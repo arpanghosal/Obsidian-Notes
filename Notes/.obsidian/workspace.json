@@ -4,22 +4,71 @@
     "type": "split",
     "children": [
       {
-        "id": "b4e0826cf99401a0",
+        "id": "7c841c4ea8f8983a",
         "type": "tabs",
         "children": [
           {
-            "id": "96169c027080a73a",
+            "id": "dc7fabc2c8746d0d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Physics.md",
+                "file": "Misc/Trivia Stuffs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4ff3c4a9274348bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Conf Talks/Lectures.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1082ca038c07ea29",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Physics/Standard Model.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "081529331b0d3de0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computing/Data Science.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a9cd6529dcc577ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "I don't know.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -49,7 +98,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -64,12 +113,20 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "cbc6d6ed91ec88dc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 308.5
   },
   "right": {
     "id": "9c02eef657f78584",
@@ -85,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Physics.md",
+                "file": "I don't know.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Physics.md",
+                "file": "I don't know.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +182,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Physics.md"
+                "file": "I don't know.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 314.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,10 +203,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "96169c027080a73a",
+  "active": "a9cd6529dcc577ff",
   "lastOpenFiles": [
-    "EFT.md",
-    "Physics.md",
-    "This is first note..md"
+    "Physics/EFT.md",
+    "Computing/obsidian.md",
+    "Computing/Self Notes.md",
+    "Misc/Trivia Stuffs.md",
+    "I don't know.md",
+    "Computing/Data Science.md",
+    "Conf Talks/Lectures.md",
+    "Physics/Standard Model.md",
+    "This is first note..md",
+    "Conf Talks/ICNFP Talk.md",
+    "Conf Talks/DPG presentation Structuring.md",
+    "Physics/attachments/Pasted image 20231019113718.png",
+    "Physics/Detector.md",
+    "Physics/Mathematics of physics.md",
+    "Physics/Measurements and Analysis.md",
+    "Computing/Projects/project - js to html.md",
+    "Computing/Projects",
+    "Computing/Computer specifics.md",
+    "Physics/attachments/Pasted image 20231009143214.png",
+    "tutorials.md",
+    "2023-10-03.md",
+    "^H-yy.md",
+    "Computing/Statistics.md",
+    "Computing/Webpage development.md",
+    "Computing/Tech Trivia.md",
+    "Computing/Systematics and Sensitivity.md",
+    "Computing/ML  and other Algorithms.md",
+    "Computing/attachments/Pasted image 20231003033916.png",
+    "Physics/attachments/Pasted image 20231003004931.png",
+    "Physics/attachments/Pasted image 20231003004914.png",
+    "attachments/Pasted image 20230418113347.png",
+    "attachments/Pasted image 20230402130707.png",
+    "attachments/Pasted image 20230401220831.png",
+    "attachments/Pasted image 20230401220511.png",
+    "attachments/Pasted image 20230316195620.png",
+    "Computing/Resources.md",
+    "Computing/Projects.md",
+    "Untitled.ipynb",
+    "Untitled.canvas",
+    "Physics/attachments",
+    "Conf Talks",
+    "ref_notes",
+    "Computing/attachments",
+    "attachments",
+    "Misc",
+    "Computing",
+    "Computing/AI"
   ]
 }

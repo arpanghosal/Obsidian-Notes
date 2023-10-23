@@ -103,3 +103,33 @@ root [18] sumWeights->Scan("names_mc_generator_weights","","colsize=30")
 *        0 *      147 *  isr:muRfac=1.0_fsr:muRfac=0.5 *
 ::
 ----
+
+
+## changing folder names regex matching
+PERL regex option -> rename 
+rename 's/PreSelection/Selection/' *PreSelection*
+Try with -n for dry-run
+Otherwise you can use "sed "
+Eg. 
+`for file in *PreSelection*; do     new_name=$(echo "$file" | sed 's/PreSelection/Selection/')     echo "Renaming $file to $new_name" done`
+
+
+---
+
+### Internet terms 
+A **domain** is a user-friendly, human-readable address used to represent an IP (Internet Protocol) address, enabling the identification and location of resources on the internet. For instance, "[www.example.com](http://www.example.com)" is a domain that helps find the associated web server.
+
+A **website** is a collection of web pages and associated resources, like images and stylesheets, hosted on a web server and accessible via the internet. An example would be "[www.wikipedia.org](http://www.wikipedia.org)," which serves as the website for the extensive online encyclopedia Wikipedia.
+
+A **webpage** is a single document or file within a website. It's the content displayed in your web browser when you visit a specific URL. For example, the homepage of Wikipedia, accessible via "[www.wikipedia.org](http://www.wikipedia.org)," represents a single webpage.
+
+**HTTPS** (Hypertext Transfer Protocol Secure) is a secure variant of HTTP, the protocol responsible for data transfer between web browsers and web servers. HTTPS employs encryption to safeguard data confidentiality and integrity during transmission. If you see "[https://www.bankname.com](https://www.bankname.com)" in your browser's address bar when visiting a banking website, it indicates a secure connection.
+
+An **IP address** is a numeric label assigned to every device connected to a network using the Internet Protocol. It functions as a unique identifier for each device on the internet. Examples include "192.168.1.1" or "203.0.113.45." The Domain Name System (DNS) translates user-friendly domain names (like "[www.example.com](http://www.example.com)") into IP addresses for locating websites.
+
+**WWW** (World Wide Web) is a system of interconnected documents and resources (web pages) linked via hyperlinks. It constitutes a subset of the broader internet and is accessible through web browsers. When you use a web browser to access online content, you're interacting with the World Wide Web.
+
+A **URL** (Uniform Resource Locator) is a character string specifying the internet address of a resource, including the protocol (e.g., HTTP or HTTPS), domain, and path. For instance, "[https://www.openai.com/research/](https://www.openai.com/research/)" is a URL where "https" is the protocol, "[www.openai.com](http://www.openai.com)" is the domain, and "/research/" is the path to a specific webpage on the OpenAI website. These terminologies are foundational for understanding the internet, websites, and secure data transmission on the web.
+
+----
+

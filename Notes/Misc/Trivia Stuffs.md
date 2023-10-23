@@ -101,3 +101,53 @@ Here are some common methods:
 5. **Fission Track Dating:** This method is used to date minerals containing uranium. When uranium undergoes fission, it leaves tracks in the crystal structure of the mineral. By counting these tracks, scientists can determine the time since the mineral cooled and the tracks were last reset.
 6. **Dendrochronology:** Also known as tree-ring dating, this method uses the growth rings in trees to determine the age of wooden objects or the timing of past events. Each ring represents one year of growth, and patterns of wide and narrow rings can be matched to known historical records to extend the dating sequence further back in time.
 7. **Varve Dating:** This method uses annual layers of sediment (varves) deposited in lakes to determine the age of geological events. Varves are formed by seasonal sedimentation, with distinct layers representing one year's worth of sediment.
+
+
+## Age of Stars
+There are several methods used to determine the ages of stars. Each method has its own strengths, limitations, and applicable ranges. Here are a few ways star ages are determined:
+
+1. **Isochrone Fitting:**
+    
+    - This is one of the most widely used methods for determining the ages of star clusters and groups of stars with similar properties.
+    - Isochrones are theoretical models that represent the evolution of stars in the Hertzsprung-Russell (HR) diagram over time.
+    - By comparing observed properties of stars (e.g., luminosity, temperature) to the predictions of isochrones, astronomers can estimate the ages of stars in a cluster.
+2. **Stellar Evolution Models:**
+    
+    - These models simulate the evolution of stars based on their masses, compositions, and other properties.
+    - Observations of a star's luminosity, temperature, and spectral features can be compared to stellar evolution models to estimate its age.
+3. **Main Sequence Turnoff (MSTO):**
+    
+    - For star clusters, the "turnoff point" on the main sequence in the HR diagram is the point where stars have exhausted their core hydrogen and are starting to evolve.
+    - The position of the MSTO on the HR diagram corresponds to the age of the star cluster.
+    - 
+4. **Gyrochronology:**
+    
+    - This method uses a star's rotation rate to estimate its age.
+    - Young stars rotate rapidly, but their rotation rate slows down as they age due to magnetic braking.
+    - By measuring a star's rotation period and using empirical relations, astronomers can estimate its age.
+    - 
+5. **White Dwarf Cooling:**
+    
+    - White dwarfs are the remnants of low- to medium-mass stars after they have exhausted their nuclear fuel.
+    - As white dwarfs cool over time, their luminosity decreases. By comparing observed luminosity to theoretical cooling models, astronomers can estimate their ages.
+6. **Lithium Depletion Boundary:**
+    
+    - This method is used for young stars that are still in the pre-main-sequence phase.
+    - The lithium abundance in a star's photosphere decreases as it ages. Observing the point at which lithium is depleted provides an estimate of the star's age.
+7. **Asteroseismology:**
+    
+    - This technique studies the oscillations or vibrations of stars caused by internal pressure waves.
+    - Asteroseismology can provide information about a star's interior structure and evolutionary stage, which can then be used to estimate its age.
+8. **Cluster Color-Magnitude Diagrams:**
+    
+    - Color-magnitude diagrams of star clusters show the distribution of stars in color (temperature) and magnitude (brightness).
+    - By comparing the positions of stars in the diagram to theoretical models, astronomers can estimate the ages of stars in the cluster.
+
+
+
+## Geological rock measurements of date :
+Can be done in 3 ways : 
+1. Relative aging according to Strata - Different stratas of sediment accumulation are studied and depending on theories like superposition, faunal succession, cross-cutting by faults etc. stratas can be relatively aged.
+2. Paleomagnetism - Studying the magnetic information stored in rocks. Some rocks, especially iron etc. contain information on basis of how their structure stores info of magnetic polarity change etc. 
+3. Radiometric dating - Can be done with C14, K-Ar, Ur present in materials - living and non-living. More the presence of daughter nuclei, more the half-lives the parent nuclei underwent, more the age. 
+

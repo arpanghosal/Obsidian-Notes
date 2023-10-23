@@ -1,0 +1,21 @@
+/* Heading Colors */
+/* Change H1 (#) heading color to Purple */
+.markdown-preview-view h1, .markdown-preview-view h1 a {
+    color: purple;
+    font-size: 80px;
+}
+
+/* Change H2 (##) heading color to Blue */
+.markdown-preview-view h2, .markdown-preview-view h2 a {
+    color: blue;
+    font-size: 20px;
+}
+
+/* Change H3 (###) heading color to Green */
+.markdown-preview-view h3, .markdown-preview-view h3 a {
+    color: green;
+    font-size: 18px;
+}
+
+
+

@@ -145,3 +145,158 @@ https://en.wikipedia.org/wiki/Parton_(particle_physics)#Parton_distribution_func
 https://en.wikipedia.org/wiki/DGLAP_evolution_equations
 
 ---
+## Yukawa coupling  and other SM interactions :
+The Yukawa coupling is a coupling constant that describes the strength of the interaction between a fermion and the Higgs field. It's represented by the symbol "y" in equations. Specifically, it determines how strongly a fermion field couples to the Higgs field and, consequently, how much mass the fermion acquires through this interaction.
+Yukawa couplings describe the interaction between fermions (quarks and leptons) and the Higgs field. They determine how strongly these particles couple to the Higgs field, leading to mass generation.
+he Yukawa coupling is considered a fundamental aspect of the Standard Model of particle physics, which is the prevailing theoretical framework describing the behavior of fundamental particles and their interactions. It's not a consequence of something more fundamental within the Standard Model; instead, it's one of the building blocks of the theory.
+
+In the Standard Model, particles acquire mass through their interactions with the Higgs field, and the strength of these interactions is quantified by Yukawa coupling constants. These coupling constants are fundamental parameters of the theory, and they are determined experimentally for different types of particles, such as quarks and leptons.
+
+- **Gauge Interactions:** These are associated with the exchange of gauge bosons, which are particles responsible for mediating the fundamental forces. There are three types of gauge interactions in the Standard Model:
+    
+    - Electromagnetic Interaction: Described by the electromagnetic coupling constant, denoted as "α" (alpha).
+    - Weak Interaction: Described by the weak mixing angle (θw) and the weak coupling constants for charged (g_w+) and neutral (g_w) weak interactions.
+    - Strong Interaction (Quantum Chromodynamics, QCD): Described by the strong coupling constant, denoted as "αs" (alpha_s).
+- - **Higgs Interaction:** This interaction is associated with the self-interaction of the Higgs field itself. It plays a role in the dynamics of the Higgs field and the Higgs boson.
+### Rise of bosons from fields:
+Here's a simplified explanation of how a field gives rise to a boson:
+
+1. **Field Concept:** In quantum field theory, fields are pervasive throughout space and time. These fields can be scalar fields (like the Higgs field), vector fields (like the electromagnetic field), or more complex fields, depending on the type of particle or force being described.
+    
+2. **Quantization:** When you quantize a field, you essentially divide it into tiny discrete units or quanta. Each of these quanta is associated with a particle. For example, in the case of the electromagnetic field, the quanta are called photons, which are massless bosons.
+    
+3. **Bosons:** Bosons are a type of particle that obeys Bose-Einstein statistics, which allow multiple bosons to occupy the same quantum state simultaneously. This is in contrast to fermions, which obey Fermi-Dirac statistics and have the Pauli exclusion principle, preventing multiple fermions from occupying the same quantum state.
+    
+4. **Higgs Mechanism:** In the case of the Higgs field, which is a scalar field, the quantization process leads to the emergence of a boson called the Higgs boson. The Higgs boson is the particle associated with the Higgs field. The Higgs mechanism is responsible for giving mass to other particles in the Standard Model, as we discussed earlier. The interaction between particles with spin (fermions) and the Higgs field involves the exchange of Higgs bosons.
+
+---
+
+### Good summary of the analysis process :
+[answer](https://physics.stackexchange.com/posts/87218/timeline)
+
+The experiments take many years. Using the Higgs boson search as an example, the reason it takes so long is because there is no "smoking gun" signature of a Higgs boson. You don't search for the Higgs boson directly, but for the Standard Model particles to which the Higgs decays. Since other Standard Model processes (called "backgrounds") can produce these particles, for any given collision at the LHC you cannot be sure that you have seen the Higgs boson. You have to produce thousands of Higgs bosons before you have a large enough statistical sample from which to draw any conclusions. And even then it can be a difficult process of comparing your observed rate of Higgs-like events to the predicted background rate. So finding the Higgs boson is not trivial; it corresponds to the experimental observation of a Higgs-like rate that is slightly larger than the predicted background rate. Since the background rate prediction has its own set of errors and assumptions, and statistical fluctuations are possible, it takes a long time to create enough Higgs bosons, and understand the detector well enough, to be confident that an observed excess of Higgs-like events is real.
+
+---
+
+## To be read: 
+https://en.wikipedia.org/wiki/Category:Experimental_particle_physics
+---
+## Question about SM:
+
+ Could all of the fundamental forces be of equal strength at very high energy, indicating a potential common origin? Could new, unknown interactions be modifying the strong force in certain processes or at certain energies?
+
+---
+
+#measurement
+
+[[ Measurements and Analysis ]]
+
+
+#Glossary
+Smirnov transform : Smirnov transform of ee -> yy in MC. Used in yy bkg evaluation usually.
+(inverse transform to go from pdf to data).
+
+Observables and the significance (coming from h->yy ppr, ):
+![[Pasted image 20231003004914.png]]
+![[Pasted image 20231003004931.png]]
+--
+
+[[ Measurements and Analysis ]]
+Also, for continuum bkg, we have :
+"The background in the Higgs boson signal extraction fit is modelled analytically. The
+functional form chosen for the background model is based on background templates built
+using simulations and data control-regions, and these are also used in the estimation of
+related systematic uncertainties. "
+
+---
+
+### Can $\sigma$  reduce with reduced cms $\sqrt{s}$  ?
+Cross section is a measure of the likelihood of a specific process occurring when particles collide. The cross section typically depends on several factors, including the center-of-mass energy of the collision (often denoted as √s), the nature of the process, and the properties of the particles involved.
+
+For many Standard Model processes, the cross section generally increases as the center-of-mass energy of the collision (√s) increases. This is because higher collision energies provide more available energy to produce massive particles, which may be involved in the process of interest.
+
+However, there are scenarios where the cross section might decrease as the collision energy decreases, but these situations are relatively less common. Here are a couple of cases where this might occur:
+
+1. **Threshold Effects**: Some particle reactions or decays have energy thresholds, below which they cannot occur. If the center-of-mass energy is reduced to a value below this threshold, the cross section for that particular process effectively drops to zero because there is not enough energy available to create the required particles or conditions.
+    
+2. **Resonance Behavior**: In certain cases, the cross section can exhibit resonance behavior. A resonance occurs when the energy is close to the mass of a specific particle. Near the resonance energy, the cross section can be significantly enhanced. However, as the energy moves away from the resonance, the cross section can drop rapidly.
+    
+    - For example, the cross section for producing the Z boson in proton-proton collisions at the Large Hadron Collider (LHC) increases as the collision energy approaches the Z boson's mass (about 91 GeV). At higher energies, the cross section decreases because the collision energy is far above the resonance peak.
+        
+    - Similarly, in electron-positron colliders, the cross section for producing the ϒ (Upsilon) mesons, which are resonances of the bottom quark-antiquark system, has a maximum at a specific energy that corresponds to the ϒ mass. At higher or lower energies, the cross section decreases.
+
+
+---
+
+---
+
+### NWA
+1. **Decay Width (Γ):** The decay width of a particle is a measure of how quickly it decays into other particles. It quantifies the probability of the particle decaying in a given time interval. Particles with a larger decay width are shorter-lived and tend to decay more quickly, while particles with a smaller decay width are longer-lived and decay more slowly.
+    
+
+Now, let's explain the narrow width approximation:
+
+- When the decay width (Γ) of a particle is much smaller than its mass (M), it means that the particle is relatively long-lived compared to the time scale of the process being studied.
+    
+- In this approximation, one can treat the particle as if it were stable for the purposes of certain calculations. This simplification is particularly useful when studying resonance phenomena, where particles temporarily exist in excited states before decaying into other particles.
+    
+- Mathematically, the narrow width approximation can be expressed as Γ << M. This implies that the particle spends a relatively long time in its excited state before decaying, allowing it to interact with other particles and form a resonance peak in a scattering process.
+---
+
+
+## A map of particle physics 
+Creating an extensive map of particle physics topics is a complex endeavor due to the vast scope and intricate history of the field. I'll provide a high-level map of key topics, developments, and experiments in particle physics to give you a broad understanding of its evolution. This map will be divided into several sections:
+
+**Foundations and Early Discoveries (Late 19th and Early 20th Century):**
+
+- **Discovery of the Electron (1897):** J.J. Thomson's experiments led to the discovery of the electron, the first subatomic particle.
+- **Development of Quantum Mechanics (1920s):** Pioneered by Schrödinger, Heisenberg, and Dirac, quantum mechanics laid the groundwork for understanding subatomic particles.
+
+**The Rise of the Standard Model (Mid-20th Century):**
+
+- **The Strong Interaction (1950s):** The theory of Quantum Chromodynamics (QCD) emerged to describe the strong nuclear force.
+- **Discovery of the Pion (1947):** The first meson was discovered, confirming the existence of these particles.
+- **Electroweak Theory (1960s):** Glashow, Salam, and Weinberg proposed the unification of the electromagnetic and weak forces.
+
+**The Higgs Boson and the Standard Model Completion (Late 20th Century - Early 21st Century):**
+
+- **Higgs Mechanism (1964):** Higgs, Brout, and Englert postulated the Higgs field and Higgs boson.
+- **LHC and Higgs Discovery (2012):** The Large Hadron Collider (LHC) at CERN discovered the Higgs boson, confirming the last missing piece of the Standard Model.
+
+**Beyond the Standard Model (Late 20th Century - Present):**
+
+- **Grand Unified Theories (GUTs):** Theories attempting to unify forces emerged.
+- **Supersymmetry (SUSY):** Postulates the existence of supersymmetric particles (sparticles).
+- **String Theory:** An ambitious theory aiming to unify all fundamental forces.
+- **Dark Matter and Dark Energy:** Ongoing efforts to understand the nature of these cosmic components.
+- **Neutrino Oscillations (2001):** Neutrinos were found to change flavor, implying they have mass.
+
+**Experimental Efforts:**
+
+- **Particle Colliders:** The LHC, Tevatron, and others conducted experiments to probe the fundamental particles.
+- **Neutrino Experiments:** Experiments like Super-Kamiokande and IceCube studied neutrinos.
+- **Cosmic Ray and Cosmic Microwave Background (CMB) Observations:** These provided insights into the early universe and cosmic ray sources.
+
+**Technological Developments:**
+
+- **Detectors:** Advancements in particle detectors (e.g., silicon detectors, calorimeters, and time-of-flight detectors).
+- **Computing:** High-performance computing for data analysis and simulations.
+- **Accelerators:** Advances in accelerator technology, such as the LHC.
+
+**Unsolved Mysteries:**
+
+- **Dark Matter:** Its nature remains unknown, with various candidates being explored.
+- **Dark Energy:** The cause of the accelerated expansion of the universe is still a mystery.
+- **Flavor Physics:** Exploring the properties of quarks and leptons to understand CP violation.
+- **Hierarchy Problem:** Why is the Higgs boson's mass so much smaller than expected?
+- **Grand Unification:** The quest to unify all fundamental forces.
+
+----
+
+
+## Nice view of SM by quanta :
+https://www.quantamagazine.org/a-new-map-of-the-standard-model-of-particle-physics-20201022/#comments
+
+![[Pasted image 20231019113718.png]]
+
+----

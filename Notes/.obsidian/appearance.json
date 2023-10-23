@@ -1,3 +1,12 @@
 {
-  "accentColor": ""
+  "accentColor": "",
+  "cssTheme": "",
+  "theme": "obsidian",
+  "translucency": false,
+  "enabledCssSnippets": [
+    "color_headings",
+    "custom",
+    "obsidian"
+  ],
+  "nativeMenus": true
 }
