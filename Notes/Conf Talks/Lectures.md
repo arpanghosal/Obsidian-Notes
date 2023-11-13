@@ -1,4 +1,4 @@
-## Stat Lecture
+# Statistics Lecture [[Statistics]]
 ### Std. deviation calculation:
 To calculate the standard deviation (SD) of a dataset, such as the one you've provided (x = [1, 2, 3, 4, 5]), you can follow these steps:
 
@@ -88,7 +88,7 @@ By performing this calculation, you can estimate the probability of having the d
 
 ---
 
-----
+<mark style="background: #ABF7F7A6;">Talk is neither extensive nor exhaustive....</mark>
 
 ## Linking the jargon :
 
@@ -182,3 +182,133 @@ By performing this calculation, you can estimate the probability of having the d
 
 ----
 
+
+## Which distribution is relevant where?
+
+Each of the probability distributions mentioned has specific characteristics and is relevant in various real-world scenarios. Here's a general overview of the types of situations where each distribution is often used:
+
+**Bernoulli Distribution:**
+
+- **Relevance:** Binary outcomes with a fixed probability of success.
+- **Examples:** Coin flips, pass/fail tests, yes/no questions, presence/absence of an event.
+
+**Binomial Distribution:**
+
+- **Relevance:** Multiple independent Bernoulli trials, counting the number of successes in a fixed number of trials.
+- **Examples:** Multiple coin flips, batch quality control, survey responses.
+
+**Gaussian (Normal) Distribution:**
+
+- **Relevance:** Continuous data with a bell-shaped curve, influenced by many factors.
+- **Examples:** Human height, measurement errors, IQ scores.
+
+**Poisson Distribution:**
+
+- **Relevance:** Counting the number of rare events occurring within a fixed interval.
+- **Examples:** Customer arrivals at a store, accidents at an intersection, typographical errors.
+
+**Uniform Distribution:**
+
+- **Relevance:** Outcomes with equal probability across a fixed range.
+- **Examples:** Rolling a fair die, generating random numbers, drawing cards from a well-shuffled deck.
+
+**Exponential Distribution:**
+
+- **Relevance:** Modeling the time between events in a Poisson process (waiting times).
+- **Examples:** Time between customer arrivals at a service center, radioactive decay, queue service times.
+
+**Gamma Distribution:**
+
+- **Relevance:** Modeling the sum of waiting times for multiple events (waiting times for multiple Poisson events).
+- **Examples:** Waiting times in multi-stage processes, life span of electronic components, rainfall intensity in a storm event.
+
+It's important to note that these distributions are often used as approximations and may be modified or extended in specific cases to better fit the data. Additionally, some situations may require other distributions or more complex models to accurately represent the underlying processes. The choice of distribution depends on the nature of the data and the characteristics of the phenomenon being studied.
+
+### Examples:
+**Bernoulli Distribution:**
+
+1. **Coin Flip:** A simple example where the outcome is either success (heads) or failure (tails). It follows a Bernoulli distribution because there are only two possible outcomes, and each has a fixed probability.
+2. **Pass/Fail Test:** In a pass/fail test, an individual either passes (success) or fails (failure). The distribution models a binary event.
+3. **Click-Through Rate:** In online advertising, the probability of a user clicking an ad (success) or not clicking (failure) can be modeled with a Bernoulli distribution.
+
+**Binomial Distribution:**
+
+1. **Number of Heads in Multiple Coin Flips:** If you flip a coin multiple times and count the number of heads in a series of Bernoulli trials, the distribution of the total heads follows a binomial distribution.
+2. **Defective Product Count:** In manufacturing, the number of defective products in a batch can be described using a binomial distribution.
+3. **Survey Responses (Yes/No Questions):** If you conduct a survey with yes/no questions, the number of "yes" responses follows a binomial distribution.
+
+**Gaussian (Normal) Distribution:**
+
+1. **Height of Individuals:** Human height tends to follow a normal distribution because it is influenced by many factors, resulting in a bell-shaped curve.
+2. **Error in Measurement:** Errors in measurements, such as those in scientific experiments, often follow a normal distribution due to the central limit theorem.
+3. **IQ Scores:** Intelligence quotient (IQ) scores in a population exhibit a normal distribution as they result from a combination of many factors.
+
+**Poisson Distribution:**
+
+1. **Arrival of Customers at a Store:** The number of customers arriving at a store within a certain time frame can be modeled using a Poisson distribution.
+2. **Accidents at an Intersection:** The number of accidents occurring at an intersection in a day can be described by a Poisson distribution.
+3. **Typographical Errors in a Book:** The number of typographical errors on each page of a book may follow a Poisson distribution.
+
+**Uniform Distribution:**
+
+1. **Rolling a Fair Six-Sided Die:** Each outcome (1 to 6) has an equal probability of 1/6, making it a uniform distribution.
+2. **Random Number Generation:** When generating random numbers in a specified range, a uniform distribution ensures equal probability for each value.
+3. **Selecting a Card from a Well-Shuffled Deck:** Assuming a well-shuffled deck, the probability of drawing any specific card is uniform.
+
+**Exponential Distribution:**
+
+1. **Time Between Arrival of Poisson-distributed Events:** If events occur according to a Poisson process (e.g., customer arrivals), the time between events often follows an exponential distribution.
+2. **Radioactive Decay:** The time it takes for a radioactive substance to decay follows an exponential distribution.
+3. **Service Time in a Queue:** The time a customer spends waiting in a queue before being served can be modeled using an exponential distribution.
+
+**Gamma Distribution:**
+
+1. **Waiting Time for Multiple Poisson Events:** When multiple Poisson-distributed events occur in succession (e.g., waiting for several customers), the waiting time can be modeled using a gamma distribution.
+2. **Life Span of Electronic Components:** The distribution of the life span of electronic components can sometimes be approximated using a gamma distribution.
+3. **Rainfall Intensity:** The distribution of rainfall intensity during a storm event can be described by a gamma distribution.
+----
+
+## Flow of the talk :
+Absolutely! Let's weave a narrative around these topics.
+
+**The Dawn of Probability**: Imagine a time when games of chance, like dice and cards, fascinated the elite and commoners alike. They often wondered: How can one predict the outcomes? This curiosity laid the foundation of what we now understand as probability. It all began as an attempt to understand games, but soon, it was realized that these mathematical principles are ubiquitous.
+
+**The Categorization of Data**: As humans, we naturally attempt to make sense of our world by categorizing and organizing information. In the realm of probability and statistics, this categorization is vital. We deal with massive amounts of data, and unless we categorize or classify them efficiently, we'd be overwhelmed. Categorization helps in answering the questions: What are we studying? How often does a particular event occur?
+
+**How is Probability Calculated?** It's the ratio of the favorable outcomes to the total number of outcomes. Think of rolling a dice: the probability of getting a '3' is 1 out of 6, because there's 1 favorable outcome and 6 possible outcomes.
+
+**Venturing into Functions**: As we gather data, we realize that it can be random. This randomness can be captured by functions, aptly named probability functions. These functions can be **discrete** (think about the number of heads when flipping coins) or **continuous** (like measuring the height of people).
+
+**Diving Deeper with Statistics**: Here, we bring in the heavy hitters like mean, median, variance, and standard deviation. These statistics tell us about the central tendency and spread of data. For instance, the average height (mean) of a group of people might be 5.5 feet, but the spread (standard deviation) tells us how much individual heights vary from this average. 
+Lumping up of data. 
+
+**Interdependence and Relationships**: Sometimes, two variables might move together. This movement can be quantified using covariance and correlation. While covariance simply indicates the direction of the linear relationship, correlation measures both direction and strength. 
+- *Definitions* :
+	- Covariance is a measure that indicates the direction of the linear relationship between two variables. If we have two sets of data, X and Y, covariance gives us insight into how changes in X might be associated with changes in Y.
+	- Correlation standardizes the measure of interdependence between two variables and ranges between -1 and 1. It not only captures the direction but also the strength of the linear relationship.
+
+**Understanding Distributions**: Life rarely fits into neat boxes, but certain patterns emerge again and again. Distributions like binomial, poisson, and gaussian encapsulate these patterns. The bell curve of the Gaussian distribution, for instance, is iconic.
+
+**Testing Our Knowledge**: As we base our decisions on data, we need tests to ensure our conclusions are sound. The t-test and chi-square test are methods that help us discern if our observations are genuine or just flukes.
+
+**The Magic of Central Limit Theorem (CLT)**: Why is the Gaussian distribution everywhere? CLT provides the answer. No matter the original distribution of data, as we take more samples and average them, their distribution becomes increasingly Gaussian.
+
+**Measuring with Precision**: Every measurement comes with uncertainty. By understanding error propagation, we can predict how individual measurement uncertainties affect our final result. The topics of covariance and correlation become vital here, showing their intertwined nature with measurement precision.
+
+**Frequentist vs. Bayesian**: These are two philosophies of interpreting probability. The frequentist approach considers probability as long-term frequencies, while the Bayesian view incorporates prior knowledge and updates probabilities based on new evidence.
+
+So, from the toss of a coin to the intricacies of Bayesian statistics, our journey through probability is filled with interconnections and revelations. Each concept builds on the previous, offering a deeper understanding of our world and the randomness that permeates it.
+
+----
+
+## Discrete vs. Continuous : 
+Terms are different :
+### Discrete - 
+Concern is with lumps/masses on histograms. And they should all add up to 1.
+
+### Continuous - 
+Concern is with intervals of random variables. The probability is spread out or "smeared" over intervals of outcomes, and this is described by a density.
+
+---
+
+### Mail to students:

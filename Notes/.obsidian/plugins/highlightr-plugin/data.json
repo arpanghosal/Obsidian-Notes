@@ -1,0 +1,18 @@
+{
+  "highlighterStyle": "realistic",
+  "highlighterMethods": "inline-styles",
+  "highlighters": {
+    "Pink": "#FFB8EBA6",
+    "Orange": "#FFB86CA6",
+    "Yellow": "#FFF3A3A6",
+    "Green": "#BBFABBA6",
+    "Cyan": "#ABF7F7A6"
+  },
+  "highlighterOrder": [
+    "Pink",
+    "Orange",
+    "Yellow",
+    "Green",
+    "Cyan"
+  ]
+}

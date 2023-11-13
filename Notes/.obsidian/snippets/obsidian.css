@@ -1,61 +1,25 @@
-/* Heading Colors */
-/* Change H1 (#) heading color to Purple */
-
-
-/* .cm-header-1, .markdown-preview-view h1 {
-color: var(--color-red);
-}.       (doesn't work) */  
-
-
-
-
-
-h1 {
-    color: red;
-    font-size: 80px; /* Increase font size */
+div.HyperMD-header-1 {
+    color: rgb(36, 178, 254);
+    font-size: 36px;
 } 
 
+div.HyperMD-header-2 {
+    color: rgb(163, 243, 238);
+    font-size: 30px;
+} 
 
-/* Change H2 (##) heading color to Blue */
-h2 {
-    color: blue;
-    font-size: 20px; /* Adjust font size */
-    margin-top: 20px; /* Add some spacing above H2 */
-}
+div.HyperMD-header-3 {
+    color: rgb(14, 250, 116);
+    font-size: 24px;
+} 
 
-/* Change H3 (###) heading color to Green */
-h3 {
-    color: green;
-    font-size: 18px; /* Adjust font size */
-    margin-top: 16px; /* Add spacing above H3 */
-}
-
-/* Line Colors */
-/* Change line colors to bright yellow */
 hr {
-    border-color: green;
+    border-color: yellow;
     margin-top: 10px; /* Add spacing above horizontal lines */
 }
 
-/* Code Blocks */
-/* Style code blocks */
-```css
-```css
-/* Style code blocks */
-pre code {
-    background-color: #274472; /* Light gray background */
-    padding: 10px; /* Add padding around code blocks */
-    border-radius: 5px; /* Rounded corners for code blocks */
-    font-family: "Courier New", monospace; /* Use a monospaced font */
-    font-size: 15px; /* Adjust font size */
+/* Change the color of text enclosed in double asterisks to red */
+:root body {
+    --bold-color: rgb(34, 159, 248);
 }
-
-/* Add line numbers to code blocks */
-pre code::before {
-    content: attr(data-line-number);
-    margin-right: 10px; /* Add spacing between line numbers and code */
-    color: #999; /* Light gray color for line numbers */
-}
-
-
-
+  

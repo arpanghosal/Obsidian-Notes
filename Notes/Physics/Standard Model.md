@@ -1,5 +1,5 @@
 
-Here I will dump physics stuffs. [[EFT]]
+Here I will dump physics stuffs. [[EFT or BSM]]
 
 -   "Leading order" refers to the highest-order term in a perturbative expansion of a given quantity. In the context of Feynman diagrams, the leading order diagram is the one that involves the fewest number of loops. Loops represent quantum corrections to the classical interaction, and therefore diagrams with fewer loops are considered to be more accurate approximations of the actual physics.
     
@@ -32,7 +32,78 @@ There are several types of bias that can occur in an experiment:
 To minimize bias in an experiment, it is important to carefully design the study and control for potential sources of bias. This can involve using random sampling methods, blinding the observers or participants to the conditions of the study, using standardized and calibrated instruments, and reporting all results, regardless of whether they support the initial hypothesis or not.
 
 
-**--- CP violating couplings ---**
+----
+
+# SM Lagrangian:
+Absolutely, I'll rewrite the mathematical expressions with the Greek characters also enclosed in `$$` for proper Markdown formatting:
+
+---
+
+## Different Terms in the Standard Model Lagrangian
+
+### 1. Gauge Field Terms
+
+- **Electromagnetic Force (QED Lagrangian)**: 
+  $$ \mathcal{L}_{\text{QED}} = -\frac{1}{4} F_{\mu\nu}F^{\mu\nu} $$
+  where $$ F_{\mu\nu} $$ is the electromagnetic field strength tensor.
+
+- **Weak Nuclear Force**: Part of the electroweak theory, includes the \( W \) and \( Z \) bosons.
+
+- **Strong Nuclear Force (QCD Lagrangian)**: 
+  $$ \mathcal{L}_{\text{QCD}} = -\frac{1}{4} G_{\mu\nu}^a G^{\mu\nu}_a $$
+  where $$ G_{\mu\nu}^a $$ is the gluon field strength tensor.
+
+### 2. Matter Field Terms (Fermions)
+
+- **Leptons and Quarks**:
+  $$ \mathcal{L}_{\text{fermions}} = \bar{\psi}(i\gamma^\mu D_\mu - m)\psi $$
+  where $$ \psi $$ are the fermion fields, $$ \gamma^\mu $$ are the gamma matrices, $$ D_\mu $$ is the covariant derivative, and $$ m $$ is the mass term.
+
+### 3. Higgs Field Term
+
+- **Higgs Mechanism**:
+  $$ \mathcal{L}_{\text{Higgs}} = |D_\mu \Phi|^2 - V(\Phi) $$
+  where $$ \Phi $$ is the Higgs field, $$ D_\mu $$ is the covariant derivative, and $$ V(\Phi) $$ is the Higgs potential.
+
+### 4. Yukawa Interactions
+
+- **Mass Generation for Fermions**:
+  $$ \mathcal{L}_{\text{Yukawa}} = -\sum_{\text{fermions}} y_f (\bar{\psi}_L \Phi \psi_R + \bar{\psi}_R \Phi^\dagger \psi_L) $$
+  where $$ y_f $$ are Yukawa coupling constants, and $$ \psi_L, \psi_R $$ are the left-handed and right-handed components of the fermion fields.
+
+---
+
+Each term in the Standard Model Lagrangian is essential for describing the interactions and properties of fundamental particles and forces, except for gravity. This Lagrangian is a cornerstone of modern particle physics.
+
+----
+
+
+
+## Yukawa coupling  and other SM interactions :
+The Yukawa coupling is a coupling constant that describes the strength of the interaction between a fermion and the Higgs field. It's represented by the symbol "y" in equations. Specifically, it determines how strongly a fermion field couples to the Higgs field and, consequently, how much mass the fermion acquires through this interaction.
+Yukawa couplings describe the interaction between fermions (quarks and leptons) and the Higgs field. They determine how strongly these particles couple to the Higgs field, leading to mass generation.
+he Yukawa coupling is considered a fundamental aspect of the Standard Model of particle physics, which is the prevailing theoretical framework describing the behavior of fundamental particles and their interactions. It's not a consequence of something more fundamental within the Standard Model; instead, it's one of the building blocks of the theory.
+
+In the Standard Model, particles acquire mass through their interactions with the Higgs field, and the strength of these interactions is quantified by Yukawa coupling constants. These coupling constants are fundamental parameters of the theory, and they are determined experimentally for different types of particles, such as quarks and leptons.
+
+- **Gauge Interactions:** These are associated with the exchange of gauge bosons, which are particles responsible for mediating the fundamental forces. There are three types of gauge interactions in the Standard Model:
+    
+    - Electromagnetic Interaction: Described by the electromagnetic coupling constant, denoted as "α" (alpha).
+    - Weak Interaction: Described by the weak mixing angle (θw) and the weak coupling constants for charged (g_w+) and neutral (g_w) weak interactions.
+    - Strong Interaction (Quantum Chromodynamics, QCD): Described by the strong coupling constant, denoted as "αs" (alpha_s).
+- - **Higgs Interaction:** This interaction is associated with the self-interaction of the Higgs field itself. It plays a role in the dynamics of the Higgs field and the Higgs boson.
+### Rise of bosons from fields:
+Here's a simplified explanation of how a field gives rise to a boson:
+
+1. **Field Concept:** In quantum field theory, fields are pervasive throughout space and time. These fields can be scalar fields (like the Higgs field), vector fields (like the electromagnetic field), or more complex fields, depending on the type of particle or force being described.
+    
+2. **Quantization:** When you quantize a field, you essentially divide it into tiny discrete units or quanta. Each of these quanta is associated with a particle. For example, in the case of the electromagnetic field, the quanta are called photons, which are massless bosons.
+    
+3. **Bosons:** Bosons are a type of particle that obeys Bose-Einstein statistics, which allow multiple bosons to occupy the same quantum state simultaneously. This is in contrast to fermions, which obey Fermi-Dirac statistics and have the Pauli exclusion principle, preventing multiple fermions from occupying the same quantum state.
+    
+4. **Higgs Mechanism:** In the case of the Higgs field, which is a scalar field, the quantization process leads to the emergence of a boson called the Higgs boson. The Higgs boson is the particle associated with the Higgs field. The Higgs mechanism is responsible for giving mass to other particles in the Standard Model, as we discussed earlier. The interaction between particles with spin (fermions) and the Higgs field involves the exchange of Higgs bosons.
+
+## CP violating couplings
 CP-violating anomalous couplings refer to interactions between particles that violate both the symmetries of charge conjugation (C) and parity (P) conservation, and involve deviations from the expected behavior of particles predicted by the Standard Model of particle physics.
 
 In the Standard Model, particles and their interactions are described by quantum field theory, and the theory predicts the strengths of various interactions between particles, including their coupling strengths. The couplings between particles can be represented by coupling constants, which are typically assumed to be constants that do not vary with energy or other parameters.
@@ -83,7 +154,7 @@ So FCNC is rare because :
 </mark>
 
 
-## How are they all related after all?
+### How are they all related after all?
 1. Flavor Changing Neutral Current (FCNC): FCNC refers to processes in particle physics where a quark changes its flavor (type) without changing its electric charge. FCNC processes are highly suppressed in the Standard Model due to the Glashow-Iliopoulos-Maiani (GIM) mechanism.
     
 2. Charged Lepton Flavor Violation (CLFV): CLFV refers to processes in which charged leptons (such as electrons or muons) change their flavor, violating the conservation of lepton flavor. CLFV is not allowed in the Standard Model but can occur in some theories beyond it.
@@ -100,7 +171,7 @@ These topics are interconnected, as the GIM mechanism, charm quark, and interfer
 
 [[Detector ]]
 
-## Cross sections
+# Cross sections
 In the context of physics, particularly in particle physics experiments, the terms "absolute cross section" and "normalized cross section" refer to different ways of quantifying and presenting experimental measurements.
 
 1. Absolute Cross Section: The absolute cross section represents the likelihood of a specific process or interaction occurring when particles (such as protons or electrons) collide with each other. It is measured in units of area, typically in barns (1 barn = 10^-28 square meters).
@@ -112,15 +183,7 @@ In the context of physics, particularly in particle physics experiments, the ter
     Normalized cross section measurements are useful for comparing data across different experiments, colliders, or energy regimes. They help to remove the effects of experimental setup differences and can provide insights into the underlying physical phenomena without being dependent on absolute values.
 
 
-## why study prompt?
-Prompt photons and prompt muons are two examples of such objects:
-
-1. Prompt Photons: A prompt photon refers to a photon that is produced directly from the primary interaction vertex in a particle collision. It is not the result of the decay of other particles. Prompt photons can arise from various processes, such as quark-gluon interactions, annihilation processes, or the decay of other prompt particles. They are often used as a probe to study specific interactions or to search for new phenomena in high-energy collisions.
-    
-2. Prompt Muons: Similarly, a prompt muon is a muon that is produced directly from the primary interaction vertex. Muons are heavy leptons, and prompt muons can be produced in processes like Drell-Yan production, where a quark and an antiquark annihilate to produce a virtual photon or Z boson, which subsequently decays into a muon-antimuon pair. Prompt muons are crucial in precision measurements, such as the determination of the W boson mass or the search for rare processes.
----
-
-## Development of PDFs for partons
+# Development of PDFs for partons
 
 Parton distribution functions (PDFs) are developed through a combination of theoretical calculations, experimental measurements, and statistical analysis. The construction of PDFs involves a multi-step process that incorporates various data sets and theoretical frameworks. Let's explore the general steps and touch upon the specific cases of NNPDF and CT10/CTEQ PDF sets.
 
@@ -145,29 +208,32 @@ https://en.wikipedia.org/wiki/Parton_(particle_physics)#Parton_distribution_func
 https://en.wikipedia.org/wiki/DGLAP_evolution_equations
 
 ---
-## Yukawa coupling  and other SM interactions :
-The Yukawa coupling is a coupling constant that describes the strength of the interaction between a fermion and the Higgs field. It's represented by the symbol "y" in equations. Specifically, it determines how strongly a fermion field couples to the Higgs field and, consequently, how much mass the fermion acquires through this interaction.
-Yukawa couplings describe the interaction between fermions (quarks and leptons) and the Higgs field. They determine how strongly these particles couple to the Higgs field, leading to mass generation.
-he Yukawa coupling is considered a fundamental aspect of the Standard Model of particle physics, which is the prevailing theoretical framework describing the behavior of fundamental particles and their interactions. It's not a consequence of something more fundamental within the Standard Model; instead, it's one of the building blocks of the theory.
+# Bjorken Scaling:
+### The Basics:
 
-In the Standard Model, particles acquire mass through their interactions with the Higgs field, and the strength of these interactions is quantified by Yukawa coupling constants. These coupling constants are fundamental parameters of the theory, and they are determined experimentally for different types of particles, such as quarks and leptons.
+Deep inelastic scattering experiments involve firing a high-energy lepton (like an electron) at a target proton or neutron. The lepton interacts with the quarks inside the proton or neutron via the exchange of a photon (the force carrier for the electromagnetic force). The goal is to probe the internal structure of the proton or neutron – to "see" the quarks inside.
 
-- **Gauge Interactions:** These are associated with the exchange of gauge bosons, which are particles responsible for mediating the fundamental forces. There are three types of gauge interactions in the Standard Model:
-    
-    - Electromagnetic Interaction: Described by the electromagnetic coupling constant, denoted as "α" (alpha).
-    - Weak Interaction: Described by the weak mixing angle (θw) and the weak coupling constants for charged (g_w+) and neutral (g_w) weak interactions.
-    - Strong Interaction (Quantum Chromodynamics, QCD): Described by the strong coupling constant, denoted as "αs" (alpha_s).
-- - **Higgs Interaction:** This interaction is associated with the self-interaction of the Higgs field itself. It plays a role in the dynamics of the Higgs field and the Higgs boson.
-### Rise of bosons from fields:
-Here's a simplified explanation of how a field gives rise to a boson:
+### The Observation:
 
-1. **Field Concept:** In quantum field theory, fields are pervasive throughout space and time. These fields can be scalar fields (like the Higgs field), vector fields (like the electromagnetic field), or more complex fields, depending on the type of particle or force being described.
-    
-2. **Quantization:** When you quantize a field, you essentially divide it into tiny discrete units or quanta. Each of these quanta is associated with a particle. For example, in the case of the electromagnetic field, the quanta are called photons, which are massless bosons.
-    
-3. **Bosons:** Bosons are a type of particle that obeys Bose-Einstein statistics, which allow multiple bosons to occupy the same quantum state simultaneously. This is in contrast to fermions, which obey Fermi-Dirac statistics and have the Pauli exclusion principle, preventing multiple fermions from occupying the same quantum state.
-    
-4. **Higgs Mechanism:** In the case of the Higgs field, which is a scalar field, the quantization process leads to the emergence of a boson called the Higgs boson. The Higgs boson is the particle associated with the Higgs field. The Higgs mechanism is responsible for giving mass to other particles in the Standard Model, as we discussed earlier. The interaction between particles with spin (fermions) and the Higgs field involves the exchange of Higgs bosons.
+When experiments of this nature were conducted, scientists noticed something surprising. When they plotted the cross-section of the scattering as a function of certain variables, they found that the cross-section depended on the energy and momentum transfer but, surprisingly, not on the specific energy of the lepton beam. This energy independence is Bjorken scaling.
+
+### Intuition:
+
+Imagine you're trying to understand the details of a complex machine, like the inner workings of a clock. You could use a magnifying glass (representing low energy) to get a closer look. At low magnifications, you might just see the large gears and components.
+
+However, if you use a microscope (representing high energy), you'll see much finer details, including smaller gears, springs, and perhaps even the texture of the material.
+
+Bjorken scaling is like saying that the pattern or distribution of these details (small gears, springs, etc.) looks remarkably the same, whether you're using a 10x microscope or a 100x microscope. The relative distribution remains consistent.
+
+### Example:
+
+Consider a target proton moving at a very high speed. From the perspective of the incoming lepton, the proton's internal quarks are moving rapidly. As you increase the energy of the lepton beam (akin to increasing the magnification of a microscope), you're probing finer and finer details of the proton's structure.
+
+Bjorken scaling suggests that the distribution of these quarks, when plotted against a certain scaled momentum variable, doesn't change. It's as if, no matter how hard you throw a baseball at a car (with the car representing the proton and the baseball the lepton), the way the baseball bounces off the tires versus the doors versus the windows remains the same. It's quite unexpected!
+
+### Importance:
+
+Bjorken scaling provided the first strong evidence for the parton model of hadrons, where hadrons (like protons and neutrons) are made up of point-like constituents called partons (which we now understand as quarks and gluons). The scaling phenomenon hinted that these partons were not interacting strongly with each other, paving the way for the development of Quantum Chromodynamics (QCD), the theory of the strong force.
 
 ---
 
@@ -178,10 +244,10 @@ The experiments take many years. Using the Higgs boson search as an example, the
 
 ---
 
-## To be read: 
+# To be read: 
 https://en.wikipedia.org/wiki/Category:Experimental_particle_physics
 ---
-## Question about SM:
+# Question about SM:
 
  Could all of the fundamental forces be of equal strength at very high energy, indicating a potential common origin? Could new, unknown interactions be modifying the strong force in certain processes or at certain energies?
 
@@ -210,7 +276,7 @@ related systematic uncertainties. "
 
 ---
 
-### Can $\sigma$  reduce with reduced cms $\sqrt{s}$  ?
+## Can $\sigma$  reduce with reduced cms $\sqrt{s}$  ?
 Cross section is a measure of the likelihood of a specific process occurring when particles collide. The cross section typically depends on several factors, including the center-of-mass energy of the collision (often denoted as √s), the nature of the process, and the properties of the particles involved.
 
 For many Standard Model processes, the cross section generally increases as the center-of-mass energy of the collision (√s) increases. This is because higher collision energies provide more available energy to produce massive particles, which may be involved in the process of interest.
@@ -230,7 +296,7 @@ However, there are scenarios where the cross section might decrease as the colli
 
 ---
 
-### NWA
+## NWA
 1. **Decay Width (Γ):** The decay width of a particle is a measure of how quickly it decays into other particles. It quantifies the probability of the particle decaying in a given time interval. Particles with a larger decay width are shorter-lived and tend to decay more quickly, while particles with a smaller decay width are longer-lived and decay more slowly.
     
 
@@ -244,7 +310,15 @@ Now, let's explain the narrow width approximation:
 ---
 
 
-## A map of particle physics 
+## Why study prompt?
+Prompt photons and prompt muons are two examples of such objects:
+
+1. Prompt Photons: A prompt photon refers to a photon that is produced directly from the primary interaction vertex in a particle collision. It is not the result of the decay of other particles. Prompt photons can arise from various processes, such as quark-gluon interactions, annihilation processes, or the decay of other prompt particles. They are often used as a probe to study specific interactions or to search for new phenomena in high-energy collisions.
+    
+2. Prompt Muons: Similarly, a prompt muon is a muon that is produced directly from the primary interaction vertex. Muons are heavy leptons, and prompt muons can be produced in processes like Drell-Yan production, where a quark and an antiquark annihilate to produce a virtual photon or Z boson, which subsequently decays into a muon-antimuon pair. Prompt muons are crucial in precision measurements, such as the determination of the W boson mass or the search for rare processes.
+---
+
+# A map of particle physics 
 Creating an extensive map of particle physics topics is a complex endeavor due to the vast scope and intricate history of the field. I'll provide a high-level map of key topics, developments, and experiments in particle physics to give you a broad understanding of its evolution. This map will be divided into several sections:
 
 **Foundations and Early Discoveries (Late 19th and Early 20th Century):**
@@ -300,3 +374,44 @@ https://www.quantamagazine.org/a-new-map-of-the-standard-model-of-particle-physi
 ![[Pasted image 20231019113718.png]]
 
 ----
+
+### LLPs : #llp    #measurement 
+Long lived particles - something that has caught my attention. Please find more abou it here in this dedicated section : [[LLP]]
+
+----
+
+# BSM Naturalness :
+**Naturalness** is the aesthetic property that the dimensionless ratios between free parameters or physical constants appearing in a physical theory should take values "of order 1" and that free parameters are not <span style="color:#00b0f0">fine-tuned.</span> 
+
+
+----
+
+# SM quantum numbers:
+Understanding the relationships between chirality, isospin, helicity, spin, and handedness in the context of fundamental particles can indeed be challenging due to the abstract nature of these concepts. Here’s a breakdown that might help make these concepts more memorable:
+
+1. **Spin**: 
+   - Think of it as an intrinsic form of angular momentum that every fundamental particle possesses. It's a quantum property, meaning particles have a fixed spin value (like 1/2 for fermions).
+
+2. **Chirality**:
+   - Chirality, or handedness, is a property that does not have a classical analog. It's purely quantum mechanical. For massless particles, chirality is well-defined and corresponds to the direction of the spin relative to the direction of motion. For massive particles, chirality is defined by the particle's wavefunction and is invariant under Lorentz transformation (meaning it doesn't change if you go to a different inertial frame).
+   - Remember: Chirality is crucial because it determines how a particle interacts with the weak force. Only left-chiral particles and right-chiral antiparticles interact with the weak force.
+
+3. **Helicity**:
+   - Helicity is the spin's projection along the direction of motion. It's like asking whether the particle is spinning clockwise or counterclockwise as it moves along. For a particle moving near the speed of light, if you can overtake it and look back, does the spin seem to be rotating with or against its motion? That's helicity.
+   - Note: For massless particles, helicity and chirality are the same because you can't overtake a massless particle (it always moves at the speed of light).
+
+4. **Isospin**:
+   - This is a concept inspired by the proton and neutron being almost identical in strong interactions. Isospin is a quantum number that differentiates members of a particle family, like up and down quarks, or protons and neutrons.
+   - Think of isospin as a label in a quantum doublet: for up quarks and down quarks, up has isospin +1/2, and down has isospin -1/2.
+
+5. **Weak Isospin**:
+   - Weak isospin is similar to isospin but specifically for weak interactions. It's related to chirality: left-chiral particles have weak isospin, while right-chiral particles do not.
+   - In the Standard Model, left-chiral fermions are doublets under the weak isospin (they have weak isospin values), and right-chiral fermions are singlets (they don't have weak isospin values).
+
+6. **Handedness**:
+   - This term can be confusing because it's used interchangeably with chirality and sometimes with helicity. In general, "handedness" refers to whether a particle is left-chiral or right-chiral.
+   - For a simple mnemonic, think: "Left-handed particles shake hands with the weak force; right-handed particles do not."
+
+Remembering the differences can be aided by associating each property with a specific aspect of particle behavior or interaction. You can also think about these properties in pairs: spin is a fundamental characteristic like the particle's eye color, while chirality/helicity is more about behavior, like whether they write with their left or right hand. Isospin and weak isospin are about the particle's identity in the context of forces, like different badges they wear in specific scenarios.
+
+---

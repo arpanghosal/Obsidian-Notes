@@ -3,7 +3,7 @@ What all do we have here?
 Well the basics that you should know :
 Programming language - python, r, sql and java for data analyses.
 The basis of everything is statistics. One should understand regression analyses, hypotheses testing, ML algorithms. ML algo's are something I should probably look more into.
-[[ML  and other Algorithms]]
+[[Algorithms and Mathematics of CS]]
 
 Next important thing is to do some data visualization. Good softwares would be Tableau, Power BI, matplotlib etc. Well it all comes with python anyway, so why worry about it.
 
@@ -18,7 +18,117 @@ In terms of projects, data scientists work on a variety of projects, including:
 4.  Recommendation Engines: Data scientists develop algorithms to recommend products or services to customers based on their past behavior or preferences.
 
 
-## Epoch, iterations, batch and folds:
+
+# Hierarchy of neural methods:
+Certainly! Here's a more detailed hierarchical list with numbered bullets, offering some context for each category and method:
+
+1. **Machine Learning (ML) Overview**
+   - ML is a field of AI that focuses on building systems that learn from data to make decisions or predictions.
+
+2. **Traditional ML Algorithms**
+   - These algorithms are often based on statistical models and are used for classification, regression, and clustering tasks.
+     1. Linear Regression
+        - A method to model the linear relationship between a dependent variable and one or more independent variables.
+     2. Logistic Regression
+        - Used for binary classification by modeling the probability of a class or event existing.
+     3. Decision Trees
+        - A tree-like model used to make decisions by recursively splitting data into branches.
+     4. k-Nearest Neighbors (kNN)
+        - Classifies data based on the closest training examples in the feature space.
+     5. Support Vector Machines (SVM)
+        - Finds the hyperplane that best separates data into classes.
+     6. Naive Bayes
+        - Applies Bayes' theorem with the assumption of independence between features.
+     7. Clustering Algorithms (e.g., K-Means, Hierarchical Clustering)
+        - Groups data points into clusters based on similarity.
+
+3. **Ensemble Methods**
+   - Combine predictions from multiple machine learning algorithms to improve robustness.
+     1. Bagging (Bootstrap Aggregating)
+        - Improves stability and accuracy by combining multiple models' predictions.
+        - Example: Random Forest
+     2. Boosting
+        - Sequentially applies weak classifiers to enhance performance.
+        - Examples:
+          1. AdaBoost
+          2. Gradient Boosting Machines (GBM)
+          3. XGBoost
+          4. LightGBM
+          5. CatBoost
+     3. Stacking
+        - Uses a meta-classifier or meta-regressor to combine the model predictions.
+
+4. **Neural Networks and Deep Learning**
+   - Deep learning involves neural networks with multiple layers that can learn increasingly abstract representations of the data.
+     1. Perceptrons
+        - The simplest type of neural network, with a single layer.
+     2. Multi-layer Perceptrons (MLP)
+        - Known as "vanilla" neural networks, consisting of one input, one output, and one or more hidden layers.
+
+   - **Deep Learning Specializations**
+     - As neural networks grew deeper, they specialized to take on tasks beyond simple classification or regression.
+        1. **Convolutional Neural Networks (CNNs)**
+           - Specialized for processing data with a grid-like topology, such as images.
+        2. **Recurrent Neural Networks (RNNs)**
+           - Designed to process sequences, such as time series or language.
+        3. **Autoencoders**
+           - Used for unsupervised learning, typically for dimensionality reduction or feature learning.
+        4. **Generative Adversarial Networks (GANs)**
+           - Consists of two networks, a generator and a discriminator, that are trained simultaneously.
+        5. **Transformer Models**
+           - Utilize attention mechanisms and have become state-of-the-art for many natural language processing tasks.
+        6. **Graph Neural Networks (GNNs)**
+           - Designed to operate on data that is represented as a graph, capturing relationships and structure.
+
+5. **Reinforcement Learning**
+   - An area of ML concerned with how agents ought to take actions in an environment to maximize some notion of cumulative reward.
+     1. Markov Decision Processes (MDP)
+        - Provides a mathematical framework for modeling decision making.
+     2. Q-Learning
+        - A model-free reinforcement learning algorithm to learn the value of an action in a particular state.
+     3. Deep Q Network (DQN)
+        - Combines Q-learning with deep neural networks.
+     4. Policy Gradient Methods
+        - A family of algorithms that optimize the policy directly as a parameterized function with respect to expected reward.
+     5. Actor-Critic Methods
+        - Combines value-based and policy-based reinforcement learning.
+     6. Proximal Policy Optimization (PPO)
+        - An algorithm that improves the stability and reliability of policy gradient approaches.
+     7. Deep Deterministic Policy Gradient (DDPG)
+        - An algorithm which concurrently learns a Q-function and a policy.
+
+6. **Explainable AI (XAI)**
+   - Methods developed to make the results of AI and ML systems more understandable to humans.
+     1. LIME (Local Interpretable Model-agnostic Explanations)
+        - Explains predictions of any classifier in an interpretable and faithful manner.
+     2. SHAP (SHapley Additive exPlanations)
+        - A game-theoretic approach to explain the output of any machine
+
+### Decision trees versus SVMs:
+Decision trees and Support Vector Machines (SVMs) are both supervised learning algorithms used for classification (and regression) tasks, but they work quite differently and have distinct properties.
+
+**Decision Trees:**
+- Decision trees work by splitting the data into subsets based on the value of input features. These splits are made by asking a sequence of questions, which can be seen as a tree-like model of decisions.
+- The decisions or splits are typically binary (Yes/No), though they can handle multiple outcomes.
+- They are non-parametric, which means that the number of parameters is not determined prior to training.
+- Decision trees can be very easy to understand and interpret, and they do not require feature scaling.
+- They can capture non-linear relationships between features and the target.
+- A major drawback is that they can easily overfit to the training data, leading to a lack of generalizability. This can be mitigated by pruning the tree or using ensemble methods like Random Forests.
+  
+**Support Vector Machines (SVMs):**
+- SVMs work by finding the hyperplane that best separates the classes in the feature space. For non-linearly separable data, SVMs can use a kernel trick to map the inputs into a higher-dimensional space where a hyperplane can be used to do the separation.
+- SVMs are parametric, and choosing the right kernel and regularization terms is crucial for their performance.
+- They are effective in high-dimensional spaces and relatively memory-efficient.
+- SVMs aim to maximize the margin between the closest data points of different classes, which can result in better generalization on unseen data.
+- They require feature scaling for optimal performance.
+- Understanding and interpreting the final model can be more challenging, especially with non-linear kernels.
+
+In summary, while both are used for similar tasks, the way they approach the problem is different. Decision trees are straightforward and easy to interpret but can overfit, while SVMs are powerful and robust to overfitting, especially with the correct kernel choice, but can be more complex and less interpretable.
+
+----
+
+
+# Epoch, iterations, batch and folds:
 
 Suppose you have a dataset of 1000 samples and you're training a neural network for a classification task.
 
@@ -49,7 +159,7 @@ Suppose you have a dataset of 1000 samples and you're training a neural network 
 In summary, batch size defines how many samples are processed at once, iteration refers to processing one batch, epoch size represents how many iterations are needed to see all data once, and k-folds cross-validation involves dividing the data into subsets for evaluating model performance. Each concept has its own role in training and evaluating machine learning models.
 
 
-## Beginner's projects ( #beginner )
+# Beginner's projects ( #beginner )
 1.  Exploratory Data Analysis: This project involves analyzing and visualizing data to understand its characteristics, such as distribution, correlation, and outliers. You can use tools like Python or R to perform exploratory data analysis on a dataset of your choice.
     
 2.  Linear Regression: Linear regression is a statistical method used to model the relationship between two variables. As a beginner, you can start with simple linear regression models and use them to predict outcomes based on historical data.
@@ -63,7 +173,7 @@ In summary, batch size defines how many samples are processed at once, iteration
 
 [[Resources]]
 
-## Neural Network Terminologies :
+# Neural Network Terminologies :
 - Batch Normalization: Batch normalization is a technique used in neural networks to normalize the inputs of each layer. It helps address the issue of internal covariate shift, which is the change in the distribution of network activations due to the changing distribution of inputs during training. By normalizing the inputs, batch normalization can improve the training speed and stability of the neural network.
  During training, the inputs to each batch normalization layer are normalized to have zero mean and unit variance based on the statistics computed over the current mini-batch.
  
@@ -96,7 +206,7 @@ In summary, batch size defines how many samples are processed at once, iteration
 
 
 
-## Why parameterize model parameters?
+# Why parameterize model parameters?
  - reduce time taken for model inference
  - reduce file/model size
 
@@ -152,7 +262,7 @@ Algorithms used to update parameters. There can be multiple, most famous being A
 ## Optuna 
 
 
-## Parts of a DNN
+# Parts of a DNN
 _Nodes_ are individual units within a neural network that receive input from the previous layer and produce output for the next layer. Each node performs a weighted sum of the input data, applies an activation function to the result, and passes the output to the next layer.
 
 _Activation functions_ are used within nodes to introduce nonlinearity into the network output. They are used to model complex relationships between the input and output data and ensure that the network output is bounded and can be easily interpreted.
@@ -251,15 +361,62 @@ The training process involves minimizing the loss function by adjusting the netw
 
 - **Dimensionality Reduction**: The learned encoding in the latent space can be used for dimensionality reduction. It can capture the most important features of the data while reducing its dimensionality, making it useful for visualization or feature extraction.
 
-- **Anomaly Detection**: Autoencoders can be used to detect anomalies or outliers in data. When the reconstruction error is significantly higher for a particular input, it may indicate an anomaly.
-- "We set a threshold for the reconstruction error. Transactions with reconstruction errors above this threshold are considered anomalies or potential fraud"
+- **Anomaly Detection**: <mark style="background: #BBFABBA6;">Autoencoders</mark> can be used to detect anomalies or outliers in data. When the reconstruction error is significantly higher for a particular input, it may indicate an anomaly.
+- "We set a threshold for the<mark style="background: #ABF7F7A6;"> reconstruction error</mark>. Transactions with reconstruction errors above this threshold are considered anomalies or potential fraud"
 
 - **Data Denoising**: Autoencoders can be used to remove noise from data by learning to represent the underlying patterns while ignoring noise.
 
-- **Image Generation**: Variational Autoencoders (a type of autoencoder) are used in generating new data samples, such as generating realistic images.
+- **Image Generation**: <mark style="background: #FFB8EBA6;">Variational Autoencoders</mark> (a type of autoencoder) are used in generating new data samples, such as generating realistic images.
 
 Autoencoders have found applications in a wide range of fields, including computer vision, natural language processing, and signal processing, among others. They are a versatile tool for various unsupervised and generative tasks.
 
 ![[Pasted image 20231003033916.png]]
 
 ---
+
+## History and advancements in ML:
+Certainly! Here's a concise historical overview of the development of advancements in machine learning and their contemporary and later applications and impact:
+
+1. **1950s - Birth of Machine Learning:**
+   - **Advancement:** The field of machine learning started with the development of the perceptron, an early neural network model, by Frank Rosenblatt.
+   - **Contemporary Impact:** Initial applications included character recognition and early attempts at natural language processing.
+
+2. **1960s - Decision Trees and Rule-Based Systems:**
+   - **Advancement:** Decision trees and rule-based systems emerged as popular approaches to machine learning and knowledge representation.
+   - **Contemporary Impact:** Used in expert systems for medical diagnosis, finance, and other domains.
+
+3. **1970s - Backpropagation Algorithm:**
+   - **Advancement:** The backpropagation algorithm was developed, enabling efficient training of multi-layer neural networks. Mentioned also in [[Algorithms and Mathematics of CS#Backpropagation algorithm]] .
+   - **Contemporary Impact:** Neural networks started being applied to more complex problems, including image and speech recognition.
+
+4. **1980s - Support Vector Machines (SVMs):**
+   - **Advancement:** SVMs were introduced as a powerful algorithm for classification tasks.
+   - **Contemporary Impact:** Applied in fields like image classification, text categorization, and bioinformatics.
+
+5. **1990s - Boosting Algorithms and Random Forests:**
+   - **Advancement:** Boosting algorithms like AdaBoost and ensemble methods like Random Forests gained popularity for improving model accuracy.
+   - **Contemporary Impact:** Improved performance in various applications, including finance, recommendation systems, and fraud detection.
+
+6. **2000s - Deep Learning Resurgence:**
+   - **Advancement:** Deep learning techniques, such as Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs), led to breakthroughs in image and speech recognition.
+   - **Contemporary Impact:** Revolutionized computer vision, natural language processing, and autonomous driving.
+
+7. **2010s - Big Data and Deep Reinforcement Learning:**
+   - **Advancement:** Big data technologies and deep reinforcement learning (e.g., AlphaGo) pushed the boundaries of machine learning.
+   - **Contemporary Impact:** Applications in recommendation systems (e.g., Netflix), autonomous robots, and gaming.
+
+8. **2020s - Transformers and AI Language Models:**
+   - **Advancement:** Transformers and large-scale AI language models like GPT-3 and BERT brought significant improvements in natural language understanding and generation.
+   - **Contemporary Impact:** Powering chatbots, language translation, content generation, and more.
+
+9. **Future - Quantum Machine Learning and Ethical AI:**
+   - **Advancement:** Quantum computing is expected to enable new machine learning algorithms with exponential speedup.
+   - **Contemporary Impact:** Quantum machine learning may transform industries like cryptography and drug discovery. Ethical AI considerations become increasingly important.
+
+Throughout this historical course, machine learning has evolved from theoretical concepts to practical applications that have transformed various industries, from healthcare and finance to entertainment and transportation. The future holds exciting possibilities as technology continues to advance and ethical considerations become central to AI development.
+
+Crux is - the techniques and algorithms and technologies - all went hand in hand. 
+
+
+----
+
