@@ -1,4 +1,7 @@
+# Flowchart:
+![[Pasted image 20231115174341.png]]
 
+# Basics?
 What all do we have here? 
 Well the basics that you should know :
 Programming language - python, r, sql and java for data analyses.
@@ -258,10 +261,6 @@ In backpropagation, we pass the output of the neural network backward through th
 ### Optimizers 
 Algorithms used to update parameters. There can be multiple, most famous being ADAM, Nadam etc.
 
-
-## Optuna 
-
-
 # Parts of a DNN
 _Nodes_ are individual units within a neural network that receive input from the previous layer and produce output for the next layer. Each node performs a weighted sum of the input data, applies an activation function to the result, and passes the output to the next layer.
 
@@ -342,7 +341,7 @@ Variance can be squeezed, but that means that bias needs to be shifted a bit. Th
 
 
 
-## Autoencoders - huge for anomaly detections
+# Autoencoders - huge for anomaly detections
 
 
 Autoencoders are a type of artificial neural network used in unsupervised machine learning and dimensionality reduction tasks. They are a specific class of neural network architecture designed to encode input data into a lower-dimensional representation and then decode it back to its original form. The primary purpose of autoencoders is to learn a compressed representation of the input data, capturing its most important features while discarding unnecessary details.
@@ -374,7 +373,7 @@ Autoencoders have found applications in a wide range of fields, including comput
 
 ---
 
-## History and advancements in ML:
+# History and advancements in ML:
 Certainly! Here's a concise historical overview of the development of advancements in machine learning and their contemporary and later applications and impact:
 
 1. **1950s - Birth of Machine Learning:**
@@ -419,4 +418,319 @@ Crux is - the techniques and algorithms and technologies - all went hand in hand
 
 
 ----
+
+#MLinHEP #MLinParticlePhysics
+
+# Cascading BDTs:
+### Boosted Decision Trees (BDTs) #bdt
+- **Decision Trees:** These are flowchart-like structures used in machine learning for classification. They split data into branches at each node based on certain criteria, with each branch representing a decision path.
+- **Boosting:** This is a method to improve the accuracy of machine learning algorithms. It combines multiple weak models (like simple decision trees) to create a strong overall model. In boosting, subsequent trees focus on data points that were misclassified by previous trees.
+- **BDTs in Particle Physics:** In particle physics, BDTs are often used for classifying events as signal (rare, interesting events) or background (common, less interesting events) based on various variables (like energy, momentum, etc.).
+
+### Cascading Technique with BDTs
+1. **Different Variables for Different Backgrounds:**
+   - The effectiveness of BDTs in separating signal from background depends on the variables (features) used. 
+   - The key point here is that the variables effective in separating the signal from one type of background might not be as effective for a different background. 
+   - By using a cascading approach, different BDTs can be sequentially applied, each optimized to separate the signal from a specific type of background using the most effective variables for that separation.
+
+2. **Dealing with Overlapping Signal and Background:**
+   - Sometimes, a significant portion of the signal might be deeply mixed with a copious (very common) background, making it challenging to use this portion effectively in training BDTs for other backgrounds.
+   - The cascading method first employs a BDT to isolate this copious background, thereby enhancing the quality of the remaining data (signal and other backgrounds) for further analysis.
+
+3. **Purification of Background Samples:**
+   - In each step of the cascade, a BDT purifies the sample by isolating one background type. 
+   - This leads to separate datasets, each enriched with a specific background type. 
+   - Such purified datasets allow for more accurate modeling (fitting) and analysis of each background type using the data.
+
+4. **Statistical Power and Constrained Fitting:**
+   - This method enhances the statistical power of the search, meaning it increases the likelihood of correctly identifying signal events and reduces false positives (misidentifying background events as signal).
+   - Moreover, with purified samples, each background can be individually fitted and analyzed with greater precision, as opposed to dealing with an aggregated mix of backgrounds.
+
+In conclusion, when cascading BDTs are used in particle physics searches, they sequentially focus on different aspects of the data, optimizing the separation of signal from various backgrounds and improving the overall accuracy and reliability of the analysis. This technique is particularly powerful in complex scenarios where different backgrounds overlap with the signal in different ways.
+
+See also, Gradient boosting [[Algorithms and Mathematics of CS/]]
+
+
+
+---
+### Dumps
+"an artificial neuron takes the outputs of the neurons of the previous layer as its inputs, and multiplies each one of these inputs by some weight value that was learned previously. Then, it applies some [mathematical function](https://www.sciencedirect.com/topics/mathematics/mathematical-function "Learn more about mathematical function from ScienceDirect's AI-generated Topic Pages") that is called “[activation function](https://www.sciencedirect.com/topics/computer-science/activation-function "Learn more about activation function from ScienceDirect's AI-generated Topic Pages")” to produce the output signal."
+
+![[Pasted image 20240112150347.png]]
+
+
+
+---
+
+
+
+# Boosted Decision Trees, Random forests, Gradient boosting 
+Decision trees, boosted decision trees (BDTs), gradient boosting, and random forests are all machine learning techniques that are primarily used for classification and regression tasks. They are related in that <mark style="background: #FFB8EBA6;">they all use decision trees as the base learner but differ in how they ensemble these trees to improve the model's performance</mark>. Let's discuss each and their relationship, hyperparameters, and considerations including overfitting.
+
+### Decision Trees
+
+- **Basics**: A decision tree is a flowchart-like structure where each internal node represents a feature(or attribute), each branch represents a decision(rule), and each leaf node represents the outcome. The top node is known as the root node.
+- **Splitting Criteria**: Decision trees use metrics like Gini impurity or entropy for classification and variance reduction for regression to split nodes.
+- **Pruning**: To avoid overfitting, decision trees can be pruned by setting a maximum depth or a minimum number of samples required at a leaf node.
+- **Hyperparameters**: Maximum depth of the tree, minimum samples for a node split, minimum samples for a leaf node, maximum number of leaf nodes, etc.
+
+### Random Forest
+
+- **Basics**: A random forest is an <mark style="background: #ABF7F7A6;">ensemble learning method</mark> that operates by constructing multiple decision trees during training and outputting the mode of the classes (classification) or mean prediction (regression) of the individual trees.
+- **Reduction of Overfitting**: By averaging multiple trees, random forests tend to overfit less than individual decision trees.
+- **Hyperparameters**: Number of trees, maximum depth of trees, minimum samples for a node split, minimum samples for a leaf node, and max features to consider for the best split.
+#### How the Random Forest Works:
+
+1. **Training**: During training, each tree in the Random Forest is built from a random sample of the training data. This introduces diversity in the models, as each tree sees slightly different data and hence learns different rules.
+    
+2. **Prediction**: When we want to make a prediction (say we have a new, unseen picture), each tree in the Random Forest makes its own prediction based on the rules it learned during training. Some might say "cat," while others might say "dog."
+    
+
+##### The Voting Process:
+
+Now, let's assume our Random Forest consists of 5 decision trees. We present the new picture to our model, and the individual trees give the following predictions:
+
+- Tree 1: Dog
+- Tree 2: Cat
+- Tree 3: Dog
+- Tree 4: Dog
+- Tree 5: Cat
+
+Now, we need to decide on the final output of the Random Forest model. This is where the "voting" comes into play:
+
+- **For Classification (Random Forest)**: We count the votes for each class. In our case, "Dog" receives 3 votes and "Cat" receives 2 votes. The class with the most votes (the mode) is chosen as the final prediction. So, in this example, the Random Forest would classify the picture as "Dog."
+
+### Boosted Decision Trees (BDTs)
+
+- **Basics**: BDTs are an ensemble technique that builds decision trees sequentially, where each subsequent tree aims to reduce the errors of the previous trees. The trees are built in a manner where each new tree is focused on correcting the mistakes made by previously trained trees.
+- **Hyperparameters**: Number of trees, learning rate, maximum depth of individual trees, loss function, and subsampling rate.
+- **Difference from Other ML Techniques**: BDTs focus on improving the predictions by reducing bias and variance through sequential learning and are particularly powerful for handling imbalanced data. They differ in their emphasis on correcting the predecessor's errors and in the way they combine the output of individual trees.
+
+### Gradient Boosting
+
+- **Basics**: Gradient boosting is a type of machine learning boosting. <mark style="background: #ABF7F7A6;">It relies on the intuition that the best possible next model, when combined with previous models, minimizes the overall prediction error</mark>. It uses a gradient descent algorithm to minimize the loss.
+- **Difference from BDTs**: While both are boosting techniques, gradient boosting differs in the way it allows optimization of arbitrary differentiable loss functions and in how it builds trees in a greedy manner.
+- **Hyperparameters**: Learning rate, number of trees, maximum depth of individual trees, subsampling rate, loss function.
+
+### Caveats and Considerations for BDTs and Gradient Boosting:
+
+1. **Overfitting**: Although individual trees are prone to overfitting, ensemble methods like BDTs and gradient boosting can mitigate this. However, if the number of trees is too large or the trees are too deep, these models can still overfit.
+2. **Computational Complexity**: BDTs and especially gradient boosting can be computationally expensive due to the sequential nature of boosting. They are not as parallelizable as random forests.
+3. **Hyperparameter Tuning**: These models come with a number of hyperparameters (like the number of trees, depth of trees, learning rate) that need careful tuning to prevent overfitting and underfitting.
+
+### Regularization Techniques:
+
+- **For Decision Trees**: Pruning techniques, setting maximum depth, and minimum samples per leaf are traditional ways to regularize decision trees.
+- **For BDTs and Gradient Boosting**: Apart from the number of trees and depth, learning rate (also known as shrinkage) acts as a regularization parameter. Lower learning rate values generally lead to better generalization. Also, subsampling (stochastic gradient boosting) introduces randomness into the model and can help prevent overfitting.
+
+
+
+
+In BDTs, the trees (estimators) are added sequentially. Here's how it works:
+
+1. **First Estimator**: The first tree is trained on the entire dataset and makes its predictions.
+    
+2. **Subsequent Estimators**: Each subsequent tree is trained on the residuals of the previous trees – essentially, it's learning to correct the mistakes of the ensemble of trees that came before it.
+    
+3. **Combining Estimators**: The predictions of individual trees are then combined through a weighted sum to produce the final prediction. The weight of each tree's prediction is determined by the learning rate and the tree's performance.
+
+### Hyperparameters Related to Estimators in BDTs:
+
+- **Number of Estimators (`n_estimators`)**: This hyperparameter defines the maximum number of trees (estimators) to be added to the model. Too few trees can lead to underfitting, while too many can lead to overfitting. It's one of the key parameters to tune.
+    
+- **Learning Rate**: This parameter scales the contribution of each tree. If you set it to a low value, you'll need more trees in the model to fit the training data, but the predictions will usually generalize better to new data.
+
+
+
+In Boosted Decision Trees (BDTs) and similar ensemble methods like Gradient Boosting, each subsequent tree is trained based on the errors or residuals made by the ensemble of previous trees. This process involves calculating a loss (or cost) function that quantifies the mistakes made by the current ensemble. Here's how the process typically works:
+
+1. **Initial Model**: The first tree (base estimator) is trained on the entire dataset and makes its predictions. The predictions are compared with the true values, and a loss function is calculated based on the difference.
+
+2. **Subsequent Trees**:
+    - **Calculating Residuals or Gradients**: For each subsequent tree, the residuals (or the negative gradient of the loss function with respect to the predictions) are calculated. Residuals represent the difference between the observed values and the predictions made by the current ensemble of trees.
+    - **Training on Residuals**: The next tree is then trained not on the original dataset but on these residuals. Essentially, it's learning to predict the error of the ensemble so far.
+    - **Updating Predictions**: The predictions from this new tree are then scaled by a factor (the learning rate) and added to the predictions of the existing ensemble. This process incrementally improves the model by correcting the errors made by the previous ensemble of trees.
+
+3. **Loss Function**:
+    - The choice of loss function can vary depending on the problem at hand (e.g., mean squared error for regression, logarithmic loss for classification).
+    - After each tree is added, the loss function is used to assess how well the ensemble is performing. It provides a quantitative measure of the difference between the predicted and true values.
+
+4. **Iterative Improvement**:
+    - This process is repeated, with each new tree focusing on the mistakes of the ensemble thus far.
+    - The model's predictions become more accurate incrementally as each tree targets the most significant sources of error in the predictions made by the previous ensemble.
+
+5. **Learning Rate**:
+    - The learning rate scales the contribution of each tree. A smaller learning rate means the model corrects its mistakes more cautiously, potentially requiring more trees but often leading to better generalization.
+
+6. **Early Stopping**:
+    - To prevent overfitting, the training process can include early stopping, where the addition of new trees is halted if the improvement in the model's performance (as measured by the loss function on a validation set) does not exceed a certain threshold over several rounds of training.
+
+In summary, in BDTs and Gradient Boosting, each subsequent tree is informed about the previous trees' errors through the residuals or the gradient of the loss function. The trees work together, each focusing on correcting the ensemble's most significant mistakes, leading to a powerful model that can capture complex patterns in the data.
+
+
+## Gini Index measure to split into nodes:
+The Gini index is a measure used in decision trees, particularly in classification problems, to determine how to split the data at each node in the tree. It's a way of quantifying how "pure" a node is, with regard to the classes of the data points it contains.
+
+### Understanding the Gini Index:
+
+1. **What it Measures**: The Gini index measures the probability of a randomly chosen data point being incorrectly labeled if it were randomly labeled according to the distribution of labels in the node. A lower Gini index indicates a higher purity of the node (i.e., most data points in the node belong to the same class).
+
+2. **Calculation**: For a set of classes, the Gini index is calculated as:
+   \[ \text{Gini} = 1 - \sum (\text{probability of class})^2 \]
+   This sum runs over all classes. The probability of each class is the proportion of data points in the node belonging to that class.
+
+### Example:
+
+Imagine you're building a decision tree to classify animals into two classes: "Bird" and "Mammal." You have a dataset where each animal is described by features like "Has Wings," "Can Fly," etc.
+
+- **Initial Node (Root)**: Suppose you have 10 animals - 6 Birds and 4 Mammals.
+  - The probability of picking a Bird is \( \frac{6}{10} \) and a Mammal is \( \frac{4}{10} \).
+  - The Gini index for the root node is \( 1 - \left(\left(\frac{6}{10}\right)^2 + \left(\frac{4}{10}\right)^2\right) = 0.48 \).
+
+- **Splitting on a Feature (e.g., "Has Wings")**: 
+  - If you split the data on the feature "Has Wings," you might end up with two nodes.
+  - Node 1 (Animals with Wings): 6 Birds, 0 Mammals. The Gini index is \( 1 - \left(\left(\frac{6}{6}\right)^2 + \left(\frac{0}{6}\right)^2\right) = 0 \). This node is pure.
+  - Node 2 (Animals without Wings): 0 Birds, 4 Mammals. The Gini index here is also 0, another pure node.
+
+### Using Gini Index in Decision Trees:
+
+- When building a decision tree, you want to split the data in a way that results in the purest possible child nodes.
+- At each step, the decision tree algorithm considers all possible splits across all features and calculates the Gini index for each potential split.
+- The split that results in the lowest weighted Gini index for the child nodes is chosen. The "weight" here refers to the proportion of data points that would fall into each child node.
+- This process continues recursively, creating a tree structure where each split is chosen to maximize the purity of the resulting child nodes, based on the Gini index.
+
+In summary, the Gini index is a straightforward and effective way to measure the purity of nodes in a decision tree and to decide on the best way to split the data at each step in the tree-building process. It helps ensure that the final tree is good at correctly classifying the data points.
+
+To determine how a node in a decision tree would be split using the Gini index as the criterion, given your dataset with two variables (photon pT and lepton pT) and their classifications (signal or background), we need to calculate the Gini index for each potential split. Let's work through this with your data.
+
+### Your Data:
+
+1. **Photon pT** (in GeV): 20 (sig), 30 (bkg), 50 (bkg)
+2. **Lepton pT** (in GeV): 14 (bkg), 16 (bkg), 20 (sig)
+
+### Steps to Determine the Split:
+
+1. **Calculate the Gini Index for Each Split**:
+   - We need to consider potential splits for both variables. 
+   - A split involves dividing the data into two groups based on a threshold. For instance, a split for photon pT at 25 GeV would divide the data into {20} and {30, 50}.
+
+2. **Photon pT Possible Splits**:
+   - Split at 25 GeV: 
+     - Left Node: {20} (1 sig, 0 bkg)
+     - Right Node: {30, 50} (0 sig, 2 bkg)
+   - Split at 40 GeV:
+     - Left Node: {20, 30} (1 sig, 1 bkg)
+     - Right Node: {50} (0 sig, 1 bkg)
+   - We calculate the Gini index for each of these splits.
+
+3. **Lepton pT Possible Splits**:
+   - Similar to Photon pT, we consider splits, like at 15 GeV and 18 GeV.
+
+4. **Calculate Gini Index for Each Node**:
+   - For a node with 's' signal and 'b' background, Gini index = \( 1 - \left(\left(\frac{s}{s+b}\right)^2 + \left(\frac{b}{s+b}\right)^2\right) \)
+   - Calculate this for each node created by each split.
+
+5. **Weighted Gini Index for Splits**:
+   - Weight each node's Gini index by the proportion of total samples in the node.
+   - Combine the weighted Gini indices of the two nodes to get the Gini index for the split.
+
+6. **Choose the Best Split**:
+   - The split with the lowest weighted Gini index is chosen as the best split.
+
+### Illustrative Calculation:
+
+Let's do one calculation as an example. Suppose we're considering the split of Photon pT at 25 GeV:
+
+- **Left Node** (20 GeV, 1 sig, 0 bkg): Gini = \( 1 - \left(\left(\frac{1}{1}\right)^2 + \left(\frac{0}{1}\right)^2\right) = 0 \)
+- **Right Node** (30, 50 GeV, 0 sig, 2 bkg): Gini = \( 1 - \left(\left(\frac{0}{2}\right)^2 + \left(\frac{2}{2}\right)^2\right) = 0 \)
+- **Weighted Gini for Split**: (1/3)\( \times \)0 + (2/3)\( \times \)0 = 0
+
+You would perform similar calculations for each potential split in both Photon pT and Lepton pT, then choose the split with the lowest weighted Gini index. 
+
+Note: This is a simplified illustration, assuming binary splits. In practice, decision tree algorithms can consider more complex splitting strategies, especially when dealing with continuous variables.
+
+No problem! Let's clarify how the weighting in the Gini index calculation is done using your example of splitting Photon pT at 40 GeV. This will involve calculating the Gini index for each of the resulting nodes and then computing the weighted Gini index for the split.
+
+### Given Data:
+
+**Photon pT** (in GeV): 20 (sig), 30 (bkg), 50 (bkg)
+
+### Split at 40 GeV:
+
+- **Left Node**: {20 (sig), 30 (bkg)} – Two events, one signal and one background.
+- **Right Node**: {50 (bkg)} – One event, all background.
+
+### Step-by-Step Calculation:
+
+1. **Calculate Gini Index for Each Node**:
+   - **Left Node** (1 sig, 1 bkg):
+     \[ \text{Gini} = 1 - \left( \left( \frac{1}{2} \right)^2 + \left( \frac{1}{2} \right)^2 \right) = 1 - \left( \frac{1}{4} + \frac{1}{4} \right) = 0.5 \]
+   - **Right Node** (0 sig, 1 bkg):
+     \[ \text{Gini} = 1 - \left( \left( \frac{0}{1} \right)^2 + \left( \frac{1}{1} \right)^2 \right) = 1 - \left( 0 + 1 \right) = 0 \]
+
+2. **Weight the Gini Index of Each Node**:
+   - The weight for each node's Gini index is based on the number of events in the node divided by the total number of events.
+   - **Left Node Weight**: 2 events out of 3 total events, so the weight is \( \frac{2}{3} \).
+   - **Right Node Weight**: 1 event out of 3 total events, so the weight is \( \frac{1}{3} \).
+
+3. **Calculate the Weighted Gini Index for the Split**:
+   - Weighted Gini for Left Node: \( \frac{2}{3} \times 0.5 = \frac{1}{3} \)
+   - Weighted Gini for Right Node: \( \frac{1}{3} \times 0 = 0 \)
+   - Total Weighted Gini for the Split: \( \frac{1}{3} + 0 = \frac{1}{3} \)
+
+The weighted Gini index for splitting Photon pT at 40 GeV is \( \frac{1}{3} \). This value would be compared with the weighted Gini index for other potential splits. The split that results in the lowest weighted Gini index is considered the best for dividing the data at that particular node in the decision tree. 
+
+This method ensures that splits which affect more data points (i.e., nodes with more events) have a greater influence on the overall decision of where to split.
+
+
+![[Pasted image 20240206123631.png]]
+
+
+----
+
+# Core Dataset creation:
+Creating a core dataset for training large models, especially in the context of machine learning and artificial intelligence, involves several crucial steps and considerations. The process is designed to ensure that the dataset is representative, comprehensive, and suitable for the specific goals of the model. Here's an overview of how such a dataset might be created:
+
+1. **Define Objectives:**
+   - **Purpose of the Model:** Clearly define what the model is intended to do. This guides the type of data you'll need.
+   - **Problem Type:** Determine whether the model is for classification, regression, clustering, etc., as this influences the nature of the dataset.
+
+2. **Data Collection:**
+   - **Sources:** Identify and gather data from various sources relevant to the model's objectives. This can include public datasets, proprietary data, web scraping, sensors, surveys, etc.
+   - **Volume:** For large models, especially deep learning models, a substantial amount of data is typically required. The "big data" can come from various sources and may include text, images, audio, video, etc.
+
+3. **Data Diversity and Representation:**
+   - Ensure the dataset is diverse and representative of the real-world scenarios where the model will be applied. This is crucial to avoid biases and to make the model robust and reliable.
+
+4. **Data Cleaning and Preprocessing:**
+   - **Cleaning:** Address missing values, remove duplicates, and correct errors.
+   - **Preprocessing:** Depending on the model, this might include normalizing or standardizing data, encoding categorical variables, resizing images, segmenting text, tokenization, etc.
+
+5. **Feature Selection and Engineering:**
+   - Identify the most relevant features that contribute to the predictive power of the model.
+   - Create new features through feature engineering to improve model performance.
+
+6. **Dataset Splitting:**
+   - Split the dataset into training, validation, and test sets. A common split ratio might be 70% training, 15% validation, and 15% test.
+
+7. **Data Labeling (for Supervised Learning):**
+   - If the model is a supervised learning model, ensure that the data is accurately labeled. This can be a labor-intensive process, especially for large datasets.
+
+8. **Data Augmentation (Optional):**
+   - For certain types of data, especially images and audio, data augmentation techniques (like rotation, flipping, scaling for images) can be used to artificially expand the training dataset.
+
+9. **Ethical and Legal Considerations:**
+   - Ensure that the dataset complies with legal standards, including privacy laws and intellectual property rights.
+   - Consider ethical aspects, such as fairness, transparency, and avoiding biases in the data.
+
+10. **Review and Iteration:**
+   - Continuously review and iterate the dataset, especially based on model performance and feedback.
+   - Update the dataset periodically to reflect new data, changes in the problem domain, or to improve model accuracy and generalizability.
+
+11. **Documentation:**
+   - Document the dataset creation process, including sources, preprocessing steps, labeling methodology, and any issues or anomalies. This is crucial for transparency and reproducibility.
+
+Creating a core dataset for large model training is a dynamic and iterative process. It requires a balance between the available data, the computational resources, and the specific objectives of the model. Due to the size and complexity of the data, automation tools and scalable data processing technologies are often employed.
+
+---
 

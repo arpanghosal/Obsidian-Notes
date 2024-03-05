@@ -2,6 +2,7 @@ in the field of particle physics, the term "Asimov dataset" is sometimes used to
 
 The Asimov dataset is often used to evaluate the statistical significance of a potential discovery in particle physics, by comparing the observed data to the expected background and signal in the Asimov dataset. This allows researchers to estimate the probability that the observed data is consistent with the background alone, or if there is evidence for the presence of a signal.
 
+This page is linked to [[Mathematics of physics]]
 
 
 In particle physics, the term "sensitivity" refers to the ability of an experiment to detect a particular signal or new physics phenomenon. It is a measure of the smallest possible signal that the experiment is capable of detecting with a given level of statistical significance.
@@ -111,9 +112,12 @@ To differentiate between irreducible and reducible backgrounds, consider the fol
     
 3. Data analysis techniques: Consider the available data analysis methods and statistical tools. If there are approaches that can be applied to suppress or eliminate the background, it suggests that it may be a reducible background. On the other hand, if the background remains present even after applying all possible mitigation techniques, it is likely an irreducible background.
 
-## application of unFolding
+## Application of unFolding
 Unfolding is a technique commonly used in differential cross section measurements, but it is not limited to that specific application. Unfolding is a statistical and computational procedure used to correct for the effects of experimental resolution and detector response in order to obtain the true underlying distribution of a physical quantity.
 
 Differential cross section measurements involve studying the dependence of a cross section (a measure of the likelihood of a particular scattering process) on one or more variables. Since experimental measurements are affected by the finite resolution and response of detectors, the observed distribution may be distorted or smeared compared to the true underlying distribution. Unfolding is used to recover the true distribution by deconvolving the measured distribution from the detector effects.
 
 However, the concept of unfolding can be applied in various other scenarios beyond differential cross section measurements. It is commonly used in areas such as high-energy physics, nuclear physics, astrophysics, and other fields where precise measurements of physical quantities are essential. Unfolding techniques can be employed to correct for instrumental effects, background contamination, or other distortions in order to obtain more accurate estimates of the true underlying distributions.
+
+----
+

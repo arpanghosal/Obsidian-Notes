@@ -65,7 +65,14 @@ Horseshoe crabs are fascinating creatures that have attracted the interest of re
 
 ---
 # Fossilization
-Fossils are the preserved remains or traces of ancient organisms that lived in the past. They provide crucial evidence for understanding the history of life on Earth. Fossilization is a rare process that requires specific conditions. Here's a detailed explanation of how fossils are formed:
+Fossils are the preserved remains or traces of ancient organisms that lived in the past.
+They provide crucial evidence for understanding the history of life on Earth. Fossilization is a rare process that requires specific conditions. 
+Quick look:
+- animal dies, gets buried quickly in sediment
+- more sediment accumulates, compactifying the animal inside, whatever remains of it.
+- Groundwater seeps in through the sediment. Mineral from water gradually replaces all the organic materials one cell at a time.
+- Finally you have a crystallised mold of what used to be the animal.
+Here's a detailed explanation of how fossils are formed:
 
 1. **Death and Burial**: The fossilization process usually begins when an organism dies. For an organism to be fossilized, it needs to be rapidly buried or protected from scavengers and decay. Burial can occur in various environments, such as sedimentary deposits, volcanic ash, tar pits, or ice.
     
@@ -97,12 +104,13 @@ Here are some common methods:
     - Samarium-Neodymium (Sm-Nd)
     - Carbon-14 (C-14) for dating organic material up to around 50,000 years old.
 2. **Luminescence Dating:** This method is used to date minerals like quartz and feldspar that have been exposed to natural radiation. When these minerals are buried and shielded from sunlight, the natural radiation trapped within them builds up over time. When the minerals are exposed to light or heat (e.g., during excavation), the stored energy is released in the form of luminescence. By measuring the amount of luminescence, scientists can estimate the time since the minerals were last exposed to sunlight.
-3. **Thermoluminescence Dating:** Similar to luminescence dating, this method uses the release of trapped electrons when minerals are heated. It is often applied to ceramics and burnt stones.
+3. **Thermoluminescence Dating:** Similar to luminescence dating, this method uses the release of trapped electrons when minerals are heated. It is often applied to ceramics and burnt stones. Thermoluminescence emits a weak light signal that is proportional to the radiation dose absorbed by the material. It is a type of luminescence dating. When they are heated, they release the trapped electrons and thus, luminescence. More the electrons trapped, more the age, more the light. 
 4. **Amino Acid Racemization:** This dating method is used for organic materials such as shells, bones, and teeth. Over time, the amino acids in these materials change from one form (isomer) to another. By measuring the ratio of different amino acid isomers, scientists can estimate the age of the organic material.
 5. **Fission Track Dating:** This method is used to date minerals containing uranium. When uranium undergoes fission, it leaves tracks in the crystal structure of the mineral. By counting these tracks, scientists can determine the time since the mineral cooled and the tracks were last reset.
+![[Pasted image 20240206093319.png]]
 6. **Dendrochronology:** Also known as tree-ring dating, this method uses the growth rings in trees to determine the age of wooden objects or the timing of past events. Each ring represents one year of growth, and patterns of wide and narrow rings can be matched to known historical records to extend the dating sequence further back in time.
 7. **Varve Dating:** This method uses annual layers of sediment (varves) deposited in lakes to determine the age of geological events. Varves are formed by seasonal sedimentation, with distinct layers representing one year's worth of sediment.
-
+Dating with U-Pb is very accurate (1% error margin), while the most feasible would be C-14 dating, easily done worldwide.
 ----
 
 
@@ -418,3 +426,532 @@ In short, the study of these special brain cells and small changes in our DNA he
 -----
 
 
+# Sexual dichotomy versus sexual dimorphism
+The terms "sexual dichotomy" and "sexual dimorphism" both relate to differences between males and females of a species, but they are used in slightly different contexts.
+
+### Sexual Dimorphism:
+
+1. **Definition**: Sexual dimorphism refers to the differences in appearance between males and females of the same species. These differences can include size, color, shape, or the presence of specific physical features.
+
+2. **Examples**: Common examples of sexual dimorphism include the larger mane of a male lion compared to a female, the larger size of male gorillas, or the bright plumage of male birds compared to the more subdued coloring of females.
+
+3. **Purpose**: These differences often arise due to evolutionary pressures, such as mating preferences, where one sex evolves distinct characteristics to attract the other, or due to different roles in survival strategies like hunting or nesting.
+
+### Sexual Dichotomy:
+
+1. **Definition**: Sexual dichotomy is a broader term that can refer to any kind of binary distinction between the sexes. This can include dimorphic differences but also encompasses differences in behavior, roles, or social structures within a species.
+
+2. **Usage**: The term dichotomy emphasizes a clear, often stark division between males and females, whereas dimorphism specifically refers to physical characteristics.
+
+3. **Examples**: Sexual dichotomy could include not just physical differences, but also things like mating behavior, gender roles in social species, or reproductive strategies.
+
+### Key Differences:
+
+- **Scope**: Sexual dimorphism is specifically about physical differences, while sexual dichotomy is a broader term that can include physical, behavioral, and social differences.
+- **Usage in Biology**: In biological studies, sexual dimorphism is a more frequently used and specific term, whereas sexual dichotomy might be used in more general discussions about gender differences.
+
+In summary, while sexual dimorphism refers specifically to physical differences between the sexes of a species, sexual dichotomy covers a broader range of differences, including behavior, roles, and social structures, in addition to physical characteristics.
+
+### TLDR: 
+<mark style="background: #FFB8EBA6;">Dichotomy - broader terms, includes physical, social, gender roles as well</mark>
+<mark style="background: #ABF7F7A6;">Dimorphism -  just the physical differences, as you might see in trans debates</mark>
+
+----
+
+# Estrous cycle:
+
+The estrous cycle is a biological process that occurs in most mammalian females, except humans and a few other species, and it governs the time during which the female is fertile and can become pregnant. Unlike the menstrual cycle in humans, the estrous cycle involves periods where the female exhibits distinct behaviors and physiological changes that indicate she is in heat (or estrus), which is the period when she is receptive to mating.
+
+It has multiple steps, Heat being the most important. 
+### Differences from the Menstrual Cycle:
+
+- **Menstruation Absence**: One key difference between the estrous and menstrual cycles is that in the estrous cycle,<mark style="background: #ABF7F7A6;"> if there is no pregnancy, the lining of the uterus is reabsorbed rather than shed </mark>(as in menstruation in humans).
+    
+- **Seasonal Breeders**: Many animals with an estrous cycle are seasonal breeders, meaning they only come into heat during specific times of the year.
+    
+- **Behavioral Changes**: <mark style="background: #FFF3A3A6;">The estrous cycle is often marked by more noticeable behavioral changes in animals,</mark> corresponding to the period they are in heat and receptive to mating.
+
+
+----
+
+# Expansion of universe:
+Absolutely, I'll format the mathematical concepts and equations with LaTeX notation for easier copying into applications like Obsidian.
+
+The expansion of the universe can be described within the framework of Albert Einstein's General Theory of Relativity, which is the foundation for our current understanding of cosmology. The mathematical model that describes a homogeneous, isotropic expanding universe is the Friedmann-Lemaître-Robertson-Walker (FLRW) metric.
+
+### General Theory of Relativity:
+
+- **Einstein's Field Equations**: The behavior of spacetime, including the expansion of the universe, is governed by Einstein's field equations:
+  $$ G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu} $$
+  Here, \( G_{\mu\nu} \) is the Einstein tensor, \( \Lambda \) is the cosmological constant, \( g_{\mu\nu} \) is the metric tensor, \( G \) is the gravitational constant, \( c \) is the speed of light, and \( T_{\mu\nu} \) is the stress-energy tensor.
+
+### FLRW Metric:
+
+- **FLRW Metric**: The FLRW metric describes a uniformly expanding or contracting universe. It is a solution to Einstein's field equations under the assumption of a homogeneous and isotropic universe. The metric is given by:
+  $$ ds^2 = -c^2 dt^2 + a(t)^2 \left[ \frac{dr^2}{1 - k r^2} + r^2 (d\theta^2 + \sin^2\theta \, d\phi^2) \right] $$
+  Here, \( ds \) is the spacetime interval, \( a(t) \) is the scale factor, and \( k \) describes the spatial curvature of the universe.
+
+### Friedmann Equations:
+
+- **Friedmann Equations**: These equations are derived from the FLRW metric and describe the dynamics of the universe. The first Friedmann equation is:
+  $$ \left( \frac{\dot{a}}{a} \right)^2 = \frac{8\pi G}{3} \rho - \frac{kc^2}{a^2} + \frac{\Lambda c^2}{3} $$
+  where \( \dot{a} \) is the time derivative of the scale factor and \( \rho \) is the energy density of the universe.
+
+### Observational Evidence:
+
+- **Hubble's Law**: Hubble's Law is a direct observational confirmation of the expanding universe. It states that the recession velocity of galaxies (\( v \)) is proportional to their distance (\( d \)):
+  $$ v = H_0 d $$
+  Here, $$ H_0 $$ is the Hubble constant. This law is derived from the FLRW metric.
+
+- **Cosmic Microwave Background (CMB)**: The CMB provides evidence of the early universe and supports the Big Bang model. Its uniformity and slight anisotropies are consistent with predictions from the FLRW metric.
+
+- **Accelerated Expansion**: Observations of distant supernovae suggest that the universe's expansion is accelerating, which is attributed to dark energy, represented by the cosmological constant \( \Lambda \) in the equations.
+
+In summary, the expansion of the universe is described by the FLRW metric in the framework of General Relativity, with the dynamics governed by the Friedmann equations. Observational data, including Hubble's Law and the CMB, provide strong support for this theoretical model. The accelerated expansion of the universe suggests the presence of dark energy, which is an area of active research in cosmology.
+
+----
+
+# Astrobiology:
+- **Extremophiles** - organisms living in extreme environments.A key to extremophile adaptation is their amino acid composition, affecting their protein folding ability under particular conditions. Places- deep sea, even Mariana, deserts etc.
+
+### Amino Acids in Space:
+
+1. **Amino Acids on Meteorites**: 
+   - Some of the most compelling evidence comes from meteorites known as carbonaceous chondrites. These meteorites contain a variety of organic compounds, including amino acids, which are the building blocks of proteins and essential for life as we know it.
+   - For instance, the Murchison meteorite, which fell in Australia in 1969, contains over 70 different amino acids, many of which are found in living organisms on Earth.
+
+2. **Implications for the Origin of Life**:
+   - The presence of amino acids in meteorites suggests that these organic molecules can form in space and be delivered to Earth. This supports the hypothesis that the ingredients for life on Earth could have come, at least in part, from outer space – a concept known as panspermia.
+   - It also implies that the basic chemical precursors to life are likely common in the universe, which could mean that the conditions for life might exist elsewhere.
+
+### Formation of Organic Substances in Space:
+
+1. **Interstellar Medium and Nebulas**:
+   - Complex organic molecules, including amino acids, can form in the interstellar medium and within nebulas (clouds of dust and gas in space) under the right conditions.
+   - These environments contain various elements like carbon, hydrogen, oxygen, and nitrogen, which can undergo chemical reactions, catalyzed by the energy from nearby stars or cosmic rays, to form organic compounds.
+
+2. **On Asteroids and Comets**:
+   - Asteroids and comets are believed to be remnants from the early solar system, containing materials that have remained relatively unchanged over billions of years. They may provide a record of the organic chemistry that was occurring during the time of planet formation.
+   - Research suggests that asteroids and comets could have brought a significant amount of water and organic material to the early Earth, contributing to the conditions necessary for life to develop.
+
+### Future Research and Exploration:
+
+- **Space Missions**: Missions like NASA's OSIRIS-REx and Japan's Hayabusa2, which are designed to collect samples from asteroids and return them to Earth, are crucial in understanding the nature and extent of organic compounds in these celestial bodies.
+- **Astrobiology**: The ongoing discovery and study of organic compounds in space are critical for astrobiology, shedding light on the potential for life beyond Earth and providing insight into the conditions and processes that lead to the emergence of life.
+
+Drake equations tries to explain the number of habitable planets and civilizations out there but falls short because of a lot of uncertainties. For eg., as Sagan pointed out, if there is at least 1 civilization in a galaxy, it wouldn't want to do the von Neumann probing due to deficit of resources ultimately. 
+
+## Abiogenesis:
+
+Abiogenesis is the process by which life arises naturally from non-living matter. It's a fundamental area of study that seeks to understand how life on Earth began. This process is distinct from biogenesis, which is the production of new living organisms or organelles. The transition from non-living to living entities was not a single event but a gradual process of increasing complexity.
+
+### Key Concepts in Abiogenesis:
+
+1. **Primordial Soup Theory**: Proposed by Alexander Oparin and J.B.S. Haldane in the 1920s, this theory suggests that life began in a "soup" of organic molecules, possibly in the oceans of the early Earth. These molecules could have formed through a series of chemical reactions driven by various energy sources, such as UV light from the sun or electrical discharges from lightning.
+
+2. **Miller-Urey Experiment**: In 1952, Stanley Miller and Harold Urey conducted an experiment that simulated the conditions of the early Earth. They showed that with a mixture of water, methane, ammonia, and hydrogen, and with the application of electric sparks, several organic compounds, including amino acids (the building blocks of proteins), could be synthesized spontaneously.
+
+### Mechanism and the First Life Forms:
+
+1. **Formation of Basic Building Blocks**: The first step in abiogenesis is the formation of basic organic compounds, which could happen through various processes, such as the<mark style="background: #ABF7F7A6;"> Miller-Urey experiment or via extraterrestrial origins </mark>(e.g., on meteorites).
+
+2. **Complex Molecules and Self-Replication**: These simple molecules could have given rise to more complex molecules. A critical step in the origin of life is the emergence of molecules capable of self-replication. RNA (ribonucleic acid) is considered a likely candidate for the first self-replicating molecule, given its ability to store, transmit, and duplicate genetic information, as well as catalyze chemical reactions (as ribozymes).
+
+3. **Protocells and the Boundary of Life**: The formation of protocells - simple, cell-like structures enclosed by a membrane - was a significant step. These protocells could have provided a distinct internal environment where more complex biochemical processes could take place.
+
+4. **From Chemistry to Biology**: The boundary between non-living chemistry and living biology is not a clear line but a gradient. The development from simple chemical reactions to complex, self-sustaining, self-replicating systems marks the transition to what we can define as life.
+
+### Theories and Current Understanding:
+
+- **Hydrothermal Vents Theory**: Another hypothesis posits that life may have originated at hydrothermal vents on the ocean floor, where mineral-rich hot water provides a unique chemical environment for the synthesis of complex molecules.
+
+- **Panspermia Hypothesis**: This suggests that life, or the building blocks of life, might have originated elsewhere in the universe and been brought to Earth via meteorites or comets.
+
+- **RNA World Hypothesis**: This popular theory posits that RNA, due to its dual role as both genetic material and a catalyst, could have been the key molecule in the early development of life.
+
+### Current Research:
+
+Today, abiogenesis is an active area of research involving biochemistry, molecular biology, and astrobiology. Scientists are working to recreate the conditions of early Earth in laboratory settings and are exploring extreme environments on Earth where life's origins might be mirrored. Despite significant progress, the exact pathway from non-living to living remains one of the most intriguing questions in science.
+
+In summary, abiogenesis is a gradual process where simple organic molecules gradually evolved into more complex forms, eventually leading to self-replicating systems and life as we know it. The transition from chemistry to biology is a continuous spectrum, and pinpointing the exact moment life began is one of the fundamental challenges in this field.
+
+### Abiogenesis in a lab:
+Abiogenesis, the process by which life arises naturally from non-living matter, is a major topic of research in the fields of biochemistry, astrobiology, and evolutionary biology. While scientists have not yet replicated the complete process of abiogenesis in a laboratory, there have been significant experiments that demonstrate key aspects of how organic compounds necessary for life could have formed under the conditions thought to exist on the early Earth. Here’s a summary of the progress and limitations in this area:
+
+#### Key Experiments and Findings:
+
+1. **Miller-Urey Experiment (1953)**:
+   - This famous experiment simulated the conditions thought to exist on the early Earth and tested the idea that life's building blocks could form spontaneously.
+   - By introducing a mixture of water, methane, ammonia, and hydrogen into a closed system, and applying electrical sparks to simulate lightning, the experiment produced amino acids, which are the building blocks of proteins.
+
+2. **Subsequent Variations of Miller-Urey**:
+   - Further experiments, modifying the conditions and ingredients of the original Miller-Urey setup, have produced other organic molecules, including nucleotides and other components of RNA and DNA.
+
+3. **Synthesis of Organic Compounds**:
+   - Modern experiments have demonstrated the synthesis of complex organic molecules, including the components of RNA and cell membrane-like structures, under prebiotic conditions.
+
+#### Challenges and Limitations:
+
+1. **Complexity of Life**: The leap from the formation of simple organic molecules to the development of living cells, which involves the creation of self-replicating systems and metabolic pathways, is enormously complex and not yet fully understood.
+
+2. **Unknown Precise Conditions of Early Earth**: There is still much to learn about the exact conditions on the early Earth and how they contributed to the origin of life. Different theories propose different scenarios, each affecting the likelihood and mechanism of abiogenesis.
+
+3. **Self-Replication and Metabolism**: Key aspects of life, such as self-replication and metabolism, involve intricate interactions between many molecules. Replicating these processes in the lab is a significant challenge.
+
+#### Future Research:
+
+- **RNA World Hypothesis**: This popular theory suggests that RNA, capable of both storing genetic information and catalyzing chemical reactions, may have been a precursor to life. Experiments continue to test various aspects of this hypothesis.
+- **Extraterrestrial Sources of Organic Molecules**: Research into meteorites and comets, which contain complex organic molecules, informs our understanding of how these molecules could have been delivered to or formed on the early Earth.
+- **Simulating Prebiotic Environments**: Continued efforts to simulate various prebiotic environments and monitor the formation and interactions of organic molecules are crucial for understanding abiogenesis.
+
+
+## RNA world hypothesis:
+This hypothesis suggests that RNA, a molecule capable of storing genetic information and catalyzing chemical reactions, played a central role in the early development of life. Understanding why and how this RNA might have begun to self-replicate involves exploring the properties of RNA and the conditions of early Earth.
+
+### The Nature of RNA and Self-Replication:
+
+1. **Chemical Properties of RNA**:
+    
+    - RNA (Ribonucleic Acid) is a nucleic acid similar to DNA but typically single-stranded.
+    - RNA is made up of nucleotides, each consisting of a sugar (ribose), a phosphate group, and a nitrogenous base.
+    - Importantly, RNA can act as a catalyst for chemical reactions, including the synthesis of other RNA molecules. These catalytic RNA molecules are called ribozymes.
+2. **Self-Replication**:
+    
+    - <mark style="background: #FFB8EBA6;">Self-replication in the context of early RNA does not imply a conscious effort or a biological function as seen in contemporary life forms. Instead, it refers to a chemical process wherein RNA molecules catalyze the formation of new RNA molecules with sequences complementary to their own.</mark>
+    - The process likely started very simply, with short RNA sequences that had the ability to attract and bind complementary nucleotides from their surroundings, facilitating the formation of new RNA strands.
+    - 
+### How Might the First RNA Have Self-Replicated?
+
+1. **Environmental Conditions**:
+    
+    - The early Earth had a variety of environments with the necessary ingredients for RNA synthesis, such as nucleotides.
+    - Conditions like those near hydrothermal vents or small warm pools could have concentrated these ingredients and provided the energy needed for chemical reactions.
+2. **Chemical Evolution**:
+
+    - Before the emergence of self-replicating RNA, there was likely a period of chemical evolution. During this time, simpler organic molecules underwent chemical reactions that gradually increased their complexity.
+    - Some of these reactions could have produced RNA nucleotides, which then randomly assembled into RNA strands.
+3. **Natural Selection at the Molecular Level**:
+    
+    - Among the diverse population of RNA molecules, some sequences happened to have catalytic properties that facilitated their own replication.
+    - These RNA molecules would have been more likely to persist and multiply. Over time, natural selection at the molecular level would have favored the proliferation of self-replicating RNA sequences.
+4. **Transition to Life**:
+    
+    - As these RNA molecules continued to replicate and evolve, they likely developed more complex mechanisms for replication and eventually became enclosed within lipid membranes, leading to the formation of protocells.
+    - This marked a transition from simple chemistry to more organized, life-like systems.
+
+
+The self-replication of the "first" RNA was not a deliberate action but a natural outcome of its chemical properties and the conditions of the early Earth. It was a process driven by the basic principles of chemistry and physics, guided by the emergent forces of natural selection at a molecular level.
+
+Let me note a bit about Lysenko as well as JBS Haldane here.
+
+"Perhaps one is freer to be a scoundrel in India than elsewhere." - JBS Haldane
+In wonder if it's still true. Haldane, with Oparin, came up with the primordial soup theory to explain life. Good to know. He spent much of his life years in india as well, ISI to be more precise.
+
+----
+
+### Lysenkoism:
+Lysenkoism refers to a political and scientific movement in the Soviet Union led by Trofim Lysenko, a Soviet agronomist and biologist. It rejected Mendelian genetics and the concept of the gene in favor of the theory of "inheritance of acquired characteristics" and "vernalization." 
+
+Key Points:
+
+1. **Rejection of Genetic Science**: Lysenkoism, prominent in the 1930s through the 1960s, dismissed Mendelian genetics and natural selection, favoring the Lamarckian view that environmental factors could directly alter the heritable traits of organisms. 
+
+2. **Vernalization**: Lysenko was particularly known for advocating "vernalization," a process that involved treating seeds with moisture and cold to increase crop yields. He claimed this could fundamentally change the heritable traits of plants.
+
+3. **Political Backing**: Lysenko gained the support of Soviet leaders, including Stalin, partly because his theories aligned with Marxist ideology and promised quick solutions to agricultural problems. This led to the suppression of legitimate genetic science in the Soviet Union.
+
+4. **Consequences**: Lysenkoism resulted in the persecution of geneticists, the decline of genetics research in the Soviet Union, and widespread agricultural failures. It stands as a cautionary tale of the dangers of allowing politics to interfere with scientific research.
+
+Lysenkoism was eventually discredited, but only after causing significant setbacks to biological science and agriculture in the Soviet Union.
+
+-----
+
+### Hamiltons' rule :
+Hamilton's rule is a fundamental concept in evolutionary biology, particularly in the context of kin selection. It was formulated by W.D. Hamilton in 1964 and provides a mathematical criterion to predict when natural selection would favor altruistic acts among related individuals.
+
+Hamilton's rule is commonly expressed as:
+
+rb>c
+
+Where:
+
+- r represents the genetic relatedness between the altruist and the beneficiary, essentially the probability that a gene present in one individual will also be present in the other due to common descent.
+- b is the reproductive benefit to the recipient of the altruistic act.
+- c is the reproductive cost to the individual performing the act.
+
+
+---
+
+# Astronomical distance measurement:
+
+Calculating the distance to distant celestial objects is a fundamental task in astronomy, and it involves a variety of methods, often depending on the distance of the object. For distant galaxies, one of the most common methods involves observing the redshift of light, but there are other techniques as well. Here's an overview:
+
+### 1. Redshift Measurement:
+- **Redshift Principle**: When a galaxy is moving away from us (which is the case for most galaxies due to the expansion of the universe), the light it emits is stretched to longer, redder wavelengths — a phenomenon known as redshift. 
+- **Spectral Lines**: <mark style="background: #ABF7F7A6;">By observing the spectral lines of elements</mark> (like hydrogen) in a galaxy's light, astronomers can measure how much these lines are shifted compared to their known wavelengths in laboratory conditions.
+- **Calculating Distance**:<mark style="background: #FFB8EBA6;"> The amount of redshift (usually denoted as 'z') is related to how fast the galaxy is moving away from us, which in turn is related to its distance due to the expansion of the universe. </mark>The relationship between redshift and distance is given by Hubble's Law, which states that the velocity of a galaxy (derived from redshift) is proportional to its distance from us.
+
+### 2. Standard Candles:
+- **Cepheid Variables**: For closer galaxies, Cepheid variable stars are used. These are stars whose brightness varies in a predictable way. The period of their brightness variation is related to their intrinsic luminosity. By comparing their intrinsic luminosity to their apparent brightness, astronomers can calculate their distance.
+- **Type Ia Supernovae**: These are standard candles for measuring farther distances. All Type Ia supernovae have roughly the same intrinsic brightness at their peak, so by measuring their apparent brightness, astronomers can calculate their distance.
+
+### 3. Tully-Fisher Relation:
+- For spiral galaxies, the Tully-Fisher relation can be used. This method relates the galaxy's luminosity to its rotation speed: <mark style="background: #FFB86CA6;">brighter galaxies tend to rotate faster.</mark> By measuring the rotation speed (from the Doppler shifting of spectral lines), the galaxy's luminosity and thus its distance can be inferred.
+
+### 4. Surface Brightness Fluctuations:
+- This method is used for elliptical galaxies. It involves measuring the fluctuations in a galaxy's surface brightness, which are related to the distance of the galaxy.
+
+### 5. Parallax:
+- For relatively close stars within our galaxy, the <mark style="background: #FFB8EBA6;">parallax method is used</mark>. It involves measuring the apparent shift in the position of a star against distant background stars as the Earth orbits around the Sun.
+
+Each of these methods has its range of applicability and depends on the type of object being measured and its distance. For very distant objects, redshift measurement is often the most applicable method, and it relies on understanding the expansion dynamics of the universe. These methods also build upon each other in what is known as the "cosmic distance ladder," where nearer methods help calibrate farther ones.
+
+----
+
+# Non-Established Theories:
+Certainly! Theoretical physics is rich with innovative and often speculative ideas that extend beyond our current understanding and experimental capabilities. Here's an overview of some prominent theories, including how they were conceived and why they remain unproven:
+
+### 1. **Supersymmetry (SUSY)**
+
+- **Concept**: Supersymmetry is an extension of the Standard Model of particle physics. It proposes a symmetry between fermions (matter particles) and bosons (force carriers). Every particle in the Standard Model would have a supersymmetric partner (a "sparticle").
+  
+- **Conception**: Developed in the 1970s, SUSY emerged from efforts to solve several theoretical issues in the Standard Model, such as the hierarchy problem and the unification of forces.
+  
+- **Testing**: Experiments at the LHC have been searching for evidence of supersymmetric particles. So far, none have been definitively observed, leading to constraints on simpler SUSY models.
+
+### 2. **String Theory**
+
+- **Concept**: String theory posits that the fundamental constituents of the universe are not point-like particles but one-dimensional "strings". It is a candidate for a theory of quantum gravity and a unified theory of all fundamental forces.
+  
+- **Conception**: Originating in the late 1960s and early 1970s, string theory evolved from attempts to describe the strong nuclear force. It gained prominence in the 1980s as a potential "theory of everything".
+  
+- **Testing**: String theory operates at energy scales and dimensions that are currently inaccessible to experiments. Thus, it remains a mathematical framework with no direct experimental evidence.
+
+### 3. **Quantum Loop Gravity**
+
+- **Concept**: This theory attempts to reconcile general relativity with quantum mechanics, focusing on the quantization of spacetime itself.
+  
+- **Conception**: Developed in the 1980s, it emerged from efforts to apply quantum field theory techniques directly to the geometric fabric of spacetime.
+  
+- **Testing**: Like string theory, quantum loop gravity predicts phenomena that occur at scales or conditions currently beyond experimental reach, making it a theoretical endeavor for now.
+
+### 4. **Extra Dimensions**
+
+- **Concept**: Some theories beyond the Standard Model, like certain variants of string theory, propose the existence of additional spatial dimensions beyond the familiar three.
+  
+- **Conception**: The idea was conceived to address various theoretical challenges, including why gravity is so much weaker than the other fundamental forces.
+  
+- **Testing**: Efforts to detect extra dimensions include searching for evidence of gravitons (hypothetical quantum gravity particles) leaking into higher dimensions. So far, experiments like those at the LHC have not found such evidence.
+
+### 5. **Dark Matter Theories**
+
+- **Concept**: Dark matter is an unseen form of matter that is thought to make up about 27% of the universe's mass-energy content. Various candidates, such as Weakly Interacting Massive Particles (WIMPs), have been proposed.
+  
+- **Conception**: Dark matter theories developed to explain astrophysical observations that cannot be accounted for by normal matter alone, such as the rotation curves of galaxies.
+  
+- **Testing**: Numerous experiments are attempting to detect dark matter particles directly or indirectly (e.g., through their annihilation signals), but a definitive detection remains elusive.
+
+### Why Are They Still Waiting to Be Discovered?
+
+- **Energy Scales and Conditions**: Many of these theories operate at energy scales or conditions (like the Planck scale) that are currently beyond the reach of our most powerful experiments.
+- **Mathematical Complexity**: Some theories, particularly in quantum gravity, are mathematically complex and not yet fully developed to the point where they make clear, testable predictions.
+- **Indirect Evidence**: In some cases, we only have indirect evidence (e.g., gravitational effects attributed to dark matter) without a direct detection of the proposed entities.
+
+---
+
+# Contesting theories of everything:
+
+Yes, there are several alternative theories to String Theory (and its extension, M-Theory), which aim to unify the fundamental forces and explain the fundamental constituents of the universe. These theories often explore different aspects of physics or propose unique frameworks that diverge from the concepts in String Theory. Some of the notable ones include:
+
+1. **Loop Quantum Gravity (LQG):**
+   - LQG is one of the main competitors to String Theory. Unlike String Theory, which posits one-dimensional strings as the fundamental entities, LQG is based on a quantization of spacetime itself.
+   - It attempts to unify gravity with the principles of quantum mechanics without requiring extra dimensions or supersymmetry. LQG focuses on describing the quantum properties of the geometry of spacetime.
+   
+>><detail>
+<h3> Key Concepts:</h3>
+
+1. **Quantization of Space:**
+    
+    - LQG proposes that space is quantized, composed of discrete units or 'quanta' at the smallest scales (on the order of the Planck length). This contrasts with the smooth continuum of space in classical general relativity.
+2. **Spin Networks:**
+    
+    - A spin network represents a quantum state of the spatial geometry. Its edges carry labels (related to angular momentum in quantum mechanics), quantifying the area of surfaces that intersect these edges.
+3. **Background Independence:**
+    
+    - LQG maintains background independence, a feature of general relativity, meaning the theory doesn't assume a fixed spacetime backdrop. Instead, spacetime itself has dynamic properties.
+
+</detail>
+
+2. **Quantum Field Theory (QFT) Extensions:**
+   - Some physicists explore extensions or modifications of the Standard Model of particle physics through advanced QFT techniques. These don't necessarily involve extra dimensions or strings.
+   - They might involve new particles, symmetries (like supersymmetry, independent of String Theory), or concepts like technicolor.
+
+3. **Causal Dynamical Triangulations (CDT):**
+   - CDT is an approach to quantum gravity that, like LQG, attempts to describe the quantum behavior of spacetime itself.
+   - It uses a technique that involves breaking spacetime down into simpler, discrete elements and studying their behavior at the quantum level.
+
+4. **Noncommutative Geometry:**
+   - This is a mathematical framework that modifies the traditional notions of spacetime at very small scales. In noncommutative geometry, the coordinates of spacetime do not commute, leading to a new way of looking at field theories and potentially unifying gravity with quantum mechanics.
+
+5. **Twistor Theory:**
+   - Proposed by Roger Penrose, Twistor Theory is another approach to the unification of quantum mechanics and general relativity. It uses mathematical objects called twistors and focuses on the geometric and algebraic aspects of spacetime.
+
+6. **Emergent Gravity:**
+   - Emergent gravity theories propose that spacetime and gravity are not fundamental, but instead emerge from more basic, microscopic physical processes, much like temperature emerges from the movement of particles.
+
+7. **E8 Theory:**
+   - Proposed by physicist Garrett Lisi, this theory attempts to describe all fundamental particles and forces of the Standard Model (and beyond) using the complex, eight-dimensional mathematical structure known as the E8 Lie group.
+
+Each of these theories has its own strengths and challenges, and none have achieved the same level of attention or development as String Theory. They are all part of ongoing efforts to understand the fundamental nature of reality, and each contributes valuable ideas and insights to the field of theoretical physics. However, it's important to note that as of now, none of these theories, including String Theory, have been definitively proven or universally accepted by the physics community. The search for a unifying theory of the fundamental forces of nature remains one of the most challenging and exciting areas of modern physics.
+
+----
+
+# Links and Books (in case you want to look) :
+
+https://web.archive.org/web/20150704043700/http://sci-ed.org/documents/Lauginie-M.pdf
+
+https://upload.wikimedia.org/wikipedia/commons/5/5f/The_laws_of_gravitation%3B_memoirs_by_Newton%2C_Bouguer_and_Cavendish%2C_together_with_abstracts_of_other_important_memoirs_%28IA_bub_gb_O58mAAAAMAAJ%29.pdf
+
+---
+
+# (Good) Neurotransmitters
+Endorphins, serotonin, and dopamine are all neurotransmitters, which are chemicals that transmit signals across a synapse from one neuron (nerve cell) to another 'target' neuron, gland cell, or muscle cell. They play significant roles in the human body and affect various physiological processes and behaviors. Here are the key differences between them:
+
+1. **Endorphins:**
+   - **Function:** Endorphins are primarily known for their role in pain relief and the feeling of well-being. They are often referred to as natural painkillers because they activate opioid receptors in the brain, helping to minimize discomfort and pain. They are also associated with feelings of euphoria.
+   - **Release Triggers:** Endorphin levels typically increase in response to stress or discomfort. They are also released during activities like eating, exercise (often referred to as a "runner's high"), and sex.
+   - **Role in the Body:** Apart from pain relief, endorphins help in reducing stress and enhancing the immune response. They also modulate appetite and release sex hormones.
+
+2. **Serotonin:**
+   - **Function:** Serotonin is a key hormone that stabilizes mood, feelings of well-being, and happiness. It impacts the entire body, enabling brain cells and other nervous system cells to communicate with each other. Serotonin also helps with sleeping, eating, and digestion.
+   - **Release Triggers:** Serotonin is synthesized from the amino acid tryptophan, which is found in foods like nuts, cheese, and red meat. Its levels can be influenced by various factors, including diet, exercise, light exposure, and mood.
+   - **Role in the Body:** It's best known for its role in the brain, but most serotonin is actually found in the gastrointestinal tract. It's also involved in the regulation of bowel function and movements, blood clotting, and bone density.
+
+3. **Dopamine:**
+   - **Function:** Dopamine is often called the "feel-good" neurotransmitter. It's associated with feelings of pleasure and satisfaction as part of the brain's reward system. Dopamine plays a major role in motivational components of reward-motivated behavior.
+   - **Release Triggers:** Activities that are rewarding and make us feel good, such as eating, sex, and certain hobbies or activities, can increase dopamine levels. Drugs of abuse can also significantly increase dopamine levels, which contributes to their addictive properties.
+   - **Role in the Body:** Beyond its role in pleasure and motivation, dopamine also has important functions in movement, cognition, mood, attention, and learning.
+
+In summary, while endorphins, serotonin, and dopamine all contribute to feelings of well-being and happiness, they each have distinct roles and mechanisms in the body. Endorphins are mainly involved in pain relief and stress reduction, serotonin regulates mood and bodily functions, and dopamine is primarily associated with the brain's reward system and motivation.
+
+----
+
+# Homologous structures in species:
+Homologous structures are anatomical features in different species that are similar because they were inherited from a common ancestor. These structures may serve different functions in the modern species but share a common ancestral origin, indicating evolutionary relationships. The concept of homologous structures is a fundamental aspect of comparative anatomy and provides strong evidence for evolution.
+
+### Example with Wings:
+An excellent example of homologous structures can be seen in the wings of birds and the forelimbs of mammals.
+
+1. **Bird Wings and Mammalian Forelimbs**:
+   - Birds have wings that are used for flying. These wings are modifications of the forelimbs.
+   - Mammals, such as humans, have forelimbs that are used for various functions like grasping, walking, or swimming.
+   - When we compare the bone structures of bird wings and mammalian forelimbs, we find striking similarities. Both have similar arrangements of bones – such as the humerus, radius, and ulna, as well as comparable structures in the wrist and digits.
+
+2. **Common Ancestral Origin**:
+   - These similarities are not because bird wings and mammalian forelimbs serve the same function (they often do not), but because they have a common evolutionary origin.
+   - The shared bone structure originated in a common ancestor and was inherited by different descendant species. Over time, natural selection acted on these structures to adapt them to different uses in different environments – for flight in birds, for manipulation in primates, for running in horses, etc.
+
+3. **Contrast with Analogous Structures**:
+   - <mark style="background: #ABF7F7A6;">Homologous structures are different from analogous structures, where similarities arise not from common ancestry, but from convergent evolution.</mark> For example, bird wings and insect wings are analogous structures. They both serve the function of flight, but their underlying structures and developmental pathways are entirely different, as they evolved independently in birds and insects.
+
+In summary, <mark style="background: #FFB8EBA6;">homologous structures like the wings of birds and the forelimbs of mammals illustrate how the same basic anatomical features, inherited from a common ancestor, can evolve for different functions in different species.</mark> This concept is a key piece of evidence for the common descent aspect of evolutionary theory.
+
+
+# Analogous structures:
+Analogous structures are features in different species that serve similar functions but have evolved independently, usually because the species have adapted to similar environments or ecological niches. Unlike homologous structures, which derive from common ancestry, analogous structures arise from convergent evolution – the process where unrelated organisms independently evolve similar traits.
+
+### Examples of Analogous Structures: Wings in Various Flying Species
+
+1. **Bird Wings**:
+   - Birds have wings with feathers and a bone structure that is a<mark style="background: #ABF7F7A6;"> modified version of the forelimbs of their vertebrate ancestors.</mark>
+   - The bones in bird wings (such as the humerus, radius, and ulna) are homologous to the limb bones of other vertebrates, but the feathers and overall wing structure are specialized for flight.
+
+2. **Bat Wings**:
+   - Bats, being mammals, have wings that are also modified forelimbs. However, their wing structure is very different from birds.
+   - Bat wings consist of a thin membrane of skin (patagium) stretched over elongated finger bones, unlike the feathered wings of birds.
+   - The bone structure in bat wings is homologous to that of other mammals but has evolved into a form that supports flight.
+
+3. **Insect Wings**:
+   - Insects, such as butterflies or flies, have wings that are entirely different in structure from those of birds and bats.
+   - Insect wings are not modified forelimbs but are unique structures that extend from the dorsal side of the body.
+   - They are <mark style="background: #ABF7F7A6;">made of chitin </mark>and have evolved independently from the wings of vertebrates.
+
+4. **Flying Squirrels**:
+   - Flying squirrels do not truly fly but glide. They have a membrane called the <mark style="background: #ABF7F7A6;">patagium </mark>that stretches between their front and hind limbs, allowing them to glide from tree to tree.
+   - This gliding mechanism is different from the powered flight of birds and bats and represents another independent evolution of a flight-related structure.
+
+5. **Pterosaurs (Extinct Species)**:
+   - Pterosaurs, now extinct, were flying reptiles that lived during the age of dinosaurs. 
+   - Like bats, their wings were formed by a membrane of skin stretching across elongated finger bones.
+
+In each of these cases, the ability to fly (or glide, in the case of flying squirrels) has evolved independently in different groups of organisms. The wings of these various species are analogous structures because they perform a similar function (flight or gliding), but they evolved independently and have different structural designs and developmental origins. The study of these structures provides valuable insights into how similar environmental pressures can lead to similar adaptations in very different organisms.
+
+Initial adaptations or variations may provide a slight advantage, or a new capability like brief air-borne movement, which then becomes more refined and enhanced over time through natural selection. This process is known as "<mark style="background: #FFB86CA6;">exaptation</mark>," where a feature that originally served one function gradually evolves to serve another.
+
+There are several key fossils and species that provide insight into the early stages of the evolution of flight, showing modifications of limbs and other structures that suggest a transition towards airborne capabilities. These fossils are crucial for understanding how flight might have evolved in different groups of organisms. Some notable examples include:
+
+### Insects
+- **Early Insects**: The earliest insect fossils date back to the Devonian period, about 400 million years ago. While the earliest forms were not capable of flight, by the Carboniferous period, there were fully winged insects. The precise transitional forms leading to these winged insects are not well-documented in the fossil record, but it's likely that early forms of gliding or wing-like extensions evolved as a prelude to powered flight.
+
+### Birds
+- **Archaeopteryx**: One of the most famous transitional fossils, Archaeopteryx, lived during the late Jurassic period. It displays a mix of avian and reptilian features, with feathered wings akin to those of modern birds but also teeth and a long bony tail like dinosaurs. <mark style="background: #ABF7F7A6;">Archaeopteryx</mark> is a key example of a transitional form between non-avian dinosaurs and birds.
+- **Feathered Dinosaurs**: Several other dinosaur species, like <mark style="background: #ABF7F7A6;">Microraptor</mark>, have been discovered with feathers and structures suggesting gliding or primitive flight capabilities. These species provide further evidence of the gradual evolution of flight in the dinosaur lineage leading to birds.
+
+### Bats
+- **Icaronycteris and Onychonycteris**: Early bat fossils like Icaronycteris and Onychonycteris show that while these animals were capable of flight, their wing structures were somewhat different from modern bats. These fossils provide insight into how flight might have evolved in this group. ~>>The first fossil bats that we find are clearly already bats. Bats are narrow from front to back, like us. This allowed for more chest muscles, which could have powered flight. They started by hanging, like primates, but then took onto flights. 
+![[Pasted image 20240206091413.png]]
+### Pterosaurs
+- **Early Pterosaurs**: Pterosaurs, the first vertebrates known to have evolved powered flight, show a range of forms from early, more primitive gliders to later, highly specialized flyers. Early pterosaurs like <mark style="background: #ABF7F7A6;">Dimorphodon </mark>had wings formed by a membrane stretching across an elongated fourth finger, and their fossils show a gradual evolution of flight capabilities.
+
+These fossils are crucial for understanding the evolutionary pathways that led to flight. They often show a mix of characteristics from both ancestral (non-flying) and descendant (flying) forms, providing a snapshot of evolutionary transitions. However, the fossil record is incomplete, and many transitional forms have yet to be discovered or may never be found due to the rarity of fossilization, especially of soft-tissue structures like early wings.
+
+----
+
+# Dark Matter observation:
+The investigation into dark matter and the measurement of mass-to-light ratios in galaxies are underpinned by several key observations:
+
+### 1. **Rotation Curves of Galaxies**
+Observations in the 1970s, notably by Vera Rubin, showed that stars at the edges of galaxies rotate at similar speeds to those near the center, contradicting the expectation from visible mass distribution. This discrepancy suggests the presence of unseen mass, or dark matter, influencing the gravitational dynamics.
+
+### 2. **Gravitational Lensing**
+The bending of light from distant galaxies by massive foreground objects demonstrates that there is more mass present than what is visible. This mass, which contributes to the gravitational lensing effect, is attributed to dark matter.
+
+### 3. **Cosmic Microwave Background (CMB)**
+Data from the CMB, particularly from the WMAP and Planck satellites, indicate fluctuations that imply the early universe had more matter than visible matter alone can account for, pointing to dark matter as a significant component.
+
+### 4. **Galaxy Clusters and the Bullet Cluster**
+The Bullet Cluster, a pair of colliding galaxy clusters, showed a separation between normal matter (visible) and the bulk of the mass (invisible) inferred from gravitational lensing. This evidence strongly supports dark matter's existence, as it behaves differently from normal, baryonic matter during collisions.
+
+### Measuring Mass-to-Light Ratios
+Mass-to-light ratios are determined by comparing the mass (from dynamical methods like rotational velocities) to the light output (luminosity) of galaxies. The significant discrepancies between these measurements imply the presence of much more mass than what is visible, further suggesting dark matter's pervasive role in the universe.
+
+### Dark Matter
+
+- **Gravitational Lensing and Galaxy Rotation Curves**: The existence of dark matter was initially inferred from the rotation curves of galaxies, which showed that stars orbit their galaxies at speeds indicating there's much more mass than the visible matter can account for. This led to the concept of dark matter halos surrounding galaxies. Further evidence comes from observations of gravitational lensing, where light from distant galaxies is bent around massive objects (like galaxy clusters) due to gravity. This bending can be used to map the distribution of mass, including dark matter, within these clusters. The Bullet Cluster, a pair of colliding galaxy clusters, is a prime example where the separation of normal matter and dark matter during the collision provided direct evidence for dark matter's existence​[](https://www.cfa.harvard.edu/research/topic/dark-energy-and-dark-matter)
+### Dark Energy
+
+- **Cosmic Microwave Background (CMB) and Supernovae Observations**: Measurements of the CMB, the afterglow of the Big Bang, help determine the composition and evolution of the universe, including dark matter and dark energy. Observations of Type Ia supernovae, which serve as "standard candles" due to their uniform brightness, have been crucial in revealing that the universe's expansion is accelerating. This acceleration is attributed to dark energy, a mysterious force that counteracts gravity and comprises about 68% of the universe. The Pantheon+ analysis, which includes over two decades of supernova data, has provided the most precise constraints on the universe's composition, indicating it's about two-thirds dark energy and one-third matter (mostly dark matter)​[](https://news.harvard.edu/gazette/story/2022/10/most-precise-accounting-yet-of-dark-matter-and-dark-energy/)
+
+​​[](https://www.cfa.harvard.edu/research/topic/dark-energy-and-dark-matter)​.
+
+
+### Distinguishing Dark Matter from Dark Energy
+
+1. **Nature and Effect**:
+    
+    - **Dark Matter**: Is a form of matter that does not emit, absorb, or reflect light, making it invisible to current telescope technologies. It interacts with the visible universe primarily through gravity. Dark matter's gravitational effects are crucial for explaining the rotation curves of galaxies, the motion of galaxy clusters, and the large-scale structure of the universe. It acts as the scaffolding for the formation of galaxies and galaxy clusters.
+    - **Dark Energy**: Is a mysterious force that permeates all of space and causes the acceleration of the universe's expansion. Unlike dark matter, dark energy does not cluster in galaxies or galaxy clusters. It has a repulsive effect, working against gravity and driving galaxies apart at an accelerating rate.
+2. **Distribution**:
+    
+    - **Dark Matter**: Exists predominantly within and around galaxies and galaxy clusters. It forms halos around galaxies, influencing their structure and the motion of stars and gas within galaxies. It is also present in the vast spaces between galaxies, contributing to the overall mass of galaxy clusters.
+    - **Dark Energy**: Is thought to be uniform across space, not just in intergalactic voids but everywhere, including within galaxies themselves. Its uniform nature means its repulsive force is exerted equally across all regions of space, influencing the expansion rate of the universe on the largest scales.
+3. **Contribution to the Universe**:
+    
+    - **Dark Matter**: Makes up about 27% of the universe's total content. Its presence is inferred from gravitational effects on visible matter, bending of light (gravitational lensing), and its role in cosmic structure formation.
+    - **Dark Energy**: Constitutes about 68% of the universe. Its existence is inferred from observations of the accelerating expansion of the universe, particularly through studies of Type Ia supernovae and the cosmic microwave background.
+
+ ## TLDR:
+  **DM** - usually in halos around galaxies - influences rotational speeds and mass/light ratios - 27% - inferred from galaxy rotation curves, lensing etc.
+  **DE** - usually uniform all across universe - works opposite of gravity, accelerates the universe - 68% - inferred from CMB and Type Ia supernovae. 
+
+---

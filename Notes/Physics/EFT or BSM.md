@@ -73,6 +73,34 @@ $$ \LARGE{ \textbf{LLPs also form some part.}}$$
 
 #llp #lhc [[LLP]]   : see here.
 
+----
+
+
+## Description
+In the context of Beyond the Standard Model (BSM) physics, the approach often involves considering the possible existence of heavier, as-yet-undiscovered particles. These particles, though not directly observable with current technology, might still influence the interactions and behaviors of particles that are part of the Standard Model (SM). To account for these potential effects, new terms are added to the SM Lagrangian. These terms typically manifest as higher-dimensional operators, often of dimension-six or higher, which describe the hypothesized interactions between BSM particles and known SM particles.
+
+### Experimentally Finding and Measuring These Couplings
+
+1. **High-Energy Particle Collisions**: Experiments at particle accelerators, like the Large Hadron Collider (LHC), can provide insights. By colliding particles at very high energies, physicists can probe for deviations from the SM predictions that might hint at the influence of BSM physics.
+
+2. **Precision Measurements**: Precise measurements of known processes can reveal discrepancies with SM predictions. For instance, precise measurements of the magnetic moment of particles, decay rates, or scattering cross-sections can show deviations that might be attributable to higher-dimensional operators.
+
+3. **Parameterization**: In theoretical models, these new couplings are often parameterized in terms of their strength and the energy scale at which they become relevant. The coefficients of these higher-dimensional operators (which represent the strength of the new couplings) are crucial parameters. They are typically expressed as a ratio where the numerator represents the strength of the interaction, and the denominator includes the new physics energy scale, often represented by Λ.
+
+### Theoretical Values and Conjectures
+
+1. **Effective Field Theory (EFT)**: The framework used to describe these interactions is known as Effective Field Theory. EFT allows physicists to systematically include the effects of high-energy physics in low-energy observations by adding higher-dimensional operators to the SM Lagrangian.
+
+2. **Theoretical Predictions**: Theoretical values for the coefficients of these new terms are often based on various BSM theories. These theories might suggest specific forms for the new interactions and provide a range of expected values for their strengths.
+
+3. **Matching and Running**: Theoretical approaches like 'matching' (connecting BSM theories with the effective theory at a high energy scale) and 'running' (using renormalization group equations to understand how these parameters change with energy) are employed to make predictions.
+
+4. **Conjectures and Hypotheses**: It's important to note that many of these theoretical values are conjectural. They are based on extensions of the SM that have not yet been experimentally confirmed. They serve as guidelines for what physicists might expect to find in experiments.
+
+In summary, the search for BSM physics involves both theoretical predictions based on extensions of the SM and experimental efforts to find deviations from SM predictions. The process of identifying these new couplings and measuring their strengths is ongoing and represents a significant part of current research in particle physics.
+
+
+
 ---
 
 ## Conflating EFT and renormalization : 
@@ -149,3 +177,86 @@ https://indico.cern.ch/event/1338871/attachments/2745421/4782252/video1080087758
 
 
 ---
+
+
+## Integrating out heavy terms in SM L:
+The passage you've shared relates to a concept in high-energy physics, particularly in the context of the Standard Model (SM) of particle physics. It's a bit technical, so I'll break it down step by step:
+
+1. **High-Energy Physics and Heavy Degrees of Freedom**: In particle physics, "degrees of freedom" generally refer to independent physical parameters that define the state of a system. In high-energy physics, these might include particles or fields that are too massive (or "heavy") to be directly observed or produced in current experiments.
+
+2. **Integrating Out Heavy Degrees of Freedom**: When these heavy particles cannot be directly observed or produced (due to limitations in energy), physicists use a technique where they "integrate out" these heavy degrees of freedom. This means they mathematically remove these variables from the equations that describe particle interactions, simplifying the model while still accounting for the effects these heavy particles would have.
+
+3. **New Terms in the SM Lagrangian**: The Standard Model is described by a mathematical structure called the Lagrangian, which encapsulates the dynamics of particles and fields. When heavy degrees of freedom are integrated out, new terms are added to this Lagrangian. These new terms are made up of "higher-dimensional operators" - mathematical entities that describe interactions not accounted for in the original framework of the SM.
+
+4. **Suppression by Λ**: The influence of these new terms is suppressed by the inverse power of a scale Λ (Lambda), which is characteristic of the energy scale of the heavy particles. The higher the energy scale, the less significant these terms are at lower energies.
+
+5. **Respecting Symmetries and Conservation Laws**: These new terms still respect the fundamental symmetries of the Standard Model, such as Lorentz invariance (the laws of physics are the same regardless of how you're moving) and SM gauge symmetries (related to the fundamental forces), as well as conservation laws like baryon and lepton number conservation.
+
+6. **Effects After Electroweak Symmetry Breaking (EWSB)**: After EWSB, a key process in particle physics where the electromagnetic and weak nuclear forces become distinct, these integrated-out terms lead to new couplings - new ways in which particles can interact. These new interactions are not part of the SM at tree level (the simplest level of particle interaction diagrams).
+
+7. **New Interactions**: This can include interactions like electric and magnetic dipole moments (properties of particles that describe how they interact with electromagnetic fields) that don't exist in the basic SM, as well as modifications to existing SM interactions.
+
+In summary, integrating out heavy degrees of freedom is a way to simplify the models of particle physics while still accounting for the potential effects of particles and fields that cannot be directly observed or produced at current energy levels. This leads to modifications of the Standard Model, which can have observable consequences at lower energies.
+
+
+-----
+
+# Cedm and Cmdm:
+
+## Definitions:
+- **cEDM (chromoelectric dipole moment)**: It is a measure of the distribution of charge within a particle in the presence of a chromoelectric field (related to the strong force in quantum chromodynamics). It represents a CP-violating property, meaning it differs under the combined operations of charge conjugation (C) and parity (P) transformation.
+    The CEDM contribution in the SM arises from the three-loop diagrams and has been shown to be very small. 
+- **cMDM (chromomagnetic dipole moment)**: It quantifies the distribution of magnetic properties within a particle under the influence of a chromomagnetic field (again related to the strong force). It's analogous to the magnetic dipole moment in electromagnetism but in the context of the strong nuclear force.
+## Values:
+In the context of the Standard Model of particle physics, both the chromoelectric dipole moment (cEDM) and the chromomagnetic dipole moment (cMDM) of particles are expected to be very small, but there are some key differences in their theoretical expectations:
+
+1. **cEDM**: The cEDM is particularly interesting because it violates CP symmetry (the combination of charge conjugation and parity). In the Standard Model, CP violation is a very rare phenomenon, observed in certain weak interactions but not in strong interactions. As a result, the cEDM, which would represent CP violation in the context of the strong force (quantum chromodynamics, QCD), is expected to be extremely small or even zero within the Standard Model framework.
+    
+2. **cMDM**: The cMDM, analogous to the magnetic dipole moment but for the strong force, doesn't necessarily imply CP violation. It can exist within the Standard Model without violating any fundamental symmetries. However, the value of cMDM in the Standard Model is also expected to be quite small, primarily due to the strong force's inherently short range and the confining nature of QCD.
+
+
+----
+
+# gtt vertex and the effects: 
+from roknabadi and estesami
+
+![[Pasted image 20231128104545.png]]
+
+The context here is the calculation of the chromomagnetic dipole moment (CMDM) of the top quark in the Standard Model (SM), particularly in relation to the \( gtt \) vertex, where \( g \) stands for a gluon and \( tt \) represents the top quark-antiquark pair. This involves evaluating Feynman diagrams that contribute to the CMDM at one-loop level. Let's break down the key points:
+
+1. **CMDM of the Top Quark**: The CMDM is a quantum property of quarks, akin to the magnetic dipole moment but in the realm of the strong interaction. For the top quark, this property can have significant contributions because the top quark is the heaviest elementary particle, and its interactions might include effects beyond the simplest predictions of the SM.
+
+2. **One-Loop Diagrams**: The calculation involves considering corrections to the \( gtt \) vertex at the one-loop level. In quantum field theory, one-loop diagrams are a first-order approximation beyond the simplest (tree-level) interaction. They can provide significant corrections to the properties of particles, especially for the top quark.
+
+3. **QCD and Electroweak Contributions**: These one-loop diagrams include both Quantum Chromodynamics (QCD) and electroweak interactions. QCD is the theory of the strong force, which governs the interactions of quarks and gluons, while electroweak interactions involve the weak force and electromagnetism.
+
+4. **Types of QCD Diagrams**:
+    - **Diagram with External Gluon Emitted from Internal Top Quark**: This Feynman diagram represents a process where the top quark emits and reabsorbs a gluon (the mediator of the strong force), and an additional gluon (the external gluon) is emitted from this internal top quark line.
+    - **Diagram with External Gluon from Exchanged Gluon**: This involves the non-Abelian nature of QCD (meaning gluons can interact with each other). In this diagram, the top quark exchanges a gluon with another quark or gluon, and the external gluon is emitted from this exchanged gluon. This is a unique feature of QCD, differentiating it from electromagnetism where photons do not interact with each other.
+
+5. **Non-Abelian Properties of Strong Interaction**: QCD is a non-Abelian gauge theory, meaning that its force carriers (gluons) can interact with each other. This property leads to complex dynamics and is crucial in the behavior of the strong force.
+
+The CMDM of the top quark is a subject of interest because its measurement and theoretical calculation can provide insights into the SM and potential new physics. Deviations from the predicted CMDM value could indicate physics beyond the SM, making precise calculations and measurements important for the ongoing exploration of fundamental particle physics.
+
+
+
+When discussing the "effects" that might be included in the interactions of the top quark beyond the simplest predictions of the Standard Model (SM), we are referring to various potential phenomena or modifications in particle behavior that are not fully accounted for in the current framework of the SM. These effects can be diverse in nature and may include:
+
+1. **New Types of Interactions**: Beyond the known electromagnetic, weak, and strong forces, there could be additional forces or interaction types that have not yet been discovered. These new interactions might become apparent only under certain conditions, such as at the high energy scales associated with the top quark.
+
+2. **Anomalous Couplings**: The top quark might exhibit anomalous couplings that differ from those predicted by the SM. This could include unexpected strengths or forms of its interactions with other particles, like gluons, W/Z bosons, or the Higgs boson.
+
+3. **Higher-Order Effects**: The top quark's large mass makes it susceptible to significant loop-level corrections (quantum effects that occur at higher orders in perturbation theory). These effects can modify the properties and interactions of the top quark in ways not fully predicted by the tree-level (simplest) calculations of the SM.
+
+4. **CP Violation**: While the SM does include CP violation (where a process does not produce the same outcome if both charge and parity are inverted), the amount of CP violation predicted by the SM is insufficient to explain certain observed phenomena, like the matter-antimatter asymmetry in the universe. The top quark, due to its unique properties, might exhibit additional CP-violating effects.
+
+5. **Mixing with Beyond Standard Model (BSM) Particles**: The top quark might mix or interact with hypothetical particles predicted by theories beyond the SM, such as supersymmetric particles or other exotic forms of matter. These interactions could alter the decay patterns, production rates, or other observable properties of the top quark.
+
+6. **Quantum Gravity Effects**: At the energy scales relevant to the top quark, some theories suggest that effects of quantum gravity might start to become significant. While this is highly speculative, it's a potential area of exploration.
+
+7. **Flavor Physics**: The top quark plays a unique role in the flavor physics of quarks (how different types of quarks transform into each other). There might be effects related to flavor that are not fully captured by the SM, especially considering the top quark's role in electroweak symmetry breaking.
+
+In summary, the nature of these effects could range from modifications in the strength and form of known interactions, to entirely new phenomena that would require extensions to the SM. Studying the top quark is particularly interesting because its large mass suggests it could be sensitive to such new physics, making it a key focus in particle physics research.
+
+-----
+

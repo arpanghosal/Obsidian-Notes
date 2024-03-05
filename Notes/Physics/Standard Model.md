@@ -415,3 +415,123 @@ Understanding the relationships between chirality, isospin, helicity, spin, and 
 Remembering the differences can be aided by associating each property with a specific aspect of particle behavior or interaction. You can also think about these properties in pairs: spin is a fundamental characteristic like the particle's eye color, while chirality/helicity is more about behavior, like whether they write with their left or right hand. Isospin and weak isospin are about the particle's identity in the context of forces, like different badges they wear in specific scenarios.
 
 ---
+
+
+# QCD - p or not:
+**Perturbative Quantum Chromodynamics (pQCD):**
+
+**Application:**
+- pQCD is applied in scenarios where the strong coupling constant is small, typically at high energy scales (due to asymptotic freedom). This includes processes like high-energy particle collisions where quarks and gluons are involved.
+
+**Strengths:**
+- Predictive Power: Provides precise predictions for processes at high energies where the coupling is weak.
+- Tested by Experiments: Many predictions of pQCD have been confirmed by experiments, especially in collider physics.
+- Calculational Framework: Allows systematic calculations using Feynman diagrams and renormalization techniques.
+
+**Shortcomings:**
+- Limited to High Energies: Not effective at low energy scales where the strong force becomes too strong (non-perturbative).
+- Infrared Divergences: Issues arise in calculations at low momenta, requiring careful handling.
+- Complexity: Calculations can become extremely complex at higher orders.
+
+**Non-perturbative Quantum Chromodynamics (non-pQCD):**
+
+**Application:**
+- Non-pQCD is necessary at low energy scales where the strong coupling constant is large, like in the study of hadron structure, quark-gluon plasma, and nuclear forces.
+
+**Strengths:**
+- Applicable to Low Energies: Essential for understanding phenomena where the strong force is strong, such as hadronization and confinement.
+- Rich Phenomenology: Provides insights into complex phenomena not accessible to pQCD.
+
+**Shortcomings:**
+- Lack of a Systematic Calculational Framework: Unlike pQCD, it doesn’t have a universally applicable mathematical framework like Feynman diagrams.
+- Reliance on Models and Numerical Methods: Often depends on phenomenological models or numerical simulations (like lattice QCD), which may have their own limitations.
+- Computational Intensity: Techniques like lattice QCD require significant computational resources.
+
+In summary, pQCD excels in high-energy regimes where the strong force is weak and allows for perturbative methods. In contrast, non-pQCD is vital for understanding low-energy strong interactions but often relies on less precise or computationally intensive methods.
+
+----
+
+
+# Spin:
+The spin of a particle in quantum mechanics is a fundamental property like its mass or charge. It's a form of angular momentum, but unlike the familiar angular momentum from classical physics (which arises from an object's rotation), spin is an intrinsic property of a particle, meaning it's a built-in feature of the particle's identity.
+
+1. **Photon's Spin 1:**
+   - Photons, which are the quantum particles of light, have a spin of 1. This classifies them as "vector bosons."
+   - Spin 1 implies that photons can have three polarization states. Unlike particles with half-integer spins (like electrons, which have spin 1/2 and can only be spin up or spin down), photons can be left-circularly polarized, right-circularly polarized, or linearly polarized.
+   - This property of photons is deeply connected with their role as force carriers of the electromagnetic force in quantum field theory.
+
+2. **Higgs Boson's Spin 0:**
+   - The Higgs boson, discovered at the Large Hadron Collider in 2012, has a spin of 0.
+   - A spin of 0 classifies it as a "scalar boson." This means the Higgs boson does not have any intrinsic angular momentum.
+   - Being a scalar boson, the Higgs does not have any directionality associated with it, which is consistent with its role in providing mass to other particles through the Higgs mechanism.
+
+**Stern-Gerlach Experiment:**
+   - The Stern-Gerlach experiment is famous for demonstrating the quantization of angular momentum. In its classical form, it involves passing a beam of particles through a non-uniform magnetic field and observing their deflection.
+   - If you were to pass photons through a Stern-Gerlach apparatus, you wouldn't observe any splitting based on their spin. This is because the experiment is designed to measure magnetic moments of particles, and photons, being neutral and having no magnetic moment, are not affected by the magnetic field in the apparatus.
+   - Similarly, the Higgs boson, with a spin of 0, would not be expected to show any splitting in a Stern-Gerlach experiment. Moreover, the Higgs boson is extremely short-lived and would decay before it could be manipulated in such an experiment.
+
+In conclusion, the spin values of particles like the photon and the Higgs boson are essential for understanding their behavior and interactions in the realm of quantum mechanics and particle physics. However, the Stern-Gerlach experiment is not a suitable method to probe the properties of these particular particles.
+
+## Light polarizations:
+Photon polarization describes the oscillation direction of the electromagnetic field associated with the photon. Since photons are quanta of light, which is an electromagnetic wave, their polarization refers to the orientation of the electric field vector. The different types of polarization - left-circular, right-circular, and linear - describe the various ways this vector can behave in space over time as the photon travels.
+
+1. **Linear Polarization:**
+   - In linear polarization, the electric field of the photon oscillates in a single plane as it moves forward. Imagine the electric field as a straight line that swings back and forth in a fixed direction while the photon travels along its path. This is the simplest form of polarization.
+   - Linear polarization is often described by the angle that this plane makes with a reference axis. For example, you might have vertically or horizontally polarized light, depending on the direction of the electric field oscillation.
+
+2. **Circular Polarization:**
+   - Circular polarization is more complex. Here, the electric field of the photon rotates in a circle around the direction of motion. This rotation can occur in two ways, giving rise to left-circular and right-circular polarization.
+   - In left-circular polarization, if you were to look at the photon coming towards you, the electric field would rotate counterclockwise. Conversely, in right-circular polarization, it would rotate clockwise.
+   - This circular motion of the electric field vector creates a helical pattern in space. The direction of this helix (left-handed or right-handed) determines whether the polarization is left-circular or right-circular.
+
+3. **Elliptical Polarization:**
+   - As an additional note, there's also elliptical polarization, which is a general form encompassing linear and circular polarizations. In elliptical polarization, the tip of the electric field vector traces out an ellipse in the plane perpendicular to the direction of propagation.
+
+The polarization of a photon is a crucial aspect in various fields of physics and technology. For example, in quantum mechanics, polarization is an essential property in understanding photon entanglement and quantum information. In everyday technology, polarized lenses in sunglasses use the property of linear polarization to reduce glare by blocking certain orientations of light. Circular polarization is significant in areas like 3D movie projection and the transmission of radio waves.
+
+
+
+---
+
+![[Pasted image 20231214111903.png]]
+
+From a terascale talk on m_top < https://indico.desy.de/event/41133/contributions/158285/attachments/87444/116796/Presentation.pdf >
+
+---
+
+
+---
+
+## Dead cone effect:
+The "dead cone effect" is a phenomenon observed in particle physics, particularly in the context of the behavior of heavy quarks (like charm and bottom quarks) when they radiate gluons. This effect is a consequence of quantum chromodynamics (QCD), the theory that describes the strong interaction, one of the four fundamental forces in nature.
+
+### Explanation of the Dead Cone Effect:
+
+1. **Gluon Radiation from Quarks**: In QCD, quarks radiate gluons, much like charged particles radiate photons in electromagnetism. This radiation process is an essential aspect of jet formation in high-energy particle collisions.
+
+2. **Mass of the Radiating Quark**: The pattern of this gluon radiation depends on the mass of the radiating quark. For light quarks (like up, down, and strange quarks), the radiation is relatively uniform in all directions. However, for heavy quarks, the situation is different due to their larger mass.
+
+3. **Suppression Near the Quark Direction**: For a heavy quark, there is a suppression of gluon radiation at small angles relative to the direction of the quark's motion. This suppression creates a region with reduced gluon radiation, known as the "dead cone."
+
+4. **Angle of the Dead Cone**: The size of the dead cone (i.e., the angular region around the heavy quark where gluon radiation is suppressed) is inversely proportional to the mass of the quark. The heavier the quark, the larger the mass, and thus, the smaller the angle of the dead cone.
+
+### Importance in Particle Physics:
+
+- **Jet Structure Analysis**: The dead cone effect is important in the analysis of jets produced in high-energy collisions, such as those in the Large Hadron Collider (LHC). It provides a way to distinguish between jets initiated by heavy quarks and those initiated by light quarks or gluons.
+- **Testing QCD Predictions**: Observing and measuring the dead cone effect serves as a test of QCD, particularly its predictions regarding the behavior of heavy quarks.
+- **Identifying Heavy Quark Jets**: In practical terms, the dead cone effect can be used as a tool to identify jets that originate from heavy quarks, which is important in many analyses searching for new physics beyond the Standard Model.
+
+In summary, the dead cone effect is a unique signature in the pattern of gluon radiation from heavy quarks, and it plays a significant role in our understanding of strong interactions and in the analysis of experimental data in particle physics.
+
+![[Pasted image 20240111145508.png]]
+
+---
+
+
+# CP Violation link :
+https://www.britannica.com/science/Pauli-exclusion-principle
+
+
+----
+
+

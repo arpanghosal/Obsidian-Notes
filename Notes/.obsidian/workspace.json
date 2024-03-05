@@ -8,51 +8,36 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dc7fabc2c8746d0d",
+            "id": "ac8f4d1dae5eab61",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Physics/Detector.md",
+                "file": "Misc/Trivia Science Stuffs.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4ff3c4a9274348bc",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Untitled.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
-              }
-            }
-          },
-          {
-            "id": "1082ca038c07ea29",
+            "id": "0e6810dffdbf1b86",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computing/obsidian.md",
+                "file": "Self Notes.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "081529331b0d3de0",
+            "id": "dfcf113c2abc8821",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Conf Talks/DPG presentation Structuring.md",
+                "file": "Misc/Trivia Science Stuffs.md",
                 "mode": "source",
                 "source": false
               }
@@ -70,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -128,7 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 222.5
+    "width": 200
   },
   "right": {
     "id": "9c02eef657f78584",
@@ -144,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Physics/Detector.md",
+                "file": "Misc/Trivia Science Stuffs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Physics/Detector.md",
+                "file": "Misc/Trivia Science Stuffs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -184,7 +170,19 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Physics/Detector.md"
+                "file": "Misc/Trivia Science Stuffs.md"
+              }
+            }
+          },
+          {
+            "id": "b98a7f5b91913aa8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -206,46 +204,47 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "dc7fabc2c8746d0d",
+  "active": "dfcf113c2abc8821",
   "lastOpenFiles": [
-    "Physics/attachments/Pasted image 20231112145644.png",
-    "Physics/attachments/Pasted image 20231112145626.png",
-    "Physics/Measurements and Analysis.md",
-    "Physics/Mathematics of physics.md",
-    "Misc/Trivia Science Stuffs.md",
-    "Misc/Trivia Non-science Stuffs.md",
-    "Misc/attachments/Pasted image 20231030110418.png",
-    "Misc/attachments/Pasted image 20231031170015.png",
-    "Misc/attachments/Pasted image 20231112114104.png",
-    "Physics/Standard Model.md",
-    "This is first note..md",
-    "Physics/EFT or BSM.md",
-    "Self Notes.md",
-    "tutorials.md",
-    "Computing/Algorithms and Mathematics of CS.md",
-    "Computing/obsidian.md",
-    "Physics/LLP.md",
-    "Computing/Resources.md",
-    "Computing/Data Science and ML.md",
-    "Misc/Nihilism and more.md",
-    "Computing/Computer specifics.md",
-    "Conf Talks/Lectures.md",
-    "Physics/Detector.md",
-    "Physics/attachments/Pasted image 20231102102151.png",
-    "Physics/attachments/Pasted image 20231002202137.png",
-    "Physics/attachments/Pasted image 20231002200422.png",
-    "Physics/attachments/Pasted image 20231003004914.png",
-    "Physics/attachments/Pasted image 20231003004931.png",
-    "Physics/attachments/Pasted image 20231009143214.png",
     "Conf Talks/DPG presentation Structuring.md",
+    "Self Notes.md",
+    "Misc/Trivia Science Stuffs.md",
+    "Computing/Data Science and ML.md",
+    "Computing/Algorithms and Mathematics of CS.md",
+    "Computing/attachments/Pasted image 20240206123631.png",
+    "Physics/Detector.md",
+    "Misc/attachments/Pasted image 20240206093319.png",
+    "Misc/attachments/Pasted image 20240206091413.png",
+    "Computing/Computer specifics.md",
+    "Computing/obsidian.md",
+    "Untitled 1.canvas",
+    "2024-01-31.md",
+    "Physics/Measurements and Analysis.md",
+    "Physics/Standard Model.md",
+    "Misc/Skills.md",
+    "tutorials.md",
+    "Dump.md",
+    "This is first note..md",
+    "2023-10-30.md",
+    "Computing/attachments/Pasted image 20240112150347.png",
+    "Physics/attachments/Pasted image 20240111145508.png",
+    "Physics/attachments/Pasted image 20240110111125.png",
+    "attachments/Pasted image 20240106164554.png",
+    "attachments/Screenshot 2024-01-06 at 13.22.30.png",
+    "Computing/Statistics.md",
+    "attachments/Pasted image 20231217120011.png",
+    "attachments/Pasted image 20231217115907.png",
+    "Physics/Mathematics of physics.md",
+    "Physics/EFT or BSM.md",
+    "Computing/Webpage development.md",
+    "Computing/Tech Trivia.md",
+    "Computing/Systematics and Sensitivity.md",
+    "Physics/LLP.md",
+    "Computing/Projects/Self-Learning + Projects.md",
+    "Computing/Projects/project - js to html.md",
+    "Conf Talks/Lectures.md",
     "Conf Talks/attachments/Recording 20231023152420.webm",
     "Untitled.canvas",
-    "2023-10-30.md",
-    "Computing/Statistics.md",
-    "Computing/Systematics and Sensitivity.md",
-    "I don't know.md",
-    "Hello.md",
-    "Computing/Self - Projects.md",
     "Misc/attachments",
     "Computing/attachments/Recording 20231023164412.webm",
     "Conf Talks/attachments",

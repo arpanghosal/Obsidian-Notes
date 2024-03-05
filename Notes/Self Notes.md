@@ -85,6 +85,9 @@ fn cmd left/right arrow - pg up down
 
 - sumWeights->Scan("names_mc_generator_weights","","colsize=30")
 
+#### <mark style="background: #FFB8EBA6;">show full:</mark>
+root [8] sumWeights->Scan("*","","colsize=30"); // adjust col size
+
 ---
 ### File search
 
@@ -125,12 +128,16 @@ $ rucio download --nrandom=2 user.aghosal.mc16_13TeV.504554.aMCPy8EG_tty_yprod.m
 ## Bash commands : #bash #shell
 
 $ open -a <app_name> \*.pdf
+### epub to pdf
 
 To convert book types, ahve calibre installed first.
 $ ebook-convert \*.epub  \*.pdf 
 
----
 
+### bash command to 'NOT' ls a filetype
+ls -l | grep -v '\.log$'
+
+---
 
 ## How to research:
 
@@ -243,3 +250,43 @@ Use Adobe on your laptop to fill the form (otherwise xx while printing or moneta
 https://www.ots-nrw.de/product/213/show?active_path=ticket%7Cproduct_category_24%7Cproduct_subcategory_28%7Cproduct_213
 
 ----
+
+## Asking chatgpt:
+Keep all expressions, mathematical equations, special and greek and other characters within $ and $, so as to be easily readable in obsidian. 
+
+---
+
+## SSH node creation and jupyter for plots:
+$  sshlxplus7 -L8869:localhost:8869 (any port number)
+### set env:
+[aghosal@lxplus784 fitting_tests]$ source /cvmfs/sft.cern.ch/lcg/views/LCG_105/x86_64-centos7-gcc12-opt/setup.sh
+
+[aghosal@lxplus784 fitting_tests]$ jupyter-notebook --port=8869 --no-browser
+
+Then click on the links
+
+-----
+
+## Getting Samples from Tape (LHC ATLAS)
+#lhc #rucio #ATLAS 
+
+- If you need an EVNT file that's most likely been transferred to the tape, the first thing to try is to check if the EVNT is still available.
+  $  rucio download --nrandom 1 mc16_13TeV.504554.aMCPy8EG_tty_yprod.merge.EVNT.e8261_e7400
+If this fails, means they are not available right now.
+- How to request them?
+    $  rucio add-rule mc16_13TeV.504554.aMCPy8EG_tty_yprod.merge.EVNT.e8261_e7400 1 CERN-PROD_SCRATCHDISK
+    This will start adding the EVNT (all) files from tape back to disk (here CERN Prod disk)
+
+- You can check the progress with list-rules:
+  $  rucio list-rules mc16_13TeV.504554.aMCPy8EG_tty_yprod.merge.EVNT.e8261_e7400
+<small><small>
+ID                                ACCOUNT    SCOPE:NAME                                                              STATE[OK/REPL/STUCK]    RSE_EXPRESSION         COPIES    SIZE    EXPIRES (UTC)        CREATED (UTC)
+--------------------------------  ---------  ----------------------------------------------------------------------  ----------------------  ---------------------  --------  ------  -------------------  -------------------
+7054626926414c86b6c3c28ebee9307d  aghosal    mc16_13TeV:mc16_13TeV.504554.aMCPy8EG_tty_yprod.merge.EVNT.e8261_e7400  REPLICATING[0/2043/0]   CERN-PROD_SCRATCHDISK  1         N/A     2024-03-15 09:37:38  2024-03-01 09:37:39
+</small></small>
+
+7054626926414c86b6c3c28ebee9307d is the job id 
+
+- Delete replication rule using delete-rule and ID.
+
+---

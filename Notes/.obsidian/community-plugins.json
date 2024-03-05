@@ -1,6 +1,6 @@
 [
   "highlightr-plugin",
-  "obsidian-scroll-to-top-plugin",
   "colored-text",
-  "symbols-prettifier"
+  "symbols-prettifier",
+  "obsidian-scroll-to-top-plugin"
 ]
