@@ -734,3 +734,234 @@ Creating a core dataset for large model training is a dynamic and iterative proc
 
 ---
 
+
+# Keras and TF:
+Yes, in simple terms, TensorFlow can serve as the backend for Keras. Here’s how they are related:
+
+- **Keras** is a high-level neural networks API (Application Programming Interface) that was designed for fast experimentation with deep neural networks. It is user-friendly, modular, and extendable.
+  
+- **TensorFlow** is a more comprehensive platform for machine learning that includes various tools, libraries, and community resources that allow researchers to develop and train machine learning models. TensorFlow provides the infrastructure and lower-level computations needed for building and training neural networks.
+
+<mark style="background: #FFB8EBA6;">When you use Keras, it needs a backend engine to perform the lower-level operations like tensor manipulation, differentiation, and optimization. TensorFlow is the most popular backend for Keras, providing the necessary computational power. Essentially, Keras sends instructions to TensorFlow (the backend), which executes them. </mark>This setup allows you to write code in Keras at a high level without worrying about the intricate details of the underlying computations.
+
+Originally, Keras supported multiple backends, like Theano and Microsoft Cognitive Toolkit (CNTK), in addition to TensorFlow. However, since the release of TensorFlow 2.0, Keras has been included as an integral part of TensorFlow, and TensorFlow serves as its default and primary backend. This integration has made it easier for developers to build and deploy machine learning models, as they can enjoy the simplicity of Keras with the robustness and flexibility of TensorFlow directly.
+
+---
+
+
+# ML compilers:
+
+There are several other compilers and tools designed to optimize machine learning models and computations for various hardware architectures. Some of the notable ones include:
+
+### 1. **TVM**
+- TVM is an open-source machine learning compiler framework for CPUs, GPUs, and specialized accelerators. It takes a high-level description of a machine learning model and generates optimized code for various hardware targets. TVM supports models from different frameworks, including TensorFlow, PyTorch, MXNet, and ONNX.
+
+### 2. **ONNX Runtime**
+- ONNX Runtime is a performance-focused engine for Open Neural Network Exchange (ONNX) models. It enables model inference on any device and supports optimization for various hardware platforms. ONNX Runtime works with models trained in different frameworks, such as PyTorch, TensorFlow, and scikit-learn, as long as they can be converted to the ONNX format.
+
+### 3. **Intel oneAPI Deep Neural Network Library (oneDNN)**
+- Formerly known as MKL-DNN or DNNL, oneDNN is part of Intel's oneAPI initiative. It's a performance library for deep learning applications that provides optimized primitives for deep learning operations on Intel CPUs and GPUs. oneDNN is designed to accelerate neural network computations and is used by various frameworks, including TensorFlow and PyTorch, to optimize performance on Intel hardware.
+
+### 4. **NVIDIA CUDA Deep Neural Network library (cuDNN)**
+- cuDNN is a GPU-accelerated library for deep neural networks provided by NVIDIA. It offers highly tuned implementations for standard routines such as forward and backward convolution, pooling, normalization, and activation layers. cuDNN is integrated into higher-level machine learning frameworks, such as TensorFlow and PyTorch, to accelerate training and inference on NVIDIA GPUs.
+
+### 5. **Apple Core ML**
+- Core ML is a framework that allows developers to integrate machine learning models into iOS, macOS, watchOS, and tvOS apps. For model optimization, Core ML Tools can convert models from a variety of frameworks (including Keras, TensorFlow, and PyTorch) into the Core ML format. It optimizes models for on-device performance, leveraging Apple's hardware, such as the Neural Engine on Apple silicon.
+
+### 6. **Google MLIR**
+- MLIR (Multi-Level Intermediate Representation) is part of the LLVM project and aims to provide a flexible intermediate representation that can bridge the gap between high-level models and low-level optimizations across different hardware platforms. MLIR supports the compilation and optimization of machine learning models and is used by TensorFlow among other projects.
+
+### 7.  **XLA**
+- XLA (Accelerated Linear Algebra) is a compiler that optimizes TensorFlow models by compiling their computation graphs into highly efficient machine code tailored for specific hardware (CPUs, GPUs, TPUs). This process improves execution speed and efficiency, particularly beneficial for complex models and performance-critical applications. While optional, XLA's integration with TensorFlow allows developers to leverage these optimizations for faster model training and inference.
+
+These compilers and tools are designed to optimize machine learning models for speed and efficiency across a wide range of hardware platforms, making them crucial for deploying machine learning applications in diverse environments.
+
+----
+
+# Machine Learning Overall summary:
+
+- Field of study in AI.
+- concerned with development of stat algos that can learn from data and then perform some tasks without any explicit instructions.
+- ML approaches useful in nlp, speech recog, comp vision, filtering, analytical predictions etc.
+- Maths foundation - provided by math optimization. 
+- Based on mirroring human thoughts.
+- "Rather, we have duplicated the human learning process—experience, trial and error, correlation of new facts with past experience." - Richard Witt on Cybertron, Time 1961.
+- Contemporary ML has 2 objectives - classify data based on models AND to make predictions for future outcomes based on these models.
+- How did it start? With perceptrons of course. GLMs were used for modeling, and are still used for regression based neural networks. Ppl were using symbolic ways in AI, like NNs, but they lost favour around the time because probabilistic systems were... limited by statistics. i.e. not much data. Then however, [[Backpropagation]] came.
+- By 1990s ppl had collected more data and had started using methods such as fuzzy logic (truth values lie between 0 to 1 in various degrees, unlike only 2 of binary logic), probab. theories etc.
+- ML has been relevant to major fields of research - AI, data compression (TF, openCV, k-means clustering in unsupervised ML), data mining (discovering unknown properties of data), generalization of algorithms (for them to be able to work with unknown data), Statistics (overlapping being data science).
+- Bias-Variance trade-off is a way of generalization of error, since data is limited and future is uncertain. So efforts from computational learning theories are also limited in that sense.
+- P=NP problem - "whether every problem whose solution can be quickly verified (NP) can also be quickly solved (P)." 
+- Approaches to ML - NO single algorithm works for all problems.
+  1. supervised learning - figure out input to output mapping.
+  2. unsupervised learning - no labels here; find structure in the data. Eg. VAE.
+  3. reinforcement learning - machine interacts and learns from environment.
+- Different models are used as mathematical constructs comprising a set of parameters and structure. A model can mean a class of learning algos like random forests; a learning algo with pre-set hyperparameters like NN, and a fully trained model with internal parameters tuned after training on the dataset.
+- Various models are used for various purposes with various pros and cons. 
+- Ah, I see! Let's categorize some of these models and techniques according to the type of learning they're primarily associated with:
+
+#### Supervised Learning
+- **ANN (Artificial Neural Networks)**: Basic form of neural networks used for both classification and regression tasks.
+- **DNN (Deep Neural Networks)**: More complex neural networks with multiple hidden layers that can capture deep hierarchical patterns in data.
+- **CNN (Convolutional Neural Networks)**: Specialized for processing structured grid data such as images, used extensively in image recognition and classification tasks.
+- **Boosting**: An ensemble technique that combines multiple weak learners to form a strong learner. Examples include AdaBoost, Gradient Boosting Machines (GBM), and XGBoost, often used for classification and regression.
+
+#### Unsupervised Learning
+- **VAE (Variational Autoencoders)**: Generative models that learn to encode input data into a compressed representation and reconstruct the input from this representation, used for tasks like generating new data samples.
+- **Generative AI/Models**: This includes GANs (Generative Adversarial Networks) as well, which learn to generate new data samples that are similar to the training data, without being explicitly told how to do so.
+
+#### Reinforcement Learning
+- **Stable Diffusion**: While primarily known as a generative model, aspects of reinforcement learning can be involved in tuning or guiding generative models towards desired outputs through reward feedback mechanisms.
+  
+#### Mixed/Other Categories
+- **RNN (Recurrent Neural Networks)**: Designed for sequential or temporal data (e.g., time series, language). They can be used in both supervised learning contexts (e.g., sequence prediction, language translation) and unsupervised learning contexts (e.g., learning representations of sequences without labeled outcomes).
+
+----
+
+
+# Transformers - Q,K,V
+
+![[Pasted image 20240430122239.png]]
+
+The concept of attention, specifically the "Q, K, V Softmax Attention" mechanism, is a key component in many modern machine learning models, particularly in natural language processing (NLP). This method helps models pay "<mark style="background: #FFB8EBA6;">attention</mark>" to the most relevant parts of the input data when performing a task.
+
+Let's break down the components and the formula step-by-step in a more approachable way:
+
+## Components of the Attention Mechanism
+- **Q (Query)**: Represents the current item or word being processed. Think of it as the item looking for information.
+- **K (Key)**: Represents the items or words in the memory (could be the same as the input sequence or different). The key is what the query uses to seek out information.
+- **V (Value)**: <mark style="background: #FFF3A3A6;">These are the actual pieces of information tied to each key. </mark>Once a key is deemed relevant to the query, its corresponding value is what actually gets used.
+
+## The Softmax Attention Formula
+The attention mechanism works by calculating a score that determines how much each part of the input data should contribute to the final output. Here’s how it generally works:
+
+1. **Dot Product of Q and K**: First, calculate the dot product between each Query and all Keys. This operation measures how much each key matches the query—essentially, it's checking for relevance or similarity.
+
+2. **Scaling**: Since the dot products might grow large in magnitude (leading to very large exponents during the softmax calculation, which can cause computational problems), we typically scale down the results by dividing by the square root of the dimension of the keys. This makes training more stable.
+
+3. **Softmax**: Apply the softmax function to the scaled dot product results. The softmax function converts the scores into probabilities that sum to one. The scores tell us how important each key is relative to the query. Higher scores get more attention because softmax amplifies differences; the key that matches the query the best (highest dot product score) will have the highest probability.
+
+4. **Multiply by V**: Finally, multiply the softmax probabilities with the Values. This step essentially weights each value by its importance determined by the softmax score.
+
+5. **Summation**: Sum up the weighted values. The result is the output of the attention mechanism for that particular query. It's a single vector that represents a combination of values, focusing more on the more relevant parts as determined by the query-key matching.
+
+### In Formula Terms
+Here's what the formula typically looks like:
+$$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right) V $$
+Where \( d_k \) is the dimension of the keys.
+
+## An Analogy
+Imagine you are in a busy museum with many different artifacts (each artifact represents a Value). You are curious about a specific topic—say, ancient Egyptian history (your Query). As you walk around, certain artifacts' descriptions (the Keys) catch your eye more than others because they mention Egypt. The relevance of each artifact to your interest in Egypt is like the scores calculated between Q and K. <mark style="background: #ABF7F7A6;">You pay more attention to those artifacts, and your memory of the visit (the output) is primarily made up of information from those relevant artifacts.</mark>
+
+<mark style="background: #FFF3A3A6;">Artifacts in museum - Values, tied up pieces of information.
+Ancient Egyptian history -  Query, the current word / item of interest
+Description of articles - Keys, which catch our eyes more.</mark>
+
+- **Values (V)** represent all the available information or data points.
+- **Keys (K)** represent aspects or features of this information that can be used to access or retrieve the Values.
+- **Queries (Q)** represent the specific piece of information or context you're currently interested in or focusing on.
+→ A practical description:
+1. **Values (V)**: Each word or token in a sentence might have associated values that represent some aspect of that word, often in the form of vector embeddings that capture its semantic, syntactic, or contextual properties.
+    
+2. **Keys (K)**: These are also often represented as vectors and are associated with the same words as the Values. However, the purpose of the Keys is to help the model determine how relevant each word (and its corresponding Value) is to the Query.
+    
+3. **Queries (Q)**: When the model is processing a particular word or looking to generate a word, it formulates a Query. This Query is used to probe the Keys to find out which Values are most relevant.
+
+## How It Works in a Sequence:
+
+Imagine the sentence: "The cat sat on the mat."
+
+- Suppose the model is trying to focus on or generate a word related to "cat."
+- The Query would be generated from the context or directly from "cat."
+- Each word in the sentence (including "cat") has a Key and a Value.
+- The attention mechanism calculates how closely each Key matches the Query (how relevant each word is to "cat").
+- It then uses these relevance scores to create a weighted sum of the Values, focusing more on those with higher relevance.
+
+### In Terms of Relevance:
+
+- The **Query** represents the current focus or the specific context/word you're examining or interested in.
+- The **Keys** are like indicators or tags that help determine how relevant each piece of information (Value) is to the Query.
+- The **Values** are the actual content or information that you might want to bring into focus, weighted by how relevant they are to the Query.
+
+## Interaction with chatgpt as example:
+
+Certainly! Let's explore how the Query (Q), Key (K), and Value (V) components of an attention mechanism within a transformer architecture work together, using the interaction between you (the user) and me (an AI based on transformer technology) as an example.
+
+### Setting the Scene:
+Imagine our interaction as a dynamic process where you input queries (questions or commands), and I generate responses. Within my transformer architecture, each piece of the conversation is treated as a part of a sequence where both past inputs (questions/commands) and my previous responses contribute to understanding and generating the next part of our dialogue.
+
+### Transformer Architecture:
+Transformers use self-attention mechanisms that allow inputs to interact with each other ("self" referring to different positions within the same sequence). In each attention step, Queries, Keys, and Values are derived from these inputs.
+
+### How Q, K, V Work in Our Interaction:
+
+1. **Input Embedding**:
+   - Every word or piece of input (from both your queries and my responses) is converted into a numerical form called embeddings. These embeddings are rich in contextual information.
+
+2. **Formation of Q, K, V**:
+   - For each word in our ongoing conversation, the transformer model generates Queries, Keys, and Values. These are vectors (lists of numbers) computed from the embeddings.
+
+3. **Self-Attention Calculation**:
+   - **Queries**: Each Query vector is generated to explore and identify which parts of the conversation are most relevant to understand the current word or piece of input.
+   - **Keys**: Each Key vector represents a part of the conversation and is used to assess its relevance or importance in relation to the Query.
+   - **Values**: Each Value vector holds the actual content of each part of the conversation. The content that is deemed relevant through the Query-Key matching will be used to influence the response.
+
+4. **Matching Q to K**:
+   - The model calculates the dot product of the Query with all Keys to determine a relevance score for each part of the conversation.
+   - These scores are then processed through a softmax function to convert them into a probability distribution, representing the relevance of each part relative to the Query.
+
+5. **Weighting the Vectors**:
+   - The softmax scores are used to weight the Values. The more relevant a part of the conversation (as determined by the Query and Key match), the more its Value will influence the current word’s output.
+
+6. **Output Generation**:
+   - The weighted sum of the Values, after being influenced by the Query and Key interactions, forms the output for the current input. This output is then transformed through additional neural network layers to generate the final text response that you see.
+
+### Example in Practice:
+If you ask, "What did we discuss about the attention mechanism?", my model processes this query to focus attention on previous parts of our conversation where 'attention mechanism' was discussed. The Query for this question would activate Keys associated with relevant past messages, pulling Values that contain information about our discussion on the attention mechanism. This influences the generation of a response that is contextually aware of our prior conversation.
+
+### Conclusion:
+In this way, the transformer architecture leverages the Q, K, V attention mechanism to dynamically focus and refocus on different parts of the input based on the current context. This is crucial for maintaining a coherent and contextually relevant dialogue, ensuring that each response is informed by the entire conversation history, not just the immediate last exchange.
+
+
+
+In summary, the Q, K, V softmax attention formula helps a model dynamically focus on the most relevant parts of the input data, similar to how you might focus your attention in a scenario like visiting a museum.
+
+----
+
+
+# Unreasonable effectiveness of Data:
+https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35179.pdf
+
+"The Unreasonable Effectiveness of Data" is a seminal paper by Alon Halevy, Peter Norvig, and Fernando Pereira, published in 2009. It explores the surprising power of large datasets in improving the performance of machine learning algorithms, even when those algorithms are relatively simple.
+
+### Key Points from the Paper:
+
+1. **Power of Data Over Algorithms:**
+   - The authors argue that for many practical problems, such as natural language processing and image recognition, having large amounts of data can be more beneficial than using complex algorithms. Simple algorithms, when provided with enough data, often outperform sophisticated models with less data.
+
+2. **Examples in Practice:**
+   - They provide examples from Google’s work, such as machine translation and speech recognition, where increasing the size of the training data led to significant performance improvements.
+
+3. **Data Handling:**
+   - The paper discusses the challenges and techniques for handling massive datasets, including data cleaning, annotation, and storage.
+
+4. **Empirical Evidence:**
+   - It presents empirical evidence that supports the idea that more data leads to better model performance, highlighting the diminishing returns but still consistent improvements as data scales up.
+
+### Implications:
+
+- **Shift in Focus:** The paper suggests a shift in focus towards collecting and utilizing large datasets rather than solely developing more complex algorithms.
+- **Practical Applications:** This approach has been influential in practical applications across various domains like search engines, recommendation systems, and social media platforms.
+
+### Further Insights:
+
+- The paper also notes that while having a large dataset is crucial, it is equally important to ensure data quality. Noisy or irrelevant data can hinder model performance despite the volume.
+
+### Current Relevance:
+
+- The principles outlined in "The Unreasonable Effectiveness of Data" remain relevant today, especially in the era of big data and deep learning, where massive datasets are a cornerstone of AI development.
+
+For more details, you can refer to the full text of the paper and its insights on data-driven approaches in machine learning【115†source】【114†source】.
+
+---
+

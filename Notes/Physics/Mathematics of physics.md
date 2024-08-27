@@ -207,6 +207,80 @@ Typically, $\hat{\sigma}(\mu)$ might be the sample standard deviation if $\mu$ i
 
 Profile likelihood is an essential tool in statistical analysis, especially in complex models with multiple parameters, as it offers a more manageable and focused approach to analysis in various practical applications.
 
+
+
+The fitting done in **HistFactory**, **RooFit**, and similar frameworks like **TRExFitter** typically employs Maximum Likelihood Estimation (MLE). Here’s an overview of how the fitting process works:
+
+### Fitting Process
+
+1. **Model Definition**: 
+   - Define the signal and background models using histograms and PDFs.
+   - Include systematic uncertainties through nuisance parameters and constraint terms.
+
+2. **Workspace Creation**: 
+   - Combine data, models, parameters, and configurations into a workspace.
+
+3. **Likelihood Construction**: 
+   - Construct the likelihood function, which represents the probability of observing the data given the model and its parameters.
+
+4. **Maximization**: 
+   - Use numerical optimization techniques to maximize the likelihood function with respect to the model parameters.
+   - This process finds the parameter values that best explain the observed data.
+
+5. **Uncertainty Estimation**: 
+   - Calculate the uncertainties on the fitted parameters, often using the profile likelihood method or other statistical tools.
+
+### Example Workflow with TRExFitter
+
+1. **Prepare Histograms**: Create histograms for data, signal, and background processes.
+2. **Define Systematics**: Specify systematic uncertainties and their effects on the histograms.
+3. **Configuration File**: Use a configuration file to define the model, including all components and systematic variations.
+4. **Run Fit**: Execute the fitting process using the provided tools, which will perform MLE to find the best-fit parameters.
+
+### MLE Fitting
+
+The MLE fitting method aims to find the parameter values that maximize the likelihood function:
+
+\[ L(\theta) = P(\text{data} | \theta) \]
+
+Where \( \theta \) represents the parameters of the model. The goal is to find the \(\theta\) that makes the observed data most probable.
+
+By maximizing the likelihood, MLE provides the most likely parameter values given the data, incorporating all available information, including systematic uncertainties. This approach is robust and widely used in high-energy physics experiments.
+
+
+Uncertainties on the parameters in statistical fitting, such as those done with **HistFactory**, **RooFit**, or **TRExFitter**, are not simply the differences between nominal and fit values. Instead, they are typically estimated using the profile likelihood method or other statistical techniques.
+
+### Profile Likelihood Method:
+1. **Likelihood Function**: Construct the likelihood function \( L(\theta) \).
+2. **Maximize Likelihood**: Find the parameter values that maximize \( L(\theta) \).
+3. **Profile Likelihood**: For each parameter of interest, \( \theta_i \), profile the likelihood by maximizing \( L \) with respect to all other parameters.
+4. **Confidence Intervals**: Determine the confidence intervals or uncertainties by finding the points where the profile likelihood drops by a certain amount (usually 1/2 for 1 standard deviation).
+
+### Steps for Uncertainty Calculation:
+- **Initialization**: Start with initial nominal values of the parameters.
+- **Fitting**: Perform the fit to get the best-fit values.
+- **Profile Likelihood**: Vary each parameter, re-maximize the likelihood for other parameters, and observe how the likelihood value changes.
+- **Error Estimation**: The changes in the likelihood are used to calculate the uncertainties, giving a range within which the true parameter value is expected to lie.
+
+### Statistical Interpretation:
+The uncertainties reflect the range within which the parameter values can vary while still being consistent with the observed data, considering both statistical fluctuations and systematic uncertainties.
+### Overall Fit
+1. **Initial Fit**: Perform an overall fit with all parameters included to find the best-fit values that maximize the likelihood function \( L(\theta) \).
+
+### Profiling for Uncertainties
+2. **Profiling Each Parameter**: For each parameter of interest, vary that parameter while re-optimizing the likelihood function with respect to all other parameters. This is done to see how changes in this single parameter affect the likelihood, holding other parameters at their new optimized values.
+   
+3. **Likelihood Difference**: The profile likelihood is examined to determine the change in the likelihood value as the parameter is varied. The points at which the likelihood decreases by a specific amount (commonly 0.5 for a 1σ confidence interval) from its maximum define the uncertainty bounds for that parameter.
+
+### Summary:
+- **Best-Fit Model**: Initial fit to find the best-fit parameters.
+- **Parameter Profiling**: Vary each parameter individually and re-optimize other parameters.
+- **Uncertainty Estimation**: Determine the parameter uncertainties based on changes in the likelihood function.
+
+This method ensures that the calculated uncertainties account for the correlations and interactions between different parameters.
+
+
+
 ---
 
 # Uncertainties on POI:
@@ -529,3 +603,36 @@ If the observed data is consistent with the background-only hypothesis (null hyp
 
 
 ----
+
+
+# Information:
+The concept of information in physics is profound and multifaceted, intertwining with the very fabric of reality according to quantum mechanics and thermodynamics. Physically,<mark style="background: #FFB86CA6;"> information refers to the arrangement or state of a system that can be measured and known</mark>. It plays a crucial role in understanding physical processes, from the microscopic world of quantum particles to the cosmic scale of black holes.
+
+### Information in Quantum Mechanics
+
+In quantum mechanics,<mark style="background: #FFB86CA6;"> information is related to the state of a quantum system</mark>. The wave function of a quantum system encodes all possible information about the system's properties, such as position, momentum, spin, etc. Measurements of these properties collapse the wave function to a specific state, revealing information about the system at the cost of disturbing it.
+
+### Information and Thermodynamics
+
+The relationship between information and thermodynamics is epitomized in the concept of entropy, which measures the amount of disorder or randomness in a system. <mark style="background: #FFB8EBA6;">Entropy is also a measure of information</mark>, specifically the information that is not known about a system. The more disordered a system, the more information it theoretically contains, because there are more possible microstates it could be in. This idea is central to the second law of thermodynamics, which states that the total entropy of an isolated system can never decrease over time.
+
+### Black Hole Information Paradox
+
+The black hole information paradox arises from the properties of black holes as described by general relativity and quantum mechanics. According to classical general relativity, anything that falls into a black hole is lost forever, beyond the event horizon from which not even light can escape. However, quantum mechanics suggests that information cannot be destroyed. This leads to a paradox when considering what happens to the information about the state of matter that falls into a black hole.
+
+Hawking's radiation, predicted by Stephen Hawking, complicates this issue further. It suggests that black holes emit radiation due to quantum effects near the event horizon, causing them to lose mass and eventually evaporate. <mark style="background: #ABF7F7A6;">The paradox is: if the black hole evaporates completely, where does the information about the matter that fell into it go? Does it get destroyed (violating quantum mechanics), or is it somehow preserved?</mark>
+
+### Resolutions and Implications
+
+Several theoretical resolutions to the black hole information paradox have been proposed, involving concepts like holographic principles, where information is encoded on the event horizon; firewall theories, suggesting violent quantum activity at the horizon; or ideas that information is somehow returned to the universe through Hawking radiation. These discussions touch on the fundamental nature of information in physics and its conservation laws.
+
+The interplay between information and physics challenges our understanding of reality, hinting at a deeper level of physical laws where information plays a central role. The resolution of issues like the black hole information paradox could lead to significant breakthroughs in our understanding of the universe, quantum mechanics, and gravity.
+
+### Quantum Gravity and Pre-Big Bang Scenarios
+
+- **Beyond Classical Physics**: Theories of quantum gravity, such as string theory and loop quantum gravity, attempt to describe the universe's behavior at the smallest scales, including the state of the universe at the Big Bang. These theories suggest that the classical concept of a singularity might be replaced with something more complex and understandable, potentially resolving the paradoxes associated with infinite density and temperature.
+    
+- **Information Conservation**: In quantum mechanics, information is considered to be conserved. This principle leads to intriguing implications for the Big Bang and the nature of singularities. If information is conserved, then in some form, the information that constitutes the current universe was present at the Big Bang, transformed through the laws of physics from the initial state to the complex cosmos we observe today.
+
+---
+

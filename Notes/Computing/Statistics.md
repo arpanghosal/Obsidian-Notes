@@ -158,3 +158,163 @@ In summary, summary statistics are powerful tools for data analysis, providing a
 
 ---
 
+# Kolmogorov-Smirnov Test:
+The Kolmogorov-Smirnov (KS) test is a non-parametric statistical test used to determine if two samples come from the same distribution, or to compare a sample with a reference probability distribution. The test is based on the maximum distance between the empirical distribution functions of the two samples or between the empirical distribution function of a sample and the cumulative distribution function (CDF) of the reference distribution.
+
+### KS-Test Statistic
+
+- **Statistic (D):** The KS test statistic, \(D\), is the maximum absolute difference between the empirical distribution functions of the two samples or between the empirical distribution function and the reference CDF. A larger value of \(D\) indicates a greater discrepancy between the two distributions being compared.
+
+### P-value
+
+- **P-value:** The p-value obtained from the KS test indicates the probability of observing a test statistic as extreme as, or more extreme than, the value computed from the data, assuming that the null hypothesis is true (i.e., the distributions are identical). A low p-value suggests that the observed data are unlikely under the null hypothesis, leading to its rejection.
+
+### Implications
+
+1. **Interpreting the Test Statistic (D):**
+   - A **small value** of \(D\) suggests that the distributions of the two samples are similar.
+   - A **large value** indicates significant differences between the distributions.
+
+2. **Interpreting the P-value:**
+   - If the **p-value is less than a predefined significance level** (commonly 0.05 or 0.01), it suggests that there is statistically significant evidence to reject the null hypothesis, indicating the distributions are different.
+   - If the **p-value is greater than the significance level**, there isn't enough evidence to reject the null hypothesis, suggesting the distributions may be considered the same for the purposes of the test.
+
+### Considerations
+
+- **Sample Size:** The power of the KS test can be sensitive to sample size. Larger samples provide more reliable results, as the test becomes more sensitive to differences between distributions.
+  
+- **Assumptions:** Being a non-parametric test, the KS test does not assume a specific distribution form (e.g., normality) for the data, making it versatile. However, it assumes that the samples are independent and identically distributed within each sample.
+
+- **Use Cases:** The KS test is widely used for goodness-of-fit testing (comparing an observed distribution to a theoretical model) and for comparing two empirical distributions. It's important in fields requiring distributional analysis without strict parametric assumptions.
+
+In summary, the KS test is a valuable tool for statistical analysis to assess the similarity of distributions. However, the interpretation of its outcomes must consider the nature of the data, the test's assumptions, and the context of the research question.
+
+---
+
+
+# Some bits on Stats and CIs and more: (dumped; needs rework)
+1. Sampling versus stat error
+Sampling error and statistical error are related concepts in statistics, but they are not exactly the same. Here’s a detailed comparison of the two:
+
+### Sampling Error
+
+**Definition**: Sampling error is the error that arises due to the fact that we are observing a sample rather than the entire population. It represents the difference between the sample statistic (e.g., sample mean) and the actual population parameter (e.g., population mean).
+
+**Causes**:
+- The inherent variability in which sample is chosen from the population.
+- The size of the sample: smaller samples tend to have larger sampling errors.
+- The method of sampling: non-random sampling methods can introduce bias, increasing the sampling error.
+
+**Characteristics**:
+- Sampling error is a natural consequence of using a sample to estimate population parameters.
+- It can be reduced by increasing the sample size.
+- It can be quantified using measures like the standard error of the mean.
+
+**Example**: If you take a sample of 100 people to estimate the average height of all adults in a city, the difference between the sample mean height and the true population mean height is the sampling error.
+
+### Statistical Error
+
+**Definition**: Statistical error is a broader term that encompasses all types of errors that can occur in the process of collecting, analyzing, interpreting, and presenting data.
+
+**Types of Statistical Errors**:
+1. **Sampling Error**: As described above.
+2. **Measurement Error**: Errors arising from inaccuracies in measuring variables. This can include instrument error, observer error, and respondent error.
+3. **Model Error**: Errors due to incorrect or oversimplified models used to analyze the data.
+4. **Random Error**: Variability in data that cannot be attributed to any specific source.
+5. **Systematic Error (Bias)**: Errors that consistently skew results in a particular direction due to flawed data collection methods, biased sampling, or other systematic issues.
+
+**Characteristics**:
+- Statistical error encompasses a wide range of potential inaccuracies in data analysis.
+- It includes both random errors (which can often be reduced by increasing sample size or improving measurement techniques) and systematic errors (which require different approaches to identify and correct).
+
+**Example**: In addition to the sampling error in the height estimation example above, if the measuring tape you use is slightly stretched, it will introduce a measurement error. If you only sample people from a specific part of the city where people are generally taller, that introduces a systematic error (bias).
+
+### Summary
+
+- **Sampling Error** is a specific type of statistical error related to the variability inherent in using a sample to estimate a population parameter. It can be minimized by increasing sample size and using proper sampling techniques.
+- **Statistical Error** is a broader term that includes sampling error as well as other types of errors such as measurement errors, model errors, random errors, and systematic errors.
+
+Both concepts are crucial in understanding the accuracy and reliability of statistical estimates and analyses.
+
+---
+
+Random error is a broad category of errors that can occur in any type of measurement or data collection process. It does not fall specifically under sampling error but is an overarching concept that includes various sources of variability. Here’s how random error fits into the context of sampling error and high-energy physics:
+
+### Random Error
+
+**Definition**: Random error refers to the variability in measurements or data that cannot be attributed to any specific cause and tends to vary in an unpredictable manner. These errors are inherent in any data collection process.
+
+**Sources**:
+- Instrumental fluctuations
+- Environmental changes
+- Variability in human response (in some types of experiments)
+
+**Characteristics**:
+- Random errors are non-systematic and do not consistently skew data in one direction.
+- They are usually distributed according to a normal distribution (Gaussian), with most errors being small and the likelihood of larger errors decreasing as they move further from the mean.
+- Random errors can be reduced by increasing the number of measurements or observations, as their effects tend to cancel out over multiple trials.
+
+**Example**: In measuring the time of flight of particles in a detector, slight fluctuations in electronic timing or environmental conditions can cause random errors in the measurement.
+
+### Sampling Error
+
+**Definition**: Sampling error is the error that arises because we are observing a sample rather than the entire population. It represents the variability in the sample statistic from the true population parameter due to the random nature of sampling.
+
+**Relationship to Random Error**:
+- Sampling error can be considered a type of random error, as it arises from the random selection of a sample.
+- However, sampling error specifically refers to the variability due to the sampling process, while random error can encompass a broader range of variability sources.
+
+### Random Error in High-Energy Physics
+
+In high-energy physics, random errors are a significant consideration, but they are often discussed in more specific terms related to the measurements and data analysis:
+
+1. **Statistical Uncertainty**: This is analogous to random error and refers to the uncertainty in measurements due to the finite number of events (sample size). For example, the statistical uncertainty in counting the number of events in a particle detector.
+2. **Systematic Uncertainty**: This includes errors that are not random, such as biases in the measurement process, calibration errors, or theoretical model uncertainties.
+
+### Example in High-Energy Physics
+
+- **Statistical (Random) Uncertainty**: When measuring the cross-section of a particular particle interaction, the finite number of observed events leads to a statistical uncertainty. This is a type of random error.
+- **Systematic Uncertainty**: If there is a consistent bias in the detector calibration that shifts all measurements in one direction, this is a systematic error.
+
+### Summary
+
+- **Random Error**: A broad category of unpredictable, non-systematic variability in measurements. In high-energy physics, this is often referred to as statistical uncertainty.
+- **Sampling Error**: A specific type of random error arising from the variability in using a sample to estimate a population parameter.
+- **In High-Energy Physics**: Both statistical (random) uncertainties and systematic uncertainties are considered, with random errors often being a major component of the overall measurement uncertainty.
+
+In high-energy physics, understanding and minimizing both random and systematic uncertainties are crucial for precise and accurate measurements, but random errors (statistical uncertainties) remain a fundamental aspect of the analysis due to the inherently stochastic nature of particle interactions and detections.
+
+
+----
+
+### Random Error in High-Energy Physics
+
+- **Statistical Uncertainty**: Random variability due to finite sample size.
+- **Systematic Uncertainty**: Non-random biases or errors in measurement.
+- **Random Error**: Generally refers to statistical uncertainties.
+
+### Sampling Error and Statistical Error
+
+- **Sampling Error**: Difference between sample statistic and population parameter.
+- **Statistical Error**: Broad term, includes all types of errors in data collection and analysis (sampling, measurement, model errors).
+
+
+![[Pasted image 20240705152456.png]]
+
+A bit on this website: /sphweb.bumc.bu.edu/otlt/mph-modules/
+
+
+----
+
+***a 95% confidence interval means that if the same population were sampled on numerous occasions and confidence interval estimates were made on each occasion, the resulting intervals would contain the true population parameter in approximately 95% of the cases, assuming that there were no biases or confounding. However, people generally apply this probability to a single study.
+
+#pvalue
+
+
+***If the p-value is 0.05 or less, reject the null hypothesis and accept that there is a statistically significant effect.
+
+The p-value indicates the probability of observing the data, or something more extreme, assuming the null hypothesis is true. A low p-value suggests that the observed difference is unlikely to have occurred by random chance, implying that the alternative hypothesis may be true.
+
+---
+
+

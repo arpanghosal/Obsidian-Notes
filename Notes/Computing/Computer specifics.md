@@ -133,3 +133,125 @@ A **URL** (Uniform Resource Locator) is a character string specifying the intern
 
 ----
 
+# With Regard to OMNI cluster - things to note and resources
+#computing #resources
+
+## Starting page:
+https://cluster.uni-siegen.de/getting-started/?lang=en 
+For more info on ssh and key-generation: https://hpc-wiki.info/hpc/Introduction_to_Linux_in_HPC/SSH_Connections
+
+OMNI uses → workspaces (unlimited in size, temporary in duration) and modules.
+
+## Types of software management:
+In computing environments, especially in research computing, high-performance computing (HPC) clusters, and scientific computing, software management can be quite complex due to varying software requirements, dependencies, and versions needed by different users and applications. Here are some ways environments manage software besides using a module system:
+
+1. **Module Systems:**
+   - **Examples:** Environment Modules (`module`), Lmod, Spack, EasyBuild, etc.
+   - **Functionality:** Module systems allow administrators to install and manage software packages in a centralized manner. Users can then load and unload modules to switch between different software versions or configurations without conflicting dependencies.
+
+2. **Virtual Environments:**
+   - **Examples:** Virtualenv (Python), conda (Anaconda/Miniconda), venv (Python 3), pipenv, etc.
+   - **Functionality:** Virtual environments create isolated environments where specific versions of Python or other programming languages and their libraries can be installed without affecting system-wide installations. They are typically used for Python and other scripting languages.
+
+3. **Containerization:**
+   - **Examples:** Docker, Singularity, Podman, etc.
+   - **Functionality:** Containers encapsulate entire software environments, including dependencies, libraries, and configurations. They provide a lightweight, portable way to package applications and their dependencies, ensuring consistency across different computing environments.
+
+4. **Package Managers:**
+   - **Examples:** apt (Ubuntu/Debian), yum/dnf (Red Hat/CentOS/Fedora), Homebrew (macOS), Chocolatey (Windows), etc.
+   - **Functionality:** Package managers automate the installation, upgrading, and removal of software packages on a system. They manage dependencies and ensure compatibility between installed packages.
+
+5. **Manual Installation:**
+   - **Examples:** Compiling from source code, downloading binaries and placing them in specific directories.
+   - **Functionality:** In some cases, software may be installed manually by compiling from source code or downloading binaries and configuring environment variables manually. This method requires careful management of dependencies and may not be scalable in larger environments.
+
+Each of these methods has its strengths and is used in different contexts depending on factors like the complexity of software requirements, the need for isolation, performance considerations, and administrative preferences. In research and HPC environments, module systems and containerization (like Singularity) are particularly common due to their ability to manage complex software stacks and ensure reproducibility of computational workflows.
+
+## Load command:
+
+<mark style="background: #ABF7F7A6;">
+$ module load singularity → used to enable and configure the Singularity software within a specific environment managed by a module system, ensuring that it is ready for use in creating and running containers.</mark>
+
+## Modules:
+Environments are pre-defined in so-called **modules**
+https://cluster.uni-siegen.de/omni/usage/modules/?lang=en
+
+The command `module load singularity` is used in environments where software modules are managed using a module system. Here’s what it typically does:
+
+1. **Module System Context:**
+   - Many high-performance computing (HPC) clusters and scientific computing environments use a module system to manage software installations.
+   - Modules are scripts or environment variables that set up the environment for a specific software package, tool, or programming environment.
+
+2. **Loading Singularity:**
+   - `module load singularity` specifically instructs the module system to configure the current shell environment to include the necessary paths, libraries, and environment variables required to use Singularity.
+   - Singularity is a containerization tool used primarily in scientific computing and HPC environments. It allows users to create and run containers that encapsulate entire software environments, including dependencies and libraries.
+
+3. **Effects of `module load singularity`:**
+   - **Environment Setup:** It sets up paths and environment variables so that the `singularity` command and associated tools are available in the current shell session.
+   - **Version Selection:** Depending on the specific setup of the module system, `module load singularity` might also select a specific version of Singularity if multiple versions are available.
+
+4. **Usage:**
+   - After executing `module load singularity`, you can typically use the `singularity` command directly in your terminal to create, run, and manage containers.
+   - For example, you might then run `singularity build mycontainer.sif myrecipe.def` to build a container from a definition file (`myrecipe.def`).
+
+In summary, `module load singularity` is a command used to enable and configure the Singularity software within a specific environment managed by a module system, ensuring that it is ready for use in creating and running containers.
+
+## Burst buffer:
+https://cluster.uni-siegen.de/omni/usage/file-systems/?lang=en#burst-buffer
+
+
+## SLURM:
+
+**SLURM (Simple Linux Utility for Resource Management)** is an open-source, highly scalable cluster management and job scheduling system used in high-performance computing (HPC) environments. Here’s a brief introduction to SLURM:
+
+1. **Job Scheduling:** SLURM is designed to efficiently manage and schedule computing resources such as compute nodes, GPUs, and software licenses in a cluster environment.
+
+2. **Resource Allocation:** It allocates resources based on job requirements, such as CPU cores, memory, and runtime constraints, ensuring optimal resource utilization.
+
+3. **Features:**
+   - **Job Submission:** Users submit jobs to SLURM, specifying resource requirements and executable commands.
+   - **Fair Sharing:** Implements fair-share scheduling policies to prioritize and allocate resources among users and groups.
+   - **Job Prioritization:** Supports job prioritization based on factors like queue policies and job dependencies.
+   - **Monitoring:** Provides monitoring and accounting capabilities to track resource usage and job statuses.
+
+4. **Usage:** SLURM is widely used in research institutions, universities, and industrial settings for scientific simulations, data analytics, and other compute-intensive tasks.
+
+5. **Flexibility:** It supports a wide range of cluster configurations and workload types, making it suitable for diverse computing needs from small clusters to large-scale supercomputers.
+
+SLURM's popularity stems from its robustness, scalability, and extensive feature set, making it a preferred choice for managing and scheduling jobs in high-performance computing environments.
+
+----
+
+### A short note about schedulers:
+
+Schedulers are typically developed as software components that run on a central management node in a cluster environment. Here’s a terse explanation of their development and operation:
+
+1. **Development:** Schedulers are developed using programming languages like C, C++, Python, or specialized scripting languages. They implement algorithms for job scheduling, resource allocation, and queue management.
+
+2. **Execution:** They run as daemons or services on a central management node, not directly on compute nodes. Compute nodes communicate with the scheduler via network protocols.
+
+3. **Cluster Connectivity:** Schedulers communicate over network protocols such as SSH, TCP/IP, or specialized cluster interconnects (e.g., InfiniBand). They manage job submission, resource monitoring, and job status updates remotely over these connections.
+
+4. **Background Operation:** Schedulers continuously monitor cluster resources, schedule jobs based on policies (like fair-share or priority), and manage job execution on compute nodes. They handle job submission, queue management, and resource reservation efficiently.
+
+Schedulers play a crucial role in maximizing cluster utilization by dynamically allocating resources and managing job priorities, ensuring efficient workload execution in high-performance computing environments.
+
+
+----
+
+
+## Job Queuing:
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -16,3 +16,9 @@ Long-lived particles in the context of particle physics refer to subatomic parti
 
 ---
 
+#link 
+## some talks from DPG:
+https://indico.desy.de/event/42884/contributions/159266/attachments/89012/119513/DPG_conference_2024.pdf
+
+https://indico.desy.de/event/42884/contributions/159265/attachments/88970/119445/DPG_LLP_Benato_2024_03_07_v2.pdf
+

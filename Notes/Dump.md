@@ -424,3 +424,9 @@ print(Dog.__qualname__) # Outputs: Dog
 
 ```
 ```
+
+
+### Machine learning training datasets:
+
+https://pytorch.org/vision/stable/datasets.html
+

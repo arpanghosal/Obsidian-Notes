@@ -606,4 +606,333 @@ Outside of decision trees, gradient boosting can be applied to other types of mo
 
 In practice, gradient boosting, especially with decision trees, is often a go-to method due to its high performance on a wide range of tasks. It's particularly well-regarded for structured, tabular data where relationships between features are complex and non-linear. The success of frameworks like XGBoost, LightGBM, and CatBoost, which implement variations of gradient boosting, further attests to its popularity and effectiveness in both academic and industrial applications.
 
+
+## Bagging vs. Boosting:
+ Bagging and boosting are both ensemble learning techniques that combine multiple models to improve performance.- Bagging focuses on reducing variance by independently training models in parallel on randomly sampled subsets of data. It aims to introduce diversity among models. - The most common bagging algorithm is Random Forest which also randomly selects features for splits. The final prediction averages individual model predictions.- Boosting sequentially trains models to correct errors of previous ones. It assigns weights to instances based on misclassifications to guide following models.- Bagging samples data randomly for each model while boosting iteratively adjusts instance weights based on errors.- Bagging averages predictions while boosting assigns weights based on model performance, giving more influence to better performing models.- Bagging is more robust to noise and outliers due to averaging, while boosting can overfit to noise if weights are adjusted too aggressively.  - Bagging introduces diversity through random sampling and features, while boosting focuses on correcting errors.- Bagging primarily reduces variance, while boosting addresses both bias and variance with an emphasis on reducing bias.- Examples given are Random Forest for bagging and AdaBoost for boosting which sequentially trains weak learners like decision trees.- Bagging works well for unstable models prone to overfitting, while boosting can improve weak learners and handle complex patterns.
+
 ----
+
+
+# Affinity 
+Affinity, in a broad sense, refers to a <mark style="background: #FFB8EBA6;">relationship or connection between things, where one influences or has relevance to the other</mark>. In different fields of research such as mathematics, physics, computer science, and beyond, the concept of affinity manifests in various ways, often reflecting the intrinsic connections that underpin these disciplines. Here's how affinity overlaps between some of these fields:
+
+### Mathematics
+
+In mathematics, affinity can refer to an affine transformation, which is a type of linear mapping method that preserves points, straight lines, and planes. Sets of parallel lines remain parallel after an affine transformation. The concept of affine spaces—an extension of the concept of vector spaces—is crucial in fields like geometry and algebra. This mathematical foundation finds applications in numerous other domains, illustrating a deep affinity between abstract mathematical principles and practical applications.
+![[Pasted image 20240311105648.png]]
+### Physics
+
+In physics, the term affinity has been used in various contexts, including in thermodynamics and chemical kinetics to describe the<mark style="background: #ABF7F7A6;"> force that drives chemical reactions</mark>. For example, in the context of chemical thermodynamics, affinity measures the tendency of a chemical reaction to occur. This concept is closely related to the Gibbs free energy change of a reaction. The mathematical treatment of these concepts shows the overlap between mathematics and physics, especially in how differential equations and linear algebra are used to model physical phenomena.
+![[Pasted image 20240311105808.png]]
+### Computer Science
+
+Computer science often utilizes mathematical concepts to solve computational problems. Algorithms, data structures, and information theory are just a few areas where the affinity between mathematics and computer science is evident. For instance, affine transformations are widely used in computer graphics for scaling, rotating, and translating images and shapes. Moreover, concepts from physics, such as optimization and systems modeling, are applied in computational simulations, machine learning, and artificial intelligence, showing a rich interplay between these fields.
+
+### Overlapping Affinities
+
+The overlapping affinities between these fields are evident in interdisciplinary areas like computational physics, numerical analysis, and quantum computing. For example:
+
+- **Computational Physics** utilizes algorithms and numerical methods (from mathematics) to solve physical problems, showing the affinity between computational techniques and physical theories.
+- **Numerical Analysis**, a field of mathematics, is crucial for developing efficient algorithms to solve problems in science and engineering, demonstrating an affinity between theoretical mathematics and its practical applications in other fields.
+- **Quantum Computing** is an area where physics, mathematics, and computer science converge. It leverages quantum mechanics (physics) to perform computations, employing mathematical concepts in algorithm design and computer science principles in hardware and software development.
+
+### Example:
+
+---
+
+The affine transformation \(T\) applied to a point \((x, y)\) in the plane can be represented as:
+
+$$
+T(x, y) = A \cdot \begin{pmatrix} x \\ y \end{pmatrix} + \vec{b}
+$$
+
+where \(A\) is the rotation and scaling matrix, and \(\vec{b}\) is the translation vector.
+
+In the given code example, the affine transformation involves:
+
+- Scaling by a factor of \(s = 2\),
+- Rotation by an angle of \(\theta = 30^\circ\),
+- Translation by a vector \(\vec{b} = \begin{pmatrix} 2 \\ 3 \end{pmatrix}\).
+
+The rotation and scaling matrix \(A\) is defined as:
+
+$$
+A = s \cdot \begin{pmatrix} \cos(\theta) & -\sin(\theta) \\ \sin(\theta) & \cos(\theta) \end{pmatrix}
+$$
+
+Given \(s = 2\) and \(\theta = 30^\circ\), we can substitute these values into the matrix to get:
+
+$$
+A = 2 \cdot \begin{pmatrix} \cos(30^\circ) & -\sin(30^\circ) \\ \sin(30^\circ) & \cos(30^\circ) \end{pmatrix}
+$$
+
+$$
+A = 2 \cdot \begin{pmatrix} \sqrt{3}/2 & -1/2 \\ 1/2 & \sqrt{3}/2 \end{pmatrix}
+$$
+
+$$
+A = \begin{pmatrix} \sqrt{3} & -1 \\ 1 & \sqrt{3} \end{pmatrix}
+$$
+
+So, the final affine transformation formula combining scaling, rotation, and translation is:
+
+$$
+T(x, y) = \begin{pmatrix} \sqrt{3} & -1 \\ 1 & \sqrt{3} \end{pmatrix} \cdot \begin{pmatrix} x \\ y \end{pmatrix} + \begin{pmatrix} 2 \\ 3 \end{pmatrix}
+$$
+
+This formula represents the mathematical background for the affine transformation applied in the Python code.
+From git projects:
+
+![[Pasted image 20240311110752.png]]
+
+---
+
+These examples illustrate how the concept of affinity reflects the interconnectedness of various disciplines, highlighting the importance of cross-disciplinary knowledge and collaboration in advancing our understanding of complex problems.
+
+----
+
+# Activation functions:
+
+https://medium.com/@tariqanwarph/activation-function-and-glu-variants-for-transformer-models-a4fcbe85323f
+
+### Markdown Format with Human-Readable Math Expressions
+prompt - "Markdown with LaTeX for mathematical expressions"
+
+### Activation Functions Overview
+
+This document provides a brief overview of some commonly used activation functions in neural networks, including their expressions and pros and cons.
+
+Activation functions are a way to introduce nonlinearity to neural networks. Without this non-linearity, the overall learned function would be linear which cannot account for the complex nonlinear relationships that a neural network needs to learn.
+
+## ReLU (Rectified Linear Unit)
+
+**Expression:**
+- $$f(x) = \max(0, x)$$
+
+**Pros:**
+- Simple and computationally efficient.
+- Helps mitigate the vanishing gradient problem for positive inputs.
+
+**Cons:**
+- Gradient can vanish for negative input values, leading to dead neurons.
+
+## GELU (Gaussian Error Linear Unit)
+
+**Expression:**
+- $$f(x) = 0.5x\left(1 + \tanh\left(\sqrt{\frac{2}{\pi}}(x + 0.044715x^3)\right)\right)$$
+
+**Pros:**
+- Non-linearities introduce flexibility, allowing the network to learn more complex patterns.
+- Smooth curve makes it more effective for deeper networks.
+
+**Cons:**
+- More computationally expensive than ReLU.
+
+## Swish
+
+**Expression:**
+- $$f(x) = x \cdot \text{sigmoid}(x)$$
+- Where sigmoid(x) is $$\sigma(x) = \frac{1}{1 + e^{-x}}$$
+
+**Pros:**
+- Smooth, non-monotonic function that has been found to outperform ReLU in some deep learning tasks.
+- Non-zero gradient everywhere helps mitigate the dying ReLU problem.
+
+**Cons:**
+- More complex and computationally expensive than ReLU.
+
+## Sigmoid
+
+**Expression:**
+- $$f(x) = \frac{1}{1 + e^{-x}}$$
+
+**Pros:**
+- Smooth and differentiable.
+- Historically popular for output layers in binary classification problems.
+
+**Cons:**
+- Suffers from vanishing gradients for inputs with large magnitude, which can slow down training.
+- Outputs are not zero-centered, which can lead to gradient update directions being inconsistent.
+
+## Tanh (Hyperbolic Tangent)
+
+**Expression:**
+- $$f(x) = \tanh(x) = \frac{2}{1 + e^{-2x}} - 1$$
+
+**Pros:**
+- Zero-centered output, which can lead to more efficient training in some cases.
+- Smooth and differentiable.
+
+**Cons:**
+- Like the sigmoid, it suffers from vanishing gradients for inputs with large magnitude.
+
+![[Pasted image 20240311155242.png]]
+## Impact:
+While activation functions like ReLU, GELU, Swish, Sigmoid, and Tanh may seem similar at a glance, especially in their graphical representations, they can have significantly different impacts on the training and performance of deep learning models. The <mark style="background: #ABF7F7A6;">choice of activation function can affect the learning process, convergence speed, and even the ability of the model to generalize from training to unseen data</mark>. The impact of these differences indeed depends on various factors, including the architecture, the specific problem being addressed, and the characteristics of the dataset. Here's how:
+
+<mark style="background: #FFF3A3A6;">Without an activation function, a neural network (NN) or model effectively becomes a linear regressor or classifier</mark>. This is because each layer in the NN would only be performing a linear transformation (a matrix multiplication followed by a bias addition) on its inputs. Without non-linear activation functions, no matter how many layers you stack together, the entire network would still represent a single linear transformation, as the composition of linear functions is itself linear. This severely limits the network's capacity to model complex, non-linear relationships within the data.
+
+<mark style="background: #FFB8EBA6;">For classification tasks, the output of such a linear model would be a linear function of the input features. </mark>For a binary classification problem, for example, the model might output a single scalar value for each input, where the sign of the scalar (positive or negative) could be interpreted as belonging to one class or the other.
+
+### Impact on the Model
+
+1. **Vanishing and Exploding Gradients**: Activation functions like Sigmoid and Tanh can suffer from vanishing gradients on deep networks, where gradients become very small, slowing down training or stopping it altogether. ReLU and its variants (like Leaky ReLU or Parametric ReLU) were introduced to mitigate this issue, particularly in deep networks, by maintaining larger gradients. However, ReLU can lead to the "dying ReLU" problem, where neurons can "die" during training and stop responding to variations in error because they get stuck in the regime where they output zero.
+
+2. **Learning Dynamics**: Non-linear functions like<mark style="background: #FFB8EBA6;"> GELU and Swish introduce more complex learning dynamics than ReLU, potentially allowing models to learn more complex patterns or relationships within the data</mark>. This is because they offer smoother gradients over a wider range of input values, which can be beneficial in tasks where capturing subtle nuances in the data is crucial.
+
+3. **Model Convergence**: The choice of activation function can affect how quickly a model converges to a solution during training. For example, smoother functions like GELU or Swish might allow for more stable gradient descent in some scenarios, potentially leading to faster convergence.
+
+### Dependency on Architecture and Task
+
+- **Architecture**: Certain architectures might be specifically designed or optimized to work with particular activation functions. For instance, Convolutional Neural Networks<mark style="background: #FFB8EBA6;"> (CNNs) have been found to work exceptionally well with ReLU</mark> and its variants for tasks like image recognition, while Recurrent Neural Networks <mark style="background: #FFB8EBA6;">(RNNs) might benefit from the properties of Tanh or Sigmoid</mark> in handling time-series data.
+
+- **Task Complexity**: For simple tasks, the difference between activation functions might not be very pronounced, and basic functions like ReLU might suffice. However, for more complex problems, such as natural language processing (NLP) or highly nuanced classification tasks, more sophisticated functions like<mark style="background: #FFB8EBA6;"> GELU or Swish could provide a performance edge by enabling the model to capture complex patterns </mark>more effectively.
+
+- **Dataset Characteristics**: The nature of the dataset, including the scale of input features and the complexity of the relationships within the data, can also influence the effectiveness of different activation functions. Functions that provide smoother transitions and non-linearities (like GELU or Swish) might handle nuanced data relationships better than simpler functions.
+
+### Conclusion
+
+The choice of an activation function is an empirical question and often depends on experimentation within the specific context of a given model, architecture, and dataset. While ReLU and its variants remain popular for their simplicity and effectiveness in many scenarios, the exploration of alternative functions like GELU, Swish, or even newer ones can lead to performance improvements in certain situations. This decision can be influenced by factors such as the need to address vanishing or exploding gradients, the desire for faster convergence, or the requirement to model complex patterns within the data.
+
+
+---
+
+# Vectorizer:
+
+
+The TF-IDF Vectorizer, short for Term Frequency-Inverse Document Frequency Vectorizer, is a technique used to convert text documents into a matrix of token counts while also considering the importance of each token across the documents. It is implemented in Python through libraries such as scikit-learn (`TfidfVectorizer`). Here’s what it does:
+
+### 1. **Term Frequency (TF):**
+This measures how frequently a term occurs in a document. Since documents can vary in length, the term frequency is often divided by the document length (the total number of terms in the document) to normalize it.
+
+\[ \text{TF}(t, d) = \frac{\text{Number of times term } t \text{ appears in document } d}{\text{Total number of terms in document } d} \]
+
+### 2. **Inverse Document Frequency (IDF):**
+This measures how important a term is across all documents in the corpus. The idea is that terms that appear in many documents are less important or informative than terms that appear in fewer documents. It is calculated as the logarithmically scaled inverse fraction of the documents that contain the word, obtained by dividing the total number of documents by the number of documents containing the term, and then taking the logarithm of that quotient.
+
+$$\text{IDF}(t) = \log \left( \frac{\text{Total number of documents}}{\text{Number of documents with term } t} \right) $$
+
+### TF-IDF Calculation:
+The TF-IDF value is calculated by multiplying TF and IDF. This gives high values for terms that are more unique to a particular document, helping to identify and weigh the most important words in each document.
+
+$$[ \text{TF-IDF}(t, d) = \text{TF}(t, d) \times \text{IDF}(t) ]$$
+
+### Application and Purpose:
+- **Feature Extraction from Text:** Converts text data into a format that machine learning algorithms can work with, by creating a numerical representation of the documents.
+- **Importance Weighting:** Helps in emphasizing words that are more relevant to a document’s context, improving the performance of algorithms on tasks like classification, clustering, and information retrieval.
+- **Dimensionality Reduction:** By considering only the most important terms, TF-IDF can help reduce the number of features in a high-dimensional dataset.
+
+In summary, the TF-IDF Vectorizer is a powerful tool for processing text data, transforming it into a structured, numerical format that highlights the relative importance of terms within and across documents in a corpus. This makes it invaluable for many NLP tasks where the significance of words plays a crucial role in understanding and analyzing the text.
+
+### Feature Extraction - Example
+vectorizer = TfidfVectorizer(max_features=1000)
+X = vectorizer.fit_transform(df['processed_reviews'])
+
+---
+
+
+
+## Linear and Logistic Regress:
+Logistic Regression is used for binary classification tasks, predicting probabilities that map to two categories. It applies a sigmoid (logit) function to model the probability, ensuring the output lies between 0 and 1.
+
+Linear Regression is used for predicting continuous outcomes, modeling the relationship between dependent and independent variables with a linear equation.
+
+---
+
+
+# GNNs:
+
+### Equivariance:
+Certainly! Here is the example with LaTeX symbols enclosed in `$$`.
+
+### Example
+
+Imagine we have a graph with three nodes \(A\), \(B\), and \(C\). The nodes are connected as follows: \(A\) is connected to \(B\), and \(B\) is connected to \(C\).
+
+#### Original Graph
+- **Nodes**: $$A, B, C$$
+- **Edges**: $$A-B, B-C$$
+
+Now, let's define a transformation $$g$$ which permutes the nodes: $$A \to C$$, $$B \to A$$, and $$C \to B$$.
+
+#### Transformed Graph
+- **Nodes**: $$C, A, B$$
+- **Edges**: $$C-A, A-B$$
+
+#### Applying GNN (Function $$f$$)
+The GNN $$f$$ computes some features based on the graph structure. Suppose the GNN outputs features $$\{f_A, f_B, f_C\}$$ for nodes $$A, B, C$$ in the original graph.
+
+#### Equivariance Property
+Equivariance means that if we apply the permutation $$g$$ to the input (nodes $$A, B, C$$), the GNN’s output should transform accordingly with a corresponding permutation $$g'$$:
+
+$$ f(g(\text{input})) = g'(f(\text{input})) $$
+
+In our example, if $$g$$ permutes $$A$$ to $$C$$, $$B$$ to $$A$$, and $$C$$ to $$B$$, then the corresponding permutation $$g'$$ should permute the GNN’s output features similarly:
+
+$$ \{f_A, f_B, f_C\} \to \{f_C, f_A, f_B\} $$
+
+### Summary
+- **Input Graph**: $$A \to B \to C$$
+- **Transformed Graph**: $$C \to A \to B$$
+- **Original Output**: $$\{f_A, f_B, f_C\}$$
+- **Transformed Output**: $$\{f_C, f_A, f_B\}$$
+
+This illustrates that the GNN’s output respects the same structure and relationships as the transformed input graph, demonstrating equivariance.
+
+
+
+
+---
+
+# Compilation vs. Linking:
+
+### Difference Between Compilation and Linking
+
+#### Compilation
+- **Purpose**: Translates source code written in a high-level programming language (like C, C++, or Java) into machine code or intermediate code (like assembly language or bytecode).
+- **Process**:
+  1. **Lexical Analysis**: Breaks down the source code into tokens.
+  2. **Syntax Analysis**: Parses tokens to check for syntax errors.
+  3. **Semantic Analysis**: Ensures the code makes sense semantically.
+  4. **Optimization**: Improves the performance and efficiency of the code.
+  5. **Code Generation**: Converts the parsed code into machine code or an intermediate representation.
+- **Output**: Generates object files or intermediate code files.
+- **Example Tools**: GCC (GNU Compiler Collection), Clang, javac (Java compiler).
+
+#### Linking
+- **Purpose**: Combines one or more object files and libraries into a single executable or library.
+- **Types**:
+  1. **Static Linking**: Copies all necessary library modules into the final executable. The resulting executable is self-contained.
+  2. **Dynamic Linking**: Links library modules at runtime, rather than at compile-time. The executable contains references to the shared libraries.
+- **Process**:
+  1. **Symbol Resolution**: Matches function calls and variable references in one object file with their definitions in another object file or library.
+  2. **Address Binding**: Assigns final memory addresses to the various code and data sections.
+- **Output**: Produces an executable file or a library file.
+- **Example Tools**: `ld` (Unix linker), `link.exe` (Windows linker).
+
+### Summary
+- **Compilation**: Converts source code into machine code or intermediate code.
+- **Linking**: Combines multiple object files and resolves references to create an executable or library.
+
+### Example
+
+#### Compilation Example
+```bash
+gcc -c myfile.c -o myfile.o
+```
+This command compiles `myfile.c` into an object file `myfile.o`.
+
+#### Linking Example
+```bash
+gcc myfile.o -o myprogram -lmylib
+```
+This command links `myfile.o` with the library `mylib` to create the executable `myprogram`.
+
+### References
+- [Compilation Process](https://en.wikipedia.org/wiki/Compiler)
+- [Linking (computing)](https://en.wikipedia.org/wiki/Linker_(computing))
+
+
+-----
+
+

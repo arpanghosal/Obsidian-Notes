@@ -356,4 +356,40 @@ By employing N-subjettiness, tuning, and grooming techniques, physicists can bet
 
 ---
 
-   
+# Look Elsewhere effect:
+
+   The Look-Elsewhere Effect (LEE) is a statistical phenomenon that occurs in the analysis of data over a wide parameter space or multiple testing scenarios. It's particularly relevant in fields like particle physics, astronomy, and any discipline involving extensive data searches for signals among background noise. The essence of the Look-Elsewhere Effect is that the more places you look for a signal, the higher the chance of finding a significant signal-like fluctuation purely by chance, even in the absence of a real signal.
+
+### Understanding the Look-Elsewhere Effect
+
+Imagine you're searching for a specific signal in a large dataset. If you look at many different regions or test multiple hypotheses, it's likely that at least one of them will show an apparent signal just due to random fluctuations in the data. This apparent signal might seem statistically significant within that local region or specific hypothesis test but becomes less significant when considering the entire search area or the number of hypotheses tested.
+
+### Example in Particle Physics
+
+A classic example is the search for new particles in collider experiments, where physicists scan a wide range of energy levels for excess events (signals) that might indicate the presence of a new particle. If the analysis is not corrected for the Look-Elsewhere Effect, a local excess that appears significant could merely be a statistical fluctuation that's expected when examining many energy bins.
+
+### Correcting for the Look-Elsewhere Effect
+
+To account for the LEE, researchers use various statistical methods to adjust the significance of their findings. One common approach is to calculate a "global significance" from the "local significance." The local significance measures how unlikely it is to observe a signal-like fluctuation in a specific region of the parameter space, assuming no real signal is present. The global significance, however, reflects the probability of observing such a fluctuation anywhere in the searched parameter space.
+
+- **Trial Factor:** This is an adjustment factor that quantifies the effective number of independent searches or hypothesis tests performed. Calculating the trial factor can be straightforward in some cases (e.g., when the parameter space is evenly and discretely divided) but may require more sophisticated statistical techniques in others, especially when the parameter space is continuous or when the tests are not independent.
+
+- **P-Value Adjustment:** Another method involves adjusting the p-values obtained from individual tests to reflect the multiplicity of tests performed. Techniques like the Bonferroni correction are examples of this approach, although they may be overly conservative in some contexts.
+
+### Importance
+
+Correcting for the Look-Elsewhere Effect is crucial for maintaining the integrity of scientific findings. Without such corrections, the risk of false positives increases, potentially leading to incorrect conclusions about the presence of new phenomena. By appropriately accounting for the LEE, researchers can better differentiate between true signals and statistical fluctuations, ensuring that claims of discoveries are robust and reliable.
+
+----
+
+
+# Ideogram method:
+The ideogram method in particle physics is used for mass fitting, particularly in the context of particle decay studies. It involves constructing a likelihood function based on the invariant mass of particle decay products, incorporating various factors like resolution effects and background contributions. This method allows for precise determination of particle masses and is often utilized in experiments such as those conducted at the Large Hadron Collider (LHC).
+
+For more detailed information, you can refer to specific particle physics literature or research papers that delve into the technical aspects of the ideogram method.
+
+See cms paper on top mass measurement: https://arxiv.org/pdf/1805.01428
+
+The ideogram method is also a fitting method used in particle physics. It combines the results of multiple invariant mass measurements to extract the most probable value for the mass of a particle. This method constructs a likelihood function that accounts for statistical and systematic uncertainties, providing a precise fit to the mass distribution. The ideogram approach is valuable for achieving high precision in mass determinations, often applied in the analysis of data from particle collision experiments.
+
+----

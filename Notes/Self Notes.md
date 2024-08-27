@@ -1,8 +1,19 @@
+
+## Obsidian:
+cmd + opt + i   - to got to developer mode
+
+cmd + r  and cmd shift r = record and stop
+cmd + shift + c = change color from palette below
+
+ctrl + p,o,y,g,c -> highlight
+ctrl + r -> remove highlight
+
+
 ## Links:
 https://www.inovex.de/de/leistungen/artificial-intelligence/ - for ML related stuffs
 
 
-[[tutorials]] -> Uproot comes with Scikit-HEP package. Major advantage. - calls compiled vectorized functions to perform very fast calculations on arrays
+[[Tutorials-Things to do]] -> Uproot comes with Scikit-HEP package. Major advantage. - calls compiled vectorized functions to perform very fast calculations on arrays
 
 
 
@@ -290,3 +301,218 @@ ID                                ACCOUNT    SCOPE:NAME                         
 - Delete replication rule using delete-rule and ID.
 
 ---
+
+## Lima: #todo
+
+
+
+
+
+----
+## Organizing files and folders:
+Taken from a zapier blog.
+- Create a clear hierarchy of folders.
+- Use consistent naming convention:
+  keywords, 
+  pascal case, 
+  add date at beginning(yymmdd_), 
+  include version if working on project,
+  keep filenames concise
+- Add tags:
+  Red - important, analysis related
+  Orange - mildly relevant, official etc.
+  Blue - Self study, papers etc.
+  Green - Self development, codes etc.
+- Archive and delete unnecessary files
+- File as you go
+- Name as WIP, final, archived etc.
+-
+
+----
+
+#todo 
+# Career Contemplation: 
+#todo 
+Transitioning into a role as a Data Analyst, Data Scientist, or Data Engineer requires a blend of technical, analytical, and soft skills. Given your background in physics, computing, and statistical skills, you're already on a strong footing. Here’s a breakdown of specific skills and resources that could help, along with advice on building a relevant portfolio:
+
+### Technical Skills
+
+1. **Advanced Programming**: Proficiency in Python is essential, as it's widely used for data analysis, machine learning, and data engineering tasks. R is also beneficial, especially for statistical analysis and visualizations.
+
+2. **Machine Learning/AI**: Understanding of machine learning algorithms, principles, and their application. This includes supervised and unsupervised learning, neural networks, and deep learning.
+
+3. **Data Manipulation and Analysis**: Skills in using libraries like Pandas, NumPy for Python. Ability to clean, manipulate, and analyze large datasets to derive meaningful insights.
+
+4. **Database Management**: Knowledge of SQL for querying databases is crucial. Familiarity with NoSQL databases (MongoDB, Cassandra) is also beneficial for Data Engineer roles.
+
+5. **Big Data Technologies**: For Data Engineering positions, skills in Hadoop, Spark, and Kafka are highly sought after. These technologies help in processing and analyzing large data sets beyond the capacity of traditional databases.
+
+6. **Data Visualization**: Proficiency in visualization tools and libraries such as Matplotlib, Seaborn (Python), and interactive tools like Tableau or Power BI to communicate data insights effectively.
+
+7. **Statistical Analysis**: Your background in particle physics and statistical skills will be invaluable. A deep understanding of statistical testing, regression analysis, and probability theory is essential.
+
+### Soft Skills
+
+1. **Problem-Solving**: Ability to approach complex problems logically and creatively.
+2. **Communication**: Clear communication of complex data insights to non-technical stakeholders.
+3. **Project Management**: Organizing, planning, and executing projects efficiently.
+
+### Resources for Learning
+
+1. **Online Courses**: Platforms like Coursera, edX, and Udacity offer specialized courses in data science, machine learning, and data engineering from top universities and companies.
+   
+2. **Books**: There are many excellent books on data science and machine learning. Some recommendations include "Python for Data Analysis" by Wes McKinney, "Data Science from Scratch" by Joel Grus, and "The Data Warehouse Toolkit" by Ralph Kimball for data engineering concepts.
+
+3. **Competitions and Projects**: Participate in Kaggle competitions to practice your skills on real-world data sets. GitHub is also a great platform to collaborate on projects and contribute to open-source.
+
+### Building a Portfolio
+
+1. **Showcase Projects**: Include projects that demonstrate your ability to extract insights from data, apply machine learning models, and use data visualization effectively. Projects related to your PhD research, where you've applied data analysis or machine learning, can be very compelling.
+
+2. **Blog Posts**: Writing about your projects or explaining complex data science concepts in simple terms can showcase your expertise and communication skills.
+
+3. **GitHub Repository**: Maintain a clean, well-documented GitHub repository for your projects. Include clear README files that explain the projects, the techniques used, and the results obtained.
+
+4. **Kaggle Profile**: Participating in Kaggle competitions and sharing your kernels (code notebooks) can also be part of your portfolio.
+
+Start with focusing on a few key areas where you feel most interested or where your skills are strongest, and gradually expand your expertise from there. Balancing technical skills development with real-world applications through projects will make your transition into data science roles smoother and more successful.
+
+
+"""
+### 2. Data Analyst/Data Scientist in Tech or Research
+
+- **Pros**: Your skills in C++, Python, machine learning, data analysis, and statistics are highly valued in these roles. There's a strong demand for data professionals across many sectors, offering good career growth and opportunities to work on varied projects.
+- **Cons**: May require continual learning and upskilling to stay abreast of new technologies and methodologies in data science."
+"""
+
+## Expertise skills:
+Transitioning to an industry job in Python and machine learning within a few months is ambitious, but with focused effort and strategic learning, it's certainly achievable. Here’s a roadmap with key areas to concentrate on, aimed at building a strong foundation in Python programming and machine learning, along with skills that are highly valued in the industry.
+
+### 1. Strengthen Python Skills
+- **Core Python**: Become proficient in Python syntax, data types, control flow (if statements, loops), functions, and error handling.
+- **Advanced Topics**: Understand more complex topics like list comprehensions, lambda functions, decorators, generators, and context managers.
+- **Object-Oriented Programming**: Grasp the principles of object-oriented programming in Python, including classes, inheritance, and polymorphism.
+
+### 2. Learn Key Python Libraries
+- **NumPy**: For numerical computations and understanding array manipulations.
+- **Pandas**: For data manipulation and analysis, especially with tabular data.
+- **Matplotlib** and **Seaborn**: For data visualization. Being able to visually explore and present data is crucial.
+- **Scikit-learn**: For implementing machine learning algorithms. Understand how to preprocess data, train models, evaluate model performance, and fine-tune parameters.
+
+### 3. Dive into Machine Learning
+- **Foundational Concepts**: Understand types of machine learning (supervised, unsupervised, reinforcement learning) and key concepts like bias-variance tradeoff, overfitting, underfitting, and cross-validation.
+- **Algorithms**: Get familiar with common algorithms for classification, regression, clustering, and dimensionality reduction. Know how and when to use algorithms like linear regression, logistic regression, decision trees, random forests, SVMs, k-means, and PCA.
+- **Model Evaluation**: Learn how to evaluate models using metrics like accuracy, precision, recall, F1 score, ROC-AUC for classification, and MSE, RMSE for regression.
+
+### 4. Get Hands-on with Projects
+- **Practical Experience**: Apply what you’ve learned in projects. Start with simple projects and gradually increase complexity. Projects could involve data analysis, predictive modeling, or even implementing machine learning algorithms from scratch.
+- **Portfolio Development**: Document your projects in a portfolio. GitHub is a great platform for this. Include a mix of your own projects and contributions to open-source.
+
+### 5. Study Deep Learning (Optional but Recommended)
+- **Frameworks**: Learn a deep learning framework such as TensorFlow or PyTorch. Start with basic neural network concepts and then explore more complex architectures like CNNs (Convolutional Neural Networks) and RNNs (Recurrent Neural Networks).
+- **Online Courses and Tutorials**: Leverage online resources, courses (e.g., Coursera, edX, Udacity), and tutorials to understand the intricacies of deep learning models and their applications.
+
+### 6. Soft Skills and Industry Knowledge
+- **Problem-Solving**: Sharpen your problem-solving skills. Practice with coding challenges on platforms like LeetCode, HackerRank, or CodeSignal.
+- **Version Control**: Become proficient with Git. Understand how to use branches, merges, pull requests, and how to collaborate on projects with others.
+- **Stay Informed**: Follow industry trends, read relevant blogs, join Python and machine learning communities, attend webinars, and participate in forums.
+
+### 7. Preparation for Job Applications
+- **Resume and LinkedIn**: Update your resume and LinkedIn profile to highlight your Python and machine learning skills, projects, and any relevant courses or certifications.
+- **Interview Preparation**: Prepare for technical interviews by reviewing machine learning concepts, practicing coding problems, and preparing to discuss your projects in detail.
+
+This roadmap is a guide to help you focus your learning efforts. The key to making a successful transition is consistency, practical application, and the continuous expansion of your knowledge and skills. Remember, the field of machine learning is vast and constantly evolving, so be prepared for lifelong learning.
+
+----
+
+
+# Recipe for functional pgm:
+
+To become knowledgeable in #functional programming (FP) without aiming for expert-level depth is a great way to broaden your programming skills and enhance your understanding of various programming paradigms. Here’s a structured recipe to help you get more acquainted with functional programming, including suggested resources, platforms for practice, and key concepts that are particularly beneficial in industry settings. #functionalprogramming
+   #career.  #skills
+### Step 1: Understand the Core Concepts
+
+Start by familiarizing yourself with the core principles of functional programming:
+- **Immutability**: Data objects are not allowed to be modified after they are created.
+- **First-Class and Higher-Order Functions**: Functions are treated as first-class citizens, meaning they can be assigned to variables, passed as arguments, and returned from other functions.
+- **Pure Functions**: Functions that have no side effects (i.e., do not alter any state outside their scope) and return the same output for the same input.
+- **Recursion**: Many functional languages rely on recursion as the primary mechanism for repetition, instead of traditional looping techniques.
+- **Functional Data Structures**: Understanding persistent and immutable data structures.
+
+### Step 2: Learn Through Online Courses
+
+There are many free and paid online courses that can provide a structured and comprehensive introduction to functional programming:
+
+- **Coursera**: Offers courses like "Functional Programming Principles in Scala" by École Polytechnique Fédérale de Lausanne. While it uses Scala, the principles are applicable across all functional languages.
+- **edX**: Look for "Introduction to Functional Programming" which historically has been offered by institutions like Delft University of Technology and covers functional programming in Haskell.
+
+### Step 3: Read Books and Articles
+
+Several books can provide in-depth knowledge and are often recommended within the functional programming community:
+- **"Structure and Interpretation of Computer Programs"** by Harold Abelson and Gerald Jay Sussman (uses Scheme, a dialect of Lisp, and is available online for free).
+- **"Learn You a Haskell for Great Good!"** by Miran Lipovača (a beginner-friendly introduction to Haskell, available for free online).
+- **"Real World Haskell"** by Bryan O'Sullivan, Don Stewart, and John Goerzen.
+
+Additionally, reading blogs and articles can keep you updated on the latest trends and discussions in the FP community.
+
+### Step 4: Practice Coding
+
+To solidify your knowledge, practice is crucial. Here are a few platforms where you can practice functional programming:
+- **Exercism**: Offers mentoring and practice exercises in many languages, including functional languages like Haskell and Elixir.
+- **HackerRank and LeetCode**: While these platforms are not specific to functional programming, they offer problems that can be solved using functional approaches in languages like Python.
+- **Codewars**: Provides many exercises that can be approached from a functional programming perspective.
+
+### Step 5: Apply FP Concepts in Industry-Relevant Projects
+
+Look for opportunities to apply functional programming concepts in your work or personal projects. Even in languages that are not purely functional like Python or JavaScript, you can apply functional programming principles to write cleaner, more robust code. For example:
+- Use Python’s `map`, `filter`, `reduce`, and lambda functions to process data functionally.
+- Explore libraries and frameworks in your language of choice that encourage functional programming, like Lodash for JavaScript.
+
+### Step 6: Join Communities
+
+Engage with the functional programming community:
+- **Online forums**: Such as the Functional Programming subreddit or Haskell and Scala communities.
+- **Meetups and Conferences**: Like LambdaConf in the USA and Functional Conf in Asia.
+
+### Conclusion
+
+By following this structured approach—starting with foundational concepts, progressing through structured learning via courses, deepening knowledge with books, practicing coding problems, applying FP principles in real-world scenarios, and engaging with the community—you’ll gain a solid understanding of functional programming that distinguishes you from the general public. This will not only improve your coding skills but also expand your approach to problem-solving in programming.
+
+-----
+
+# ssh-keygen:
+[aghosal@lxplus714 ~]$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/afs/cern.ch/user/a/aghosal/.ssh/id_rsa):
+/afs/cern.ch/user/a/aghosal/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /afs/cern.ch/user/a/aghosal/.ssh/id_rsa.
+Your public key has been saved in /afs/cern.ch/user/a/aghosal/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:2uxnVjVMFfndX9BPP43xZwFcRNDUodMYZHgWiL2hv6o aghosal@lxplus714.cern.ch
+The key's randomart image is:
++---[RSA 2048]----+
+|          o =BXX*|
+|         . =.+O++|
+|          . =* BO|
+|         . .  *.%|
+|        S .  . o=|
+|       +   ..   .|
+|      . o  ..    |
+|       .  +.     |
+|       Eo=.      |
++----[SHA256]-----+
+[aghosal@lxplus714 ~]$ cat .ssh/id_rsa
+id_rsa      id_rsa.pub
+[aghosal@lxplus714 ~]$ cat .ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7SgsQYnJ6yr/Vs75wg9SDjT6Y78fotUxpNuKb4UibyT3uNYGsAP6bY0q6ERCyrXnV22X9LkHuhCjP/czfSUFlV4wxJlisvhgVxMclDJ2XYqY9LRusJdUChHihVctyIl+GAapT4wt2FBUYqS7RAJAzll9P9S/3NG730YUdpFSzHDFfkAjCz/TrBgQ0v5XTc3dP1B4OYN4DzplAQS0jB24QRQkhunhqLNCCGqpqLuOa8+OHF0JK1dUP/dxxHxdAA+jXfSYLTVmmYD1O55NMy+qPMgKAOsh+ZyfqBXzABk5VM42DDqBA34ZuqvD1Sg0GMeiPvu81bEaUbBXR4xjG6ws3 aghosal@lxplus714.cern.ch
+[aghosal@lxplus714 ~]$ logout
+Connection to lxplus7.cern.ch closed.
+>
+>
+then add it to gitlab or wherever.
+>
+>
+-----

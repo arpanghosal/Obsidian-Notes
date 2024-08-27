@@ -589,3 +589,63 @@ In high-energy physics experiments, weights, including pileup weights and others
     - They correct for various factors like detector efficiency, pileup, initial state radiation, and more, making the simulation more representative of the real experimental conditions.
 
 ----
+
+# Eyes as camera:
+- Our eyes are detectors for photons  -> maps to ECal in ATLAS
+
+ - a **tracker**, which measures the [momentum](https://en.wikipedia.org/wiki/Momentum) of [charged](https://en.wikipedia.org/wiki/Electrical_charge) particles as they curve in a [magnetic field](https://en.wikipedia.org/wiki/Magnetic_field). Next there are one or more **calorimeters**, which measure the energy of most charged and [neutral](https://en.wikipedia.org/wiki/Neutral_particle) particles by absorbing them in dense material, and a [**muon**](https://en.wikipedia.org/wiki/Muon) **system** which measures the one type of particle that is not stopped through the calorimeters and can still be detected.  - A tracker is basically simplified Si chip maybe found in camera. Similarly the bubble/cloud chambers would be older form of Calo’s we use now. The magnetic field is what maybe in a cyclotron or something -more curvature means lesser momentum.
+
+----
+
+# Jets and constituents:
+Describing the entire chain of productions and transformations for D-mesons, B-hadrons, and kaons, particularly in the context of high-energy physics experiments like Belle 2 and ATLAS, involves a complex network of particle physics phenomena. The production and decay chains of these particles are a rich tapestry woven from the fabric of the Standard Model of particle physics, illustrating both the beauty and complexity of the subatomic world. Here’s an overview to guide you through this fascinating landscape:
+
+### 1. Production in Colliders
+- **D-Mesons and B-Hadrons**: In particle colliders, heavy flavored mesons such as D-mesons (charm quark-containing) and B-hadrons (bottom quark-containing) are primarily produced in high-energy collisions between protons (as in the LHC for ATLAS) or electron-positron collisions (as in Belle 2). The energy in these collisions can be sufficient to create a quark-antiquark pair (e.g., charm-anticharm or bottom-antibottom). These quarks then hadronize, meaning they combine with other quarks from the vacuum to form particles like D-mesons and B-hadrons.
+- **Kaons**: Kaons contain a strange quark and are produced through similar processes. They can be produced directly in the collisions or as decay products of heavier particles.
+
+### 2. Hadronization and Jet Formation
+- When quarks are produced in high-energy collisions, they undergo hadronization, a process by which quarks combine to form hadrons. This process often leads to the creation of jets, which are collimated beams of hadrons and other particles. Jets are a common feature in collider experiments and are crucial for identifying the types of particles produced in a collision.
+
+### 3. Decay Chains
+- **D-Mesons**: D-mesons can decay through various channels. For example, a \(D^0\) meson (containing a charm and an anti-up quark) can decay into \(K^-\) and \(\pi^+\), among other possibilities. These decays involve the weak force and can produce a variety of particles, including kaons.
+- **B-Hadrons**: B-hadrons decay through a rich spectrum of channels, often involving the transformation of a bottom quark into a charm quark or other configurations via the weak interaction. For example, a \(B^0\) meson can decay into a \(D^-\) and a \(\pi^+\), among many other modes. B-hadron decays are particularly interesting for studying CP violation.
+- **Kaons**: Kaons themselves are subject to weak decay processes. For instance, a \(K^+\) can decay into a \(\pi^+\), a neutrino, and an antineutrino.
+
+### 4. Transformations and Interactions
+- In the dense environment of a jet or within the detectors, these particles can interact with the detector material or with other particles. For instance, a kaon might undergo a nuclear interaction with the detector material, changing its state or producing secondary particles.
+- The chain of decays and the interactions within the detector are crucial for identifying the particles involved in the initial collision and for studying their properties, including mass, charge, and lifetime.
+
+### Experiments like Belle 2 and ATLAS
+- These experiments are designed to detect the various particles produced in these complex chains. Belle 2, with its focus on precision measurements in the flavor sector, is particularly suited to studying decays of B-hadrons and D-mesons, as well as tau leptons and kaons. ATLAS, being a general-purpose detector at the LHC, is equipped to study a wide range of phenomena from Higgs boson physics to supersymmetry and beyond.
+
+-----
+
+
+# PLV Loose criteria:
+In the context of the ATLAS experiment at the Large Hadron Collider (LHC), the PLVLoose isolation criteria refer to a set of guidelines used to identify and separate particles, specifically leptons (electrons and muons), based on their isolation properties. Isolation criteria are used to distinguish prompt leptons, which originate directly from the primary vertex of a collision, from non-prompt leptons, which might come from secondary processes such as decays of hadrons.
+
+The term "PLVLoose" stands for Prompt Lepton Vertex Loose isolation, where "Loose" indicates a less stringent or relaxed set of requirements compared to tighter isolation criteria like "Medium" or "Tight."
+
+Here are the general steps and components involved in defining PLVLoose isolation criteria:
+
+1. **Track and Calorimeter Isolation**: 
+   - **Track Isolation**: Summing the transverse momentum (\( p_T \)) of tracks within a cone of a certain size (usually defined by \( \Delta R \), where \( \Delta R = \sqrt{(\Delta \eta)^2 + (\Delta \phi)^2} \)) around the lepton candidate. For PLVLoose, this cone size might be relatively larger.
+   - **Calorimeter Isolation**: Summing the transverse energy (\( E_T \)) deposited in the calorimeter within a similar cone around the lepton candidate.
+
+2. **Isolation Variables**:
+   - **Relative Isolation**: This is typically the sum of the transverse momenta or energies (as described above) divided by the \( p_T \) of the lepton candidate. For PLVLoose, the allowed relative isolation value would be higher, allowing more surrounding activity compared to stricter criteria.
+   - **Absolute Isolation**: The absolute sum of the transverse momenta or energies in the cone without normalization by the lepton \( p_T \).
+
+3. **Cone Size**: 
+   - The size of the cone (\( \Delta R \)) used in the calculation can vary. A typical value might be 0.2 or 0.3, but this can be adjusted depending on the specifics of the analysis and the required isolation level.
+
+4. **Pile-Up Correction**: 
+   - Adjustments are often made to account for the contribution of multiple overlapping proton-proton collisions (pile-up). This ensures that the isolation calculation reflects only the activity related to the lepton of interest.
+
+5. **Empirical Calibration**:
+   - The criteria are often derived empirically from data and Monte Carlo simulations to balance efficiency and purity. This involves tuning the isolation cuts to optimize signal retention (prompt leptons) while minimizing background contamination (non-prompt leptons).
+
+In summary, PLVLoose isolation criteria are a relaxed set of requirements used in the ATLAS experiment to identify isolated leptons. The criteria involve calculating the track and calorimeter isolation within a certain cone around the lepton, allowing for more surrounding activity than stricter isolation definitions. This makes PLVLoose useful in analyses where retaining a higher number of leptons is important, even at the cost of including more background.
+
+----
